@@ -16,11 +16,40 @@ quand Internet, le réseau mobile ou l'électricité ne fonctionnent plus.
 
 ## Compiler
 
+### Sur le VPS (APK et .aab signés)
+
+Une seule fois, pour installer le JDK 17 et le SDK Android (environ 1 Go) :
+
+```bash
+git clone https://github.com/aymenkssi/survive.git && cd survive
+./scripts/build-vps.sh setup
+```
+
+Puis à chaque nouvelle version :
+
+```bash
+git pull
+./scripts/build-vps.sh apk     # APK à installer sur un téléphone
+./scripts/build-vps.sh aab     # .aab à envoyer sur Google Play
+./scripts/build-vps.sh all     # les deux
+```
+
+- Le script vérifie d'abord le contenu (tests des fiches JSON et du Morse), puis compile en release (R8 activé).
+- Les fichiers arrivent dans `~/builds/survive/` (`survive-<version>-<versionCode>.apk` / `.aab`).
+  Pour les récupérer : `scp utilisateur@vps:builds/survive/*.apk .`
+- La clé de signature est créée au premier build dans `~/.survive/` (jamais dans le dépôt).
+  **Sauvegardez ce dossier** : la même clé doit signer toutes les mises à jour.
+- Le `.aab` est accompagné de son fichier de désobscurcissement (`-mapping.txt`) : l'envoyer à Google Play
+  avec le bundle pour pouvoir lire les rapports de plantage.
+- Avant chaque build envoyé à Google Play : augmenter `versionCode` (et `versionName`) dans `app/build.gradle.kts`.
+
+### En local (développement)
+
 Prérequis : JDK 17+ et le SDK Android (API 35). Ouvrir le projet dans Android Studio, ou :
 
 ```bash
 ./gradlew assembleDebug   # APK : app/build/outputs/apk/debug/app-debug.apk
-./gradlew test            # valide le contenu JSON et la recherche
+./gradlew test            # valide le contenu JSON, le Morse et les écrans
 ```
 
 ## Captures d'écran
