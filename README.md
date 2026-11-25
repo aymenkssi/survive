@@ -3,9 +3,11 @@
 Application Android de survie **entièrement hors ligne** : toutes les astuces et les gestes utiles
 quand Internet, le réseau mobile ou l'électricité ne fonctionnent plus.
 
-- 11 thématiques : urgences, premiers secours, eau, feu, abri, nourriture, orientation,
-  communication sans réseau, énergie, hygiène, préparation.
-- 41 fiches pratiques sourcées (OMS, ERC, Croix-Rouge, gouvernement, manuel FM 21-76…).
+- 12 thématiques : urgences, premiers secours, eau, feu, abri, nourriture, orientation,
+  communication sans réseau, énergie, hygiène, préparation, nœuds.
+- 73 fiches pratiques sourcées (OMS, ERC, Croix-Rouge, gouvernement, manuels FM 21-76 / FM 3-97.61…).
+- Outils intégrés : lampe & SOS automatique, émetteur Morse, boussole, métronome de massage cardiaque.
+- Favoris, checklists mémorisées (kit 72 h, trousse, stock…), mode nuit rouge, grand texte.
 - Recherche insensible aux accents, accès rapide aux gestes vitaux.
 - Aucune permission Internet : rien ne dépend du réseau.
 
@@ -20,6 +22,14 @@ Prérequis : JDK 17+ et le SDK Android (API 35). Ouvrir le projet dans Android S
 ./gradlew assembleDebug   # APK : app/build/outputs/apk/debug/app-debug.apk
 ./gradlew test            # valide le contenu JSON et la recherche
 ```
+
+## Captures d'écran
+
+| Accueil | Nuit rouge | Fiche | Checklist | Massage cardiaque |
+|---|---|---|---|---|
+| ![](docs/captures/home.png) | ![](docs/captures/home_nuit_rouge.png) | ![](docs/captures/fiche_massage.png) | ![](docs/captures/fiche_kit.png) | ![](docs/captures/outil_massage.png) |
+
+Générées sans émulateur (Robolectric + Roborazzi) : `./gradlew recordRoborazziDebug` → `app/build/outputs/roborazzi/`.
 
 ## Documentation
 

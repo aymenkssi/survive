@@ -80,5 +80,61 @@
       "OMS"
     ],
     "categoryId": "hygiene"
+  },
+  {
+    "id": "stress",
+    "title": "Gérer le stress et la peur",
+    "summary": "Garder la tête froide est la première compétence de survie.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "S'arrêter : ne pas agir dans la précipitation.",
+      "Respiration carrée : inspirer 4 secondes, bloquer 4 secondes, expirer 4 secondes, bloquer 4 secondes ; répéter 4 fois.",
+      "Observer : faire le point sur la situation, les dangers et les ressources.",
+      "Planifier : une liste courte de priorités (voir la règle des 3), puis agir étape par étape.",
+      "Garder une routine (repas, sommeil, tâches) et donner un rôle à chacun, y compris aux enfants.",
+      "Parler, rester en groupe, limiter l'écoute des informations anxiogènes."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "panique",
+      "angoisse",
+      "peur",
+      "mental",
+      "enfants"
+    ],
+    "sources": [
+      "FM 21-76",
+      "OMS"
+    ],
+    "categoryId": "hygiene"
+  },
+  {
+    "id": "dechets",
+    "title": "Gérer les déchets sans ramassage",
+    "summary": "Éviter rats, mouches et maladies.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Trier : déchets alimentaires d'un côté, emballages secs de l'autre.",
+      "Bien fermer les sacs de déchets alimentaires et les stocker à l'extérieur, dans un bac fermé, à l'ombre.",
+      "Rincer et aplatir les emballages pour réduire volume et odeurs.",
+      "Composter ou enterrer les épluchures si un jardin est disponible, loin des points d'eau."
+    ],
+    "warnings": [
+      "Ne pas brûler de plastiques (fumées toxiques)."
+    ],
+    "tips": [],
+    "tags": [
+      "poubelle",
+      "ordures",
+      "rats",
+      "déchets"
+    ],
+    "sources": [
+      "OMS"
+    ],
+    "categoryId": "hygiene"
   }
 ]

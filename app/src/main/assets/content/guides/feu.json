@@ -94,5 +94,63 @@
       "FEMA Ready.gov"
     ],
     "categoryId": "feu"
+  },
+  {
+    "id": "feu-sans-briquet",
+    "title": "Allumer un feu sans briquet ni allumettes",
+    "summary": "Pierre à feu, loupe, pile : des alternatives qui marchent vraiment.",
+    "priority": "utile",
+    "materials": [
+      "Pierre à feu, loupe ou pile 9 V et laine d'acier",
+      "Amadou sec"
+    ],
+    "steps": [
+      "Pierre à feu (ferrocérium) : gratter fermement la tige avec le dos d'un couteau, au ras de l'amadou ; les étincelles très chaudes l'enflamment.",
+      "Loupe, lentille de lunettes de vue pour presbyte, fond de canette poli : concentrer le soleil en un point minuscule sur un amadou sombre et sec.",
+      "Pile et paille de fer fine (laine d'acier) : frotter les deux bornes d'une pile 9 V sur la laine d'acier, qui rougit ; la placer aussitôt dans l'amadou.",
+      "Dans tous les cas, préparer l'amadou, le petit bois et le combustible AVANT d'essayer."
+    ],
+    "warnings": [],
+    "tips": [
+      "La méthode par friction (archet) est très difficile sans entraînement : ne pas compter dessus en situation réelle.",
+      "Glisser une pierre à feu dans chaque kit : elle fonctionne même mouillée."
+    ],
+    "tags": [
+      "ferro",
+      "étincelle",
+      "loupe",
+      "allumer",
+      "sans allumette"
+    ],
+    "sources": [
+      "FM 21-76"
+    ],
+    "categoryId": "feu"
+  },
+  {
+    "id": "feu-sous-pluie",
+    "title": "Faire du feu par temps humide",
+    "summary": "Trouver du bois sec sous la pluie.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Chercher les branches mortes encore accrochées aux arbres, et le dessous des troncs couchés.",
+      "Fendre le bois : le cœur reste sec même quand l'extérieur est mouillé.",
+      "Tailler des « bâtons à copeaux » : faire de longs copeaux fins sans les détacher, ils s'enflamment facilement.",
+      "Construire une plateforme de branches pour isoler le feu du sol mouillé.",
+      "Faire sécher le bois suivant près du feu."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "pluie",
+      "humide",
+      "mouillé",
+      "bois sec"
+    ],
+    "sources": [
+      "FM 21-76"
+    ],
+    "categoryId": "feu"
   }
 ]

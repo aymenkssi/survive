@@ -55,5 +55,61 @@
       "FM 21-76"
     ],
     "categoryId": "abri"
+  },
+  {
+    "id": "abri-voiture",
+    "title": "S'abriter dans une voiture",
+    "summary": "Bloqué par la neige ou sur la route : la voiture protège, à condition de bien l'utiliser.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Rester dans le véhicule, sauf si un abri sûr est visible et tout proche.",
+      "Signaler sa présence : feux de détresse, tissu coloré à l'antenne ou à la vitre.",
+      "Faire tourner le moteur 10 minutes par heure seulement pour se chauffer, une vitre légèrement entrouverte.",
+      "Dégager régulièrement le pot d'échappement de la neige.",
+      "Se couvrir (couvertures, vêtements), bouger un peu pour garder la circulation, boire de l'eau."
+    ],
+    "warnings": [
+      "Pot d'échappement bouché par la neige = monoxyde de carbone dans l'habitacle, mortel en quelques minutes."
+    ],
+    "tips": [],
+    "tags": [
+      "auto",
+      "neige",
+      "bloqué",
+      "route",
+      "véhicule"
+    ],
+    "sources": [
+      "FEMA Ready.gov",
+      "CDC"
+    ],
+    "categoryId": "abri"
+  },
+  {
+    "id": "choisir-bivouac",
+    "title": "Choisir où passer la nuit dehors",
+    "summary": "Les erreurs d'emplacement qu'on paie la nuit.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "S'installer avant la tombée de la nuit, une à deux heures avant.",
+      "Éviter les fonds de vallée (air froid, humidité) et les sommets exposés au vent : préférer un replat à mi-pente.",
+      "Ne jamais dormir dans un lit de rivière à sec ou trop près de l'eau (crue soudaine).",
+      "Vérifier l'absence d'arbres ou de branches mortes au-dessus (« veuves »).",
+      "Rester près d'eau, de bois et d'un endroit dégagé pour être vu."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "camper",
+      "dormir",
+      "nuit",
+      "emplacement"
+    ],
+    "sources": [
+      "FM 21-76"
+    ],
+    "categoryId": "abri"
   }
 ]

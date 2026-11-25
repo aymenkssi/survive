@@ -1,0 +1,110 @@
+[
+  {
+    "id": "noeud-chaise",
+    "title": "Le nœud de chaise",
+    "summary": "Une boucle fixe qui ne glisse pas et se défait facilement, même après traction.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Faire une petite boucle dans le brin principal, le brin dessus (« le terrier »).",
+      "Passer l'extrémité de la corde dans cette boucle par en dessous (« le lapin sort du terrier »).",
+      "Faire passer l'extrémité derrière le brin principal (« il fait le tour de l'arbre »).",
+      "La repasser dans la petite boucle par le haut (« il rentre dans le terrier »).",
+      "Serrer en tirant sur le brin principal tout en maintenant la grande boucle."
+    ],
+    "warnings": [],
+    "tips": [
+      "Laisser au moins 10 fois le diamètre de la corde en extrémité libre.",
+      "Utilisé pour hisser une personne ou faire une boucle autour de la taille."
+    ],
+    "tags": [
+      "boucle",
+      "nœud",
+      "hisser",
+      "sauvetage"
+    ],
+    "sources": [
+      "FM 3-97.61"
+    ],
+    "categoryId": "noeuds"
+  },
+  {
+    "id": "noeud-cabestan",
+    "title": "Le nœud de cabestan",
+    "summary": "Attacher rapidement une corde à un poteau ou une branche.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Faire un tour de corde autour du poteau.",
+      "Croiser par-dessus le premier tour et faire un second tour.",
+      "Glisser l'extrémité sous ce second tour, entre la corde et le poteau.",
+      "Serrer en tirant sur les deux brins."
+    ],
+    "warnings": [
+      "Il peut glisser si la traction varie : l'assurer avec deux demi-clés pour une charge importante."
+    ],
+    "tips": [],
+    "tags": [
+      "attacher",
+      "poteau",
+      "piquet",
+      "nœud"
+    ],
+    "sources": [
+      "FM 3-97.61"
+    ],
+    "categoryId": "noeuds"
+  },
+  {
+    "id": "noeud-tendeur",
+    "title": "Le nœud tendeur (tension réglable)",
+    "summary": "Pour tendre une corde de bâche ou de tente et régler la tension.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Passer la corde autour du piquet ou de l'arbre.",
+      "Avec l'extrémité, faire deux tours autour du brin principal, vers le piquet (à l'intérieur de la boucle).",
+      "Faire un troisième tour à l'extérieur de ces deux tours, du côté opposé.",
+      "Serrer : le nœud coulisse quand on le pousse, et bloque sous la tension."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "tendre",
+      "bâche",
+      "tente",
+      "hauban"
+    ],
+    "sources": [
+      "FM 3-97.61"
+    ],
+    "categoryId": "noeuds"
+  },
+  {
+    "id": "noeud-plat",
+    "title": "Le nœud plat",
+    "summary": "Relier deux cordes de même diamètre ou fermer un bandage.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Croiser l'extrémité droite sur la gauche et faire un premier nœud simple.",
+      "Croiser l'extrémité gauche sur la droite et faire un second nœud simple.",
+      "Vérifier : les deux extrémités sortent du même côté, le nœud est bien symétrique.",
+      "Serrer."
+    ],
+    "warnings": [
+      "Ne jamais l'utiliser pour supporter une personne ou une charge importante : il peut se défaire."
+    ],
+    "tips": [],
+    "tags": [
+      "relier",
+      "abouter",
+      "bandage",
+      "nœud"
+    ],
+    "sources": [
+      "FM 3-97.61"
+    ],
+    "categoryId": "noeuds"
+  }
+]

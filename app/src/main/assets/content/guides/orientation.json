@@ -101,6 +101,34 @@
       "IGN",
       "FM 21-76"
     ],
+    "categoryId": "orientation",
+    "tool": "compass"
+  },
+  {
+    "id": "estimer-jour-restant",
+    "title": "Estimer le temps avant la nuit",
+    "summary": "Avec la main tendue vers l'horizon.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Tendre le bras, main à plat, doigts serrés à l'horizontale.",
+      "Placer le bas de la main sur l'horizon et compter combien de largeurs de doigts tiennent jusqu'au soleil.",
+      "Chaque doigt représente environ 15 minutes avant le coucher du soleil (4 doigts ≈ 1 heure).",
+      "Prévoir l'installation de l'abri avant la dernière heure."
+    ],
+    "warnings": [
+      "Ne jamais regarder le soleil directement."
+    ],
+    "tips": [],
+    "tags": [
+      "coucher de soleil",
+      "heure",
+      "nuit",
+      "temps"
+    ],
+    "sources": [
+      "FM 21-76"
+    ],
     "categoryId": "orientation"
   }
 ]

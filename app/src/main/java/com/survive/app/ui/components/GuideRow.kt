@@ -11,6 +11,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.survive.app.data.Guide
 import com.survive.app.data.Priority
+import com.survive.app.ui.theme.LocalNightRed
 
 @Composable
 fun PriorityBadge(priority: Priority) {
@@ -19,12 +20,13 @@ fun PriorityBadge(priority: Priority) {
         Priority.IMPORTANT -> "IMPORTANT" to Color(0xFFF57C00)
         Priority.USEFUL -> "UTILE" to Color(0xFF558B2F)
     }
-    Surface(color = color, shape = MaterialTheme.shapes.small) {
+    val night = LocalNightRed.current
+    Surface(color = if (night) MaterialTheme.colorScheme.primaryContainer else color, shape = MaterialTheme.shapes.small) {
         Text(
             label,
             modifier = Modifier.padding(horizontal = 6.dp, vertical = 2.dp),
             style = MaterialTheme.typography.labelSmall,
-            color = Color.White,
+            color = if (night) MaterialTheme.colorScheme.onPrimaryContainer else Color.White,
             fontWeight = FontWeight.Bold,
         )
     }

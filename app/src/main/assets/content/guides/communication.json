@@ -28,7 +28,8 @@
       "FM 21-76",
       "OACI"
     ],
-    "categoryId": "communication"
+    "categoryId": "communication",
+    "tool": "torch"
   },
   {
     "id": "radios",
@@ -113,6 +114,85 @@
     "sources": [
       "Briar Project",
       "Meshtastic"
+    ],
+    "categoryId": "communication"
+  },
+  {
+    "id": "alphabet-morse",
+    "title": "L'alphabet morse",
+    "summary": "Transmettre un message avec une lampe, un sifflet ou des coups.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Point = signal court ; trait = signal long (3 fois un point).",
+      "Laisser un court silence entre les signaux d'une lettre, un silence plus long (3 points) entre les lettres, et encore plus long (7 points) entre les mots.",
+      "Lettres les plus utiles : S = · · ·  O = — — —  E = ·  T = —  A = · —  N = — ·  I = · ·  M = — —.",
+      "SOS : · · · — — — · · · d'un seul bloc, puis une pause, et recommencer.",
+      "Utiliser l'outil Morse de l'application pour traduire et émettre automatiquement n'importe quel message."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "morse",
+      "code",
+      "lampe",
+      "signal"
+    ],
+    "sources": [
+      "UIT"
+    ],
+    "tool": "morse",
+    "categoryId": "communication"
+  },
+  {
+    "id": "alphabet-radio",
+    "title": "L'alphabet radio (épeler sans erreur)",
+    "summary": "Pour épeler un nom ou une adresse par radio ou téléphone dans le bruit.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "A Alpha, B Bravo, C Charlie, D Delta, E Echo, F Foxtrot, G Golf, H Hotel, I India.",
+      "J Juliett, K Kilo, L Lima, M Mike, N November, O Oscar, P Papa, Q Quebec, R Romeo.",
+      "S Sierra, T Tango, U Uniform, V Victor, W Whiskey, X X-ray, Y Yankee, Z Zulu.",
+      "Chiffres : les prononcer un par un (« un - deux - cinq » pour 125).",
+      "Fin de message : « Terminé » ; pour couper la conversation : « Terminé, je coupe »."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "OTAN",
+      "épeler",
+      "radio",
+      "alphabet phonétique"
+    ],
+    "sources": [
+      "OACI"
+    ],
+    "categoryId": "communication"
+  },
+  {
+    "id": "entraide-quartier",
+    "title": "Organiser l'entraide de quartier",
+    "summary": "Sans Internet, l'information circule par les voisins.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Repérer à l'avance les personnes vulnérables de l'immeuble ou de la rue (âgées, malades, seules).",
+      "Fixer un point de rencontre et un horaire quotidien pour partager les nouvelles.",
+      "Utiliser un tableau d'affichage (hall, mairie) : besoins, offres, informations officielles.",
+      "Mettre en commun : radio, outils, chargeurs solaires, compétences (soignant, électricien).",
+      "Toujours vérifier une information auprès d'une source officielle (radio) avant de la diffuser."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "voisins",
+      "solidarité",
+      "rumeurs",
+      "quartier"
+    ],
+    "sources": [
+      "Gouv.fr - Je me prépare"
     ],
     "categoryId": "communication"
   }

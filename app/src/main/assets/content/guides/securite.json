@@ -111,5 +111,125 @@
       "Gouv.fr - Risques"
     ],
     "categoryId": "securite"
+  },
+  {
+    "id": "incendie-domicile",
+    "title": "Incendie dans le logement",
+    "summary": "Sortir vite, se protéger de la fumée, fermer les portes.",
+    "priority": "critique",
+    "materials": [],
+    "steps": [
+      "Si le feu est petit et naissant (poêle, corbeille) : l'étouffer avec un couvercle ou une couverture, couper le gaz ou l'électricité. Jamais d'eau sur de l'huile en feu.",
+      "Sinon : évacuer immédiatement tout le monde, sans rien emporter, en fermant les portes derrière soi.",
+      "Dans la fumée : se baisser, l'air respirable est près du sol ; se couvrir le nez et la bouche d'un tissu.",
+      "Ne jamais prendre l'ascenseur.",
+      "Si la sortie est bloquée : rester dans une pièce, fermer la porte, calfeutrer le bas avec des linges mouillés, se montrer à la fenêtre et appeler le 18 ou le 112.",
+      "Si les vêtements d'une personne prennent feu : l'arrêter, l'allonger au sol et la faire rouler, ou l'envelopper dans une couverture (pas synthétique)."
+    ],
+    "warnings": [
+      "La fumée tue plus que les flammes : quelques bouffées peuvent faire perdre connaissance.",
+      "Avant d'ouvrir une porte, toucher la poignée du dos de la main : si elle est chaude, ne pas ouvrir."
+    ],
+    "tips": [],
+    "tags": [
+      "feu",
+      "fumée",
+      "pompiers",
+      "brûler",
+      "évacuer"
+    ],
+    "sources": [
+      "Gouv.fr - Risques",
+      "Croix-Rouge"
+    ],
+    "categoryId": "securite"
+  },
+  {
+    "id": "confinement-alerte",
+    "title": "Sirène d'alerte et mise à l'abri",
+    "summary": "Accident industriel, chimique ou nucléaire : s'enfermer et écouter la radio.",
+    "priority": "critique",
+    "materials": [],
+    "steps": [
+      "Reconnaître la sirène d'alerte (France) : son montant et descendant, trois cycles de 1 minute 41 secondes séparés de 5 secondes. Fin de l'alerte : son continu de 30 secondes.",
+      "Rejoindre sans délai le bâtiment le plus proche (pas une voiture).",
+      "Fermer portes et fenêtres, arrêter ventilation, climatisation et chauffage à air.",
+      "Calfeutrer les ouvertures si possible (linges mouillés, ruban adhésif).",
+      "Écouter la radio (France Bleu / ICI, France Inter) pour les consignes.",
+      "Ne pas aller chercher les enfants à l'école : les enseignants les mettent à l'abri.",
+      "Ne téléphoner qu'en cas d'urgence vitale, pour laisser les réseaux aux secours."
+    ],
+    "warnings": [
+      "Ne sortir qu'à la fin de l'alerte ou sur ordre des autorités.",
+      "Les comprimés d'iode ne se prennent que sur consigne officielle, et seulement en cas d'accident nucléaire."
+    ],
+    "tips": [],
+    "tags": [
+      "sirène",
+      "nucléaire",
+      "chimique",
+      "nuage toxique",
+      "confinement",
+      "abri"
+    ],
+    "sources": [
+      "Gouv.fr - Risques",
+      "Radio France"
+    ],
+    "categoryId": "securite"
+  },
+  {
+    "id": "tempete",
+    "title": "Tempête et vents violents",
+    "summary": "Rester à l'abri et s'éloigner de tout ce qui peut tomber.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Avant : rentrer ou attacher les objets extérieurs (pots, meubles de jardin, poubelles).",
+      "Fermer volets et fenêtres, recharger téléphones et batteries, préparer lampes et radio.",
+      "Pendant : rester à l'intérieur, loin des fenêtres ; éviter les déplacements.",
+      "Ne jamais s'abriter sous un arbre, ni s'approcher des chantiers et des bords de mer.",
+      "Après : ne pas toucher les fils électriques tombés au sol, signaler les dégâts."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "vent",
+      "ouragan",
+      "orage",
+      "cyclone"
+    ],
+    "sources": [
+      "Gouv.fr - Risques"
+    ],
+    "categoryId": "securite"
+  },
+  {
+    "id": "canicule",
+    "title": "Canicule : se protéger de la chaleur",
+    "summary": "Surtout sans électricité ni climatisation : garder le corps et le logement frais.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Boire régulièrement de l'eau sans attendre d'avoir soif ; éviter l'alcool.",
+      "Fermer volets et fenêtres le jour, ouvrir la nuit quand il fait plus frais dehors.",
+      "Se mouiller le corps (brumisateur, linge humide) et se ventiler.",
+      "Éviter les efforts et les sorties aux heures les plus chaudes ; rester dans la pièce la plus fraîche.",
+      "Prendre des nouvelles des personnes âgées, isolées, des bébés et des malades."
+    ],
+    "warnings": [
+      "Ne jamais laisser un enfant ou un animal dans une voiture, même quelques minutes."
+    ],
+    "tips": [],
+    "tags": [
+      "chaleur",
+      "été",
+      "déshydratation",
+      "climatisation"
+    ],
+    "sources": [
+      "Santé publique France"
+    ],
+    "categoryId": "securite"
   }
 ]

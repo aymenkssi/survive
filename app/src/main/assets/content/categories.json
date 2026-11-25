@@ -86,5 +86,13 @@
     "icon": "kit",
     "color": "#546E7A",
     "order": 10
+  },
+  {
+    "id": "noeuds",
+    "title": "Nœuds & cordes",
+    "description": "Les quelques nœuds qui servent vraiment : attacher, tendre, hisser, assurer.",
+    "icon": "knot",
+    "color": "#8D6E63",
+    "order": 11
   }
 ]

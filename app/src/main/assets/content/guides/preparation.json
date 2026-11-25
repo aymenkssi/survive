@@ -33,7 +33,8 @@
       "Gouv.fr - Je me prépare",
       "FEMA Ready.gov"
     ],
-    "categoryId": "preparation"
+    "categoryId": "preparation",
+    "checklist": true
   },
   {
     "id": "preparer-telephone",
@@ -86,6 +87,67 @@
     "sources": [
       "Croix-Rouge"
     ],
+    "categoryId": "preparation",
+    "checklist": true
+  },
+  {
+    "id": "kit-voiture",
+    "title": "Le kit d'urgence de la voiture",
+    "summary": "Pour un blocage sur la route, une panne ou une évacuation.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Eau (quelques litres) et en-cas non périssables.",
+      "Couvertures de survie et couverture chaude.",
+      "Lampe frontale et piles.",
+      "Câble de recharge USB et adaptateur allume-cigare.",
+      "Trousse de premiers secours.",
+      "Gilet jaune et triangle de signalisation.",
+      "Pelle pliante, grattoir, chaînes en hiver.",
+      "Câbles de démarrage.",
+      "Carte routière papier de la région."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "auto",
+      "voiture",
+      "coffre",
+      "route"
+    ],
+    "sources": [
+      "FEMA Ready.gov",
+      "Gouv.fr - Je me prépare"
+    ],
+    "checklist": true,
+    "categoryId": "preparation"
+  },
+  {
+    "id": "documents",
+    "title": "Les documents à préparer",
+    "summary": "Pour prouver son identité et se soigner quand rien n'est accessible en ligne.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Photocopies des pièces d'identité, passeports, livret de famille.",
+      "Ordonnances, carte Vitale et attestation de mutuelle, carnets de vaccination, groupe sanguin.",
+      "Contrats d'assurance (habitation, voiture) et leurs numéros.",
+      "Liste papier des numéros importants (famille, médecin, voisins, employeur).",
+      "Clés de rechange.",
+      "Ranger le tout dans une pochette étanche dans le kit d'urgence."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "papiers",
+      "identité",
+      "ordonnance",
+      "assurance"
+    ],
+    "sources": [
+      "Gouv.fr - Je me prépare"
+    ],
+    "checklist": true,
     "categoryId": "preparation"
   }
 ]

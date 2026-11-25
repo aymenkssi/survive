@@ -29,24 +29,39 @@ app/src/main/
     ├── SurviveApp.kt                # Application : crée le ContentRepository
     ├── MainActivity.kt
     ├── data/
-    │   ├── Models.kt                # Category, Guide, Priority
+    │   ├── Models.kt                # Category, Guide, Priority, Tools
     │   ├── ContentRepository.kt     # chargement, filtres, recherche
-    │   └── AssetContentSource.kt    # lecture des assets Android
+    │   ├── AssetContentSource.kt    # lecture des assets Android
+    │   └── UserPrefs.kt             # favoris, thème, grand texte, cases cochées
+    ├── tools/                       # matériel : Morse (pur Kotlin), Torch (flash), Beeper (son)
     └── ui/
         ├── Navigation.kt            # routes : home, search, category/{id}, guide/{id}
         ├── theme/Theme.kt
         ├── components/              # tuiles, badges, barre de retour
         ├── home/                    # accueil : bandeau 112, accès urgence, grille des thèmes
         ├── category/                # liste des fiches d'un thème
-        ├── guide/                   # détail : alertes, matériel, étapes, astuces, sources
-        └── search/                  # recherche plein texte
+        ├── guide/                   # détail : favori, outil lié, alertes, étapes ou checklist
+        ├── search/                  # recherche plein texte
+        ├── settings/                # thème (clair, sombre, nuit rouge), grand texte
+        └── tools/                   # Lampe & SOS, Morse, Boussole, Métronome massage cardiaque
 app/src/test/                        # tests JVM qui valident le contenu
 ```
 
+## Outils hors ligne
+
+| Outil | Matériel utilisé | Repli si absent |
+|---|---|---|
+| Lampe & SOS | flash (`CameraManager.setTorchMode`, sans permission caméra) | écran plein blanc (ou rouge en mode nuit), luminosité max |
+| Morse | flash + bip (`ToneGenerator`, flux alarme) + voyant écran | voyant écran |
+| Boussole | capteur de rotation, sinon accéléromètre + magnétomètre | message renvoyant à la méthode du bâton |
+| Massage cardiaque | bip 110/min + pulsation visuelle, mode 30:2, rappel de relais toutes les 2 min | — |
+
+Les écrans d'outils gardent l'écran allumé tant qu'ils sont affichés.
+
 ## Feuille de route
 
-1. **v0.1 (actuelle)** : structure, 11 thématiques, ~40 fiches, recherche, accès rapide urgence.
-2. **v0.2** : favoris et « fiches lues » (DataStore), mode lecture grand texte, mode nuit rouge (préserve la vision nocturne).
-3. **v0.3** : outils hors ligne – lampe torche/stroboscope SOS, signal morse sonore et lumineux, boussole (capteur magnétique), minuteur de massage cardiaque (métronome 110/min).
-4. **v0.4** : illustrations (vectoriels dans l'APK), checklists interactives du kit d'urgence.
-5. **v0.5** : traduction (arabe, anglais) via des fichiers `content-<langue>/`.
+1. ~~v0.1 : structure, thématiques, fiches, recherche, accès rapide urgence.~~
+2. ~~v0.2 : favoris, checklists, mode grand texte, mode nuit rouge, outils hors ligne, 12 thématiques / 73 fiches.~~
+3. **v0.3** : illustrations vectorielles (nœuds, PLS, massage, signaux sol-air), relecture médicale des fiches.
+4. **v0.4** : traduction (arabe, anglais) via des fichiers `content-<langue>/` ; widget d'accueil « SOS ».
+5. **v0.5** : publication (signature release, F-Droid / Play Store).

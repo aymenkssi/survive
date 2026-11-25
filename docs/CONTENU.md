@@ -16,7 +16,9 @@ Fichier `app/src/main/assets/content/guides/<categoryId>.json` (tableau de fiche
   "warnings": ["Danger à éviter"],    // optionnel, affiché en rouge
   "tips": ["Astuce"],                 // optionnel
   "tags": ["bouillir", "potable"],    // synonymes pour la recherche
-  "sources": ["OMS", "CDC"]           // clés de docs/SOURCES.md, au moins une
+  "sources": ["OMS", "CDC"],          // clés de docs/SOURCES.md, au moins une
+  "checklist": false,                 // optionnel : étapes en cases à cocher mémorisées
+  "tool": "cpr"                       // optionnel : torch | morse | compass | cpr
 }
 ```
 
@@ -35,18 +37,21 @@ Fichier `app/src/main/assets/content/guides/<categoryId>.json` (tableau de fiche
 
 | Thématique | Fiches | Prochaines fiches à rédiger |
 |---|---|---|
-| Urgences & sécurité | 4 | Incendie domestique, tempête, canicule, accident nucléaire/chimique (confinement), coupure de gaz |
-| Premiers secours | 7 | Fractures et entorses, AVC (signes FAST), crise d'asthme, allergie grave, morsures, coup de chaleur, gestes pour enfant/nourrisson |
-| Eau | 5 | Filtre artisanal (sable/charbon), stockage longue durée, distillation solaire |
-| Feu & chaleur | 3 | Feu sous la pluie, allumer sans briquet (pierre à feu, loupe, pile + paille de fer) |
-| Abri | 2 | Abri de neige, abri urbain (voiture, bâtiment), choisir un bivouac |
-| Nourriture | 3 | Stock de base 2 semaines, conserves maison, pêche simple, plantes comestibles courantes avec photos |
-| Orientation | 4 | Lire une carte topographique, estimer distance et heure restante avant la nuit |
-| Communiquer sans réseau | 4 | Alphabet morse complet, alphabet radio (Alpha, Bravo…), réseau d'entraide de quartier |
-| Énergie & électricité | 3 | Dimensionner un petit kit solaire, utiliser une batterie de voiture en sécurité |
-| Hygiène & santé | 3 | Gestion des déchets, soins dentaires, médicaments essentiels, santé mentale et stress |
-| Préparation & kit | 3 | Kit voiture, kit de travail, stock domicile 2 semaines, documents à numériser et imprimer |
-| **Nouvelles thématiques possibles** | – | Nœuds utiles, météo sans prévisions, outils & réparations, enfants et personnes vulnérables |
+| Urgences & sécurité | 8 | Coupure de gaz, avalanche, feu de forêt, évacuation |
+| Premiers secours | 14 | Réanimation de l'enfant et du nourrisson, convulsions, malaise diabétique, plaie à la tête, noyade, hypothermie de l'enfant |
+| Eau | 7 | Distillation solaire, eau de piscine (usage non alimentaire) |
+| Feu & chaleur | 5 | Poêle de fortune sécurisé, fabriquer des allume-feux |
+| Abri | 4 | Abri de neige, isoler une fenêtre cassée |
+| Nourriture | 4 | Plantes comestibles courantes (avec illustrations), pêche simple, conserves maison |
+| Orientation | 5 | Lire une carte topographique (courbes de niveau), estimer une distance |
+| Communiquer sans réseau | 7 | Code des signaux corporels pour hélicoptère, utilisation d'un scanner radio |
+| Énergie & électricité | 5 | Groupe électrogène : branchement en sécurité |
+| Hygiène & santé | 5 | Médicaments essentiels, soins dentaires, hygiène féminine |
+| Préparation & kit | 5 | Kit de travail / bureau, kit bébé, kit animal |
+| Nœuds & cordes | 4 | Nœud de huit, demi-clés, brêlage (assembler des perches) |
+| **Thématiques possibles** | – | Météo sans prévisions, outils & réparations, personnes vulnérables |
+
+Toutes les fiches de premiers secours (thème `secours`) doivent être **relues par un secouriste ou un soignant** avant publication.
 
 ## Ajouter une fiche
 

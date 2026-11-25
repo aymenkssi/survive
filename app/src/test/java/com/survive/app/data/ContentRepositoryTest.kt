@@ -54,6 +54,13 @@ class ContentRepositoryTest {
         assertTrue(repo.search("x").isEmpty())
     }
 
+    @Test fun toolLinksAreValid() {
+        repo.guides.mapNotNull { g -> g.tool?.let { g.id to it } }.forEach { (id, tool) ->
+            assertTrue("$id : outil inconnu « $tool »", tool in Tools.all)
+        }
+        assertEquals("cpr", repo.guide("massage-cardiaque")?.tool)
+    }
+
     @Test fun criticalGuidesExist() {
         assertTrue(repo.criticalGuides().any { it.id == "massage-cardiaque" })
     }

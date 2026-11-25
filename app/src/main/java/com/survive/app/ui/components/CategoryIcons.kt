@@ -18,6 +18,7 @@ fun categoryIcon(name: String): ImageVector = when (name) {
     "hygiene" -> Icons.Filled.CleanHands
     "security" -> Icons.Filled.Shield
     "kit" -> Icons.Filled.Backpack
+    "knot" -> Icons.Filled.Gesture
     else -> Icons.Filled.Info
 }
 

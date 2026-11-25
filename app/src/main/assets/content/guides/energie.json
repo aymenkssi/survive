@@ -83,5 +83,58 @@
       "FEMA Ready.gov"
     ],
     "categoryId": "energie"
+  },
+  {
+    "id": "batterie-voiture",
+    "title": "Utiliser une batterie de voiture en sécurité",
+    "summary": "Une réserve d'énergie de 12 V pour éclairer et recharger.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Brancher un convertisseur 12 V vers USB, ou une prise allume-cigare sur pinces.",
+      "Rouge sur la borne +, noir sur la borne −, pinces bien serrées.",
+      "Petits appareils uniquement : téléphones, lampes LED, radio.",
+      "Ne pas vider complètement la batterie si on compte redémarrer la voiture : arrêter avant que les phares ne faiblissent."
+    ],
+    "warnings": [
+      "Ne jamais relier directement les deux bornes (court-circuit, brûlures, explosion).",
+      "Pas de flamme ni d'étincelle près d'une batterie en charge (gaz hydrogène)."
+    ],
+    "tips": [],
+    "tags": [
+      "12V",
+      "voiture",
+      "batterie",
+      "convertisseur"
+    ],
+    "sources": [
+      "FEMA Ready.gov"
+    ],
+    "categoryId": "energie"
+  },
+  {
+    "id": "kit-solaire",
+    "title": "Dimensionner un petit kit solaire",
+    "summary": "Choisir un panneau et une batterie pour recharger téléphones et lampes.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Estimer le besoin : un téléphone ≈ 15 Wh par charge, une lampe LED ≈ 3 à 5 Wh par soirée, une radio ≈ 2 Wh.",
+      "Batterie externe : 20 000 mAh ≈ 70 Wh, soit environ 4 charges de téléphone.",
+      "Panneau pliant de 20 à 30 W : environ 50 à 100 Wh par journée ensoleillée (bien moins par temps couvert).",
+      "Recharger la batterie externe le jour avec le panneau, puis les appareils le soir."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "solaire",
+      "panneau",
+      "watt",
+      "mAh"
+    ],
+    "sources": [
+      "FEMA Ready.gov"
+    ],
+    "categoryId": "energie"
   }
 ]

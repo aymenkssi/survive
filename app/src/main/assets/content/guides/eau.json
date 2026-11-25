@@ -158,5 +158,67 @@
       "FEMA Ready.gov"
     ],
     "categoryId": "eau"
+  },
+  {
+    "id": "filtre-artisanal",
+    "title": "Fabriquer un filtre à eau artisanal",
+    "summary": "Pour clarifier une eau trouble avant de la désinfecter.",
+    "priority": "utile",
+    "materials": [
+      "Bouteille plastique",
+      "Tissu",
+      "Charbon de bois",
+      "Sable",
+      "Gravier"
+    ],
+    "steps": [
+      "Couper le fond d'une bouteille plastique et la retourner, bouchon percé de petits trous ou remplacé par un tissu.",
+      "Remplir par couches, du bas vers le haut : tissu, charbon de bois écrasé (pas de briquettes de barbecue), sable fin, sable grossier, gravier.",
+      "Verser l'eau doucement par le haut ; jeter les premiers passages, encore troubles.",
+      "Désinfecter l'eau filtrée (ébullition, chlore ou SODIS) avant de la boire."
+    ],
+    "warnings": [
+      "Ce filtre rend l'eau plus claire mais NE la rend PAS potable : la désinfection reste obligatoire."
+    ],
+    "tips": [],
+    "tags": [
+      "filtrer",
+      "trouble",
+      "boue",
+      "clarifier"
+    ],
+    "sources": [
+      "FM 21-76",
+      "OMS"
+    ],
+    "categoryId": "eau"
+  },
+  {
+    "id": "stocker-eau",
+    "title": "Stocker l'eau sur la durée",
+    "summary": "Des réserves propres qui ne se dégradent pas.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Le plus simple : des bouteilles d'eau du commerce, stockées au frais, à l'abri de la lumière, et renouvelées avant la date indiquée.",
+      "Pour des bidons remplis au robinet : utiliser des récipients alimentaires, nettoyés puis rincés avec une eau légèrement chlorée.",
+      "Remplir à ras, fermer, étiqueter avec la date ; renouveler tous les 6 mois.",
+      "Stocker loin des produits chimiques, de l'essence et des sources de chaleur."
+    ],
+    "warnings": [
+      "Ne jamais réutiliser un bidon ayant contenu des produits chimiques ou du lait (difficile à nettoyer)."
+    ],
+    "tips": [],
+    "tags": [
+      "réserve",
+      "bidon",
+      "stock",
+      "conserver"
+    ],
+    "sources": [
+      "CDC",
+      "FEMA Ready.gov"
+    ],
+    "categoryId": "eau"
   }
 ]

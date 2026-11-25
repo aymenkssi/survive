@@ -44,4 +44,17 @@ data class Guide(
     val tags: List<String> = emptyList(),
     /** Références des sources (voir docs/SOURCES.md). */
     val sources: List<String> = emptyList(),
+    /** Si vrai, les étapes s'affichent comme des cases à cocher mémorisées (listes de matériel). */
+    val checklist: Boolean = false,
+    /** Outil intégré associé à la fiche : "torch", "morse", "compass" ou "cpr". */
+    val tool: String? = null,
 )
+
+/** Identifiants des outils intégrés (voir ui/tools). */
+object Tools {
+    const val TORCH = "torch"
+    const val MORSE = "morse"
+    const val COMPASS = "compass"
+    const val CPR = "cpr"
+    val all = listOf(TORCH, MORSE, COMPASS, CPR)
+}

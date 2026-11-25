@@ -82,5 +82,35 @@
       "ANSES"
     ],
     "categoryId": "nourriture"
+  },
+  {
+    "id": "stock-2-semaines",
+    "title": "Constituer un stock alimentaire de 2 semaines",
+    "summary": "Des aliments qui se gardent, se mangent sans cuisson ou cuisent vite.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Conserves de plats cuisinés, légumes, poisson, viande (se mangent froides).",
+      "Féculents à cuisson rapide : semoule, flocons d'avoine, pâtes fines, purée en flocons.",
+      "Biscuits, pain grillé, crackers, barres de céréales.",
+      "Fruits secs, oléagineux, beurre de cacahuète, chocolat.",
+      "Lait en poudre ou UHT, sucre, sel, miel, café ou thé.",
+      "Ouvre-boîte manuel, et de quoi tenir les besoins spécifiques (bébé, régime, animaux).",
+      "Appliquer « premier entré, premier sorti » : consommer et remplacer régulièrement."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "réserves",
+      "provisions",
+      "conserves",
+      "stock"
+    ],
+    "sources": [
+      "Gouv.fr - Je me prépare",
+      "FEMA Ready.gov"
+    ],
+    "checklist": true,
+    "categoryId": "nourriture"
   }
 ]

@@ -62,7 +62,8 @@
       "ERC 2021",
       "Croix-Rouge"
     ],
-    "categoryId": "secours"
+    "categoryId": "secours",
+    "tool": "cpr"
   },
   {
     "id": "hemorragie",
@@ -212,6 +213,214 @@
     "sources": [
       "FM 21-76",
       "Croix-Rouge"
+    ],
+    "categoryId": "secours"
+  },
+  {
+    "id": "avc",
+    "title": "Reconnaître un AVC",
+    "summary": "Visage, bras, parole : au moindre signe, appeler immédiatement.",
+    "priority": "critique",
+    "materials": [],
+    "steps": [
+      "Visage : demander de sourire ; la bouche est-elle déformée d'un côté ?",
+      "Bras : demander de lever les deux bras ; l'un retombe-t-il ?",
+      "Parole : demander de répéter une phrase simple ; les mots sont-ils confus ou mal prononcés ?",
+      "Au moindre de ces signes : appeler le 15 ou le 112 immédiatement.",
+      "Noter l'heure du début des symptômes : elle détermine le traitement possible.",
+      "Allonger ou installer confortablement la personne, ne rien lui donner à boire ni à manger."
+    ],
+    "warnings": [
+      "Même si les signes disparaissent, appeler quand même : c'est souvent l'annonce d'un AVC grave."
+    ],
+    "tips": [],
+    "tags": [
+      "attaque cérébrale",
+      "paralysie",
+      "AVC",
+      "FAST",
+      "parole"
+    ],
+    "sources": [
+      "Santé publique France",
+      "ERC 2021"
+    ],
+    "categoryId": "secours"
+  },
+  {
+    "id": "allergie-grave",
+    "title": "Réaction allergique grave",
+    "summary": "Gonflement du visage, difficulté à respirer après une piqûre, un aliment ou un médicament.",
+    "priority": "critique",
+    "materials": [],
+    "steps": [
+      "Appeler le 15 ou le 112.",
+      "Si la personne a un stylo d'adrénaline : l'aider à l'utiliser sur la face externe de la cuisse (à travers les vêtements si besoin).",
+      "L'installer en position assise si elle respire mal, allongée jambes surélevées si elle est pâle ou faible.",
+      "Si aucune amélioration après 5 minutes et qu'un second stylo est disponible : faire une deuxième injection.",
+      "Surveiller la respiration ; si elle s'arrête, commencer le massage cardiaque."
+    ],
+    "warnings": [
+      "Ne pas faire marcher ni lever brusquement la personne."
+    ],
+    "tips": [],
+    "tags": [
+      "anaphylaxie",
+      "œdème",
+      "Quincke",
+      "adrénaline",
+      "piqûre de guêpe"
+    ],
+    "sources": [
+      "ERC 2021"
+    ],
+    "categoryId": "secours"
+  },
+  {
+    "id": "asthme",
+    "title": "Crise d'asthme",
+    "summary": "Respiration sifflante, difficulté à expirer.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Installer la personne assise, penchée légèrement en avant, et la rassurer.",
+      "L'aider à prendre son traitement de crise (inhalateur bronchodilatateur, souvent bleu) selon sa prescription.",
+      "Desserrer les vêtements, l'éloigner de la fumée, de la poussière ou du froid.",
+      "Appeler le 15 ou le 112 si la crise ne cède pas, si elle n'arrive plus à parler ou si ses lèvres deviennent bleues."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "respirer",
+      "inhalateur",
+      "Ventoline",
+      "essoufflement"
+    ],
+    "sources": [
+      "ERC 2021"
+    ],
+    "categoryId": "secours"
+  },
+  {
+    "id": "fracture",
+    "title": "Fracture, entorse, luxation",
+    "summary": "Ne pas bouger le membre, l'immobiliser tel quel.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Ne pas chercher à remettre en place ni à redresser le membre.",
+      "Immobiliser dans la position trouvée : caler avec des vêtements roulés, ou fixer à une attelle (bâton, carton, magazine roulé) en prenant l'articulation au-dessus et en dessous.",
+      "Pour un bras : écharpe faite avec un foulard ou un t-shirt.",
+      "Fracture ouverte (os visible) : couvrir avec un linge propre sans appuyer sur l'os, arrêter le saignement autour.",
+      "Appliquer du froid enveloppé dans un tissu pour l'entorse et la douleur, 20 minutes maximum.",
+      "Faire appeler les secours ou rejoindre un soignant."
+    ],
+    "warnings": [
+      "Suspicion d'atteinte du dos ou du cou (chute de hauteur, accident) : ne pas déplacer la victime sauf danger immédiat, lui demander de ne pas bouger la tête."
+    ],
+    "tips": [],
+    "tags": [
+      "os cassé",
+      "attelle",
+      "entorse",
+      "cheville",
+      "poignet"
+    ],
+    "sources": [
+      "Croix-Rouge",
+      "ERC 2021"
+    ],
+    "categoryId": "secours"
+  },
+  {
+    "id": "coup-de-chaleur",
+    "title": "Coup de chaleur",
+    "summary": "Peau brûlante, maux de tête, confusion : refroidir sans attendre.",
+    "priority": "critique",
+    "materials": [],
+    "steps": [
+      "Mettre la personne à l'ombre ou au frais, l'allonger.",
+      "Appeler le 15 ou le 112 si elle est confuse, vomit ou perd connaissance.",
+      "Retirer les vêtements superflus, l'asperger d'eau fraîche et l'éventer en continu.",
+      "Placer des linges mouillés sur le cou, les aisselles et l'aine.",
+      "Si elle est bien consciente : lui donner à boire de l'eau fraîche par petites gorgées."
+    ],
+    "warnings": [
+      "Ne rien donner à boire à une personne inconsciente ou confuse : PLS si elle respire."
+    ],
+    "tips": [],
+    "tags": [
+      "chaleur",
+      "insolation",
+      "hyperthermie",
+      "fièvre"
+    ],
+    "sources": [
+      "ERC 2021",
+      "Santé publique France"
+    ],
+    "categoryId": "secours"
+  },
+  {
+    "id": "morsures",
+    "title": "Morsures et piqûres",
+    "summary": "Chien, serpent, tique, guêpe : les bons gestes.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Morsure d'animal : laver abondamment à l'eau et au savon pendant 5 minutes, désinfecter, et consulter (risque d'infection et de rage).",
+      "Morsure de serpent : rester calme et immobile, allonger la victime, retirer bagues et bracelets, immobiliser le membre, appeler le 15.",
+      "Tique : la retirer au plus vite avec un tire-tique en tournant, sans l'écraser, puis désinfecter ; surveiller l'apparition d'une plaque rouge qui s'étend dans les semaines suivantes et consulter le cas échéant.",
+      "Guêpe ou abeille : retirer le dard en le grattant avec un ongle ou une carte, froid local. Appeler le 15 en cas de piqûre dans la bouche ou de réaction généralisée."
+    ],
+    "warnings": [
+      "Serpent : ne pas poser de garrot, ne pas inciser, ne pas aspirer le venin.",
+      "Tique : ne pas utiliser d'éther, d'alcool ou de produit avant de la retirer."
+    ],
+    "tips": [],
+    "tags": [
+      "serpent",
+      "vipère",
+      "chien",
+      "tique",
+      "guêpe",
+      "abeille",
+      "rage",
+      "Lyme"
+    ],
+    "sources": [
+      "Croix-Rouge",
+      "Santé publique France"
+    ],
+    "categoryId": "secours"
+  },
+  {
+    "id": "etouffement-nourrisson",
+    "title": "Étouffement du nourrisson (moins d'un an)",
+    "summary": "Le bébé ne peut plus pleurer, tousser ni respirer.",
+    "priority": "critique",
+    "materials": [],
+    "steps": [
+      "Allonger le bébé à plat ventre sur votre avant-bras, tête plus basse que le corps, en tenant sa mâchoire.",
+      "Donner jusqu'à 5 claques dans le dos, entre les omoplates, avec le talon de la main.",
+      "Si l'objet n'est pas sorti : le retourner sur le dos sur l'autre avant-bras, tête plus basse.",
+      "Faire jusqu'à 5 compressions thoraciques avec deux doigts au centre de la poitrine, juste sous la ligne des mamelons.",
+      "Alterner 5 claques et 5 compressions ; faire appeler le 112.",
+      "S'il perd connaissance : commencer la réanimation adaptée au nourrisson."
+    ],
+    "warnings": [
+      "Ne jamais suspendre le bébé par les pieds ni chercher l'objet à l'aveugle avec le doigt.",
+      "Une formation pratique aux gestes pédiatriques est vivement recommandée."
+    ],
+    "tips": [],
+    "tags": [
+      "bébé",
+      "nourrisson",
+      "étouffer",
+      "enfant"
+    ],
+    "sources": [
+      "ERC 2021"
     ],
     "categoryId": "secours"
   }
