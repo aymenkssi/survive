@@ -14,8 +14,8 @@ android {
         applicationId = "com.survive.app"
         minSdk = 24          // Android 7.0 : couvre les vieux téléphones gardés en secours
         targetSdk = 35
-        versionCode = 1
-        versionName = "0.1.0"
+        versionCode = 2
+        versionName = "0.3.0"
     }
 
     buildTypes {

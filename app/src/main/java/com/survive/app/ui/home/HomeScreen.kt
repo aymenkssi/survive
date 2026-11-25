@@ -6,6 +6,7 @@ import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.grid.*
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.FavoriteBorder
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material.icons.filled.Star
@@ -41,6 +42,7 @@ fun HomeScreen(
     onTool: (String) -> Unit,
     onSearch: () -> Unit,
     onSettings: () -> Unit,
+    onSupport: () -> Unit,
 ) {
     val categories = remember { repository.categories }
     val critical = remember { repository.criticalGuides() }
@@ -53,6 +55,7 @@ fun HomeScreen(
                 title = { Text("Survive", fontWeight = FontWeight.Bold) },
                 actions = {
                     IconButton(onClick = onSearch) { Icon(Icons.Filled.Search, contentDescription = "Rechercher") }
+                    IconButton(onClick = onSupport) { Icon(Icons.Filled.FavoriteBorder, contentDescription = "Soutenir l'application") }
                     IconButton(onClick = onSettings) { Icon(Icons.Filled.Settings, contentDescription = "Réglages") }
                 },
             )

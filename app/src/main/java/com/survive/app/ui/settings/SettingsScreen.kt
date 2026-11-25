@@ -16,7 +16,7 @@ import com.survive.app.ui.components.BackTopBar
 import com.survive.app.ui.tools.SwitchRow
 
 @Composable
-fun SettingsScreen(prefs: UserPrefs, onBack: () -> Unit) {
+fun SettingsScreen(prefs: UserPrefs, onSupport: () -> Unit, onBack: () -> Unit) {
     val theme by prefs.theme.collectAsState()
     val large by prefs.largeText.collectAsState()
 
@@ -41,6 +41,7 @@ fun SettingsScreen(prefs: UserPrefs, onBack: () -> Unit) {
             HorizontalDivider()
             SwitchRow("Grand texte (+30 %)", large) { prefs.setLargeText(it) }
             HorizontalDivider()
+            OutlinedButton(onClick = onSupport, modifier = Modifier.fillMaxWidth()) { Text("❤ Soutenir l'application") }
             Text(
                 "Survive fonctionne sans aucune connexion. Vos favoris et réglages restent sur ce téléphone. " +
                     "Ce contenu ne remplace pas une formation aux premiers secours : en cas d'urgence, appelez le 112.",

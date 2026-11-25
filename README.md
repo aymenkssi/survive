@@ -6,10 +6,13 @@ quand Internet, le réseau mobile ou l'électricité ne fonctionnent plus.
 - 12 thématiques : urgences, premiers secours, eau, feu, abri, nourriture, orientation,
   communication sans réseau, énergie, hygiène, préparation, nœuds.
 - 73 fiches pratiques sourcées (OMS, ERC, Croix-Rouge, gouvernement, manuels FM 21-76 / FM 3-97.61…).
-- Outils intégrés : lampe & SOS automatique, émetteur Morse, boussole, métronome de massage cardiaque.
+- Outils intégrés : lampe & SOS automatique, Morse (émettre, **écouter au micro et traduire**, traduire un code écrit),
+  boussole, métronome de massage cardiaque.
+- Page « Soutenir l'application » : don libre via PayPal (ouvert dans le navigateur).
 - Favoris, checklists mémorisées (kit 72 h, trousse, stock…), mode nuit rouge, grand texte.
 - Recherche insensible aux accents, accès rapide aux gestes vitaux.
-- Aucune permission Internet : rien ne dépend du réseau.
+- Aucune permission Internet : rien ne dépend du réseau. Seule permission : le micro, facultative,
+  pour décoder le Morse à l'oreille (analyse en direct, rien n'est enregistré).
 
 > ⚠️ Ce contenu ne remplace pas une formation aux premiers secours (PSC1) ni l'avis des secours.
 > En cas d'urgence vitale : **112**.
@@ -57,6 +60,10 @@ Prérequis : JDK 17+ et le SDK Android (API 35). Ouvrir le projet dans Android S
 | Accueil | Nuit rouge | Fiche | Checklist | Massage cardiaque |
 |---|---|---|---|---|
 | ![](docs/captures/home.png) | ![](docs/captures/home_nuit_rouge.png) | ![](docs/captures/fiche_massage.png) | ![](docs/captures/fiche_kit.png) | ![](docs/captures/outil_massage.png) |
+
+| Morse : écouter | Morse : traduire | Soutenir |
+|---|---|---|
+| ![](docs/captures/outil_morse_ecouter.png) | ![](docs/captures/outil_morse_traduire.png) | ![](docs/captures/soutenir.png) |
 
 Générées sans émulateur (Robolectric + Roborazzi) : `./gradlew recordRoborazziDebug` → `app/build/outputs/roborazzi/`.
 

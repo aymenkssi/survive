@@ -12,6 +12,7 @@ import com.survive.app.ui.guide.GuideScreen
 import com.survive.app.ui.home.HomeScreen
 import com.survive.app.ui.search.SearchScreen
 import com.survive.app.ui.settings.SettingsScreen
+import com.survive.app.ui.support.SupportScreen
 import com.survive.app.ui.tools.CompassScreen
 import com.survive.app.ui.tools.CprScreen
 import com.survive.app.ui.tools.MorseScreen
@@ -21,6 +22,7 @@ object Routes {
     const val HOME = "home"
     const val SEARCH = "search"
     const val SETTINGS = "settings"
+    const val SUPPORT = "support"
     const val CATEGORY = "category/{id}"
     const val GUIDE = "guide/{id}"
     fun category(id: String) = "category/$id"
@@ -42,12 +44,14 @@ fun SurviveNavHost(repository: ContentRepository, prefs: UserPrefs) {
                 onTool = { nav.navigate(Routes.tool(it)) },
                 onSearch = { nav.navigate(Routes.SEARCH) },
                 onSettings = { nav.navigate(Routes.SETTINGS) },
+                onSupport = { nav.navigate(Routes.SUPPORT) },
             )
         }
         composable(Routes.SEARCH) {
             SearchScreen(repository, onGuide = { nav.navigate(Routes.guide(it)) }, onBack = back)
         }
-        composable(Routes.SETTINGS) { SettingsScreen(prefs, onBack = back) }
+        composable(Routes.SETTINGS) { SettingsScreen(prefs, onSupport = { nav.navigate(Routes.SUPPORT) }, onBack = back) }
+        composable(Routes.SUPPORT) { SupportScreen(onBack = back) }
         composable(Routes.CATEGORY) { entry ->
             CategoryScreen(
                 repository = repository,

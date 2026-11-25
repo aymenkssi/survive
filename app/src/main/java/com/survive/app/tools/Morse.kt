@@ -30,6 +30,21 @@ object Morse {
             if (word == "SOS") SOS else word.mapNotNull { table[it] }.joinToString(" ")
         }
 
+    private val reverse: Map<String, Char> by lazy { table.entries.associate { (k, v) -> v to k } }
+
+    /**
+     * Code -> texte. Accepte « . » ou « • » pour le point, « - », « — » ou « _ » pour le trait,
+     * un espace entre les lettres et « / » (ou plusieurs espaces) entre les mots.
+     */
+    fun decode(code: String): String =
+        code.replace('•', '.').replace('·', '.').replace('—', '-').replace('_', '-').replace('–', '-')
+            .trim().split(Regex("\\s*/\\s*|\\s{2,}")).filter { it.isNotBlank() }
+            .joinToString(" ") { word ->
+                word.trim().split(Regex("\\s+")).joinToString("") { letter ->
+                    if (letter == SOS) "SOS" else (reverse[letter]?.toString() ?: "?")
+                }
+            }
+
     /**
      * Code -> suite d'impulsions (allumé ?, durée en unités).
      * Point = 1 unité, trait = 3, espace intra-lettre = 1, entre lettres = 3, entre mots = 7.

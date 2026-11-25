@@ -8,6 +8,10 @@
     <!-- Matériel optionnel : sans flash ni boussole, l'application se replie sur l'écran ou un message. -->
     <uses-feature android:name="android.hardware.camera.flash" android:required="false" />
     <uses-feature android:name="android.hardware.sensor.compass" android:required="false" />
+    <uses-feature android:name="android.hardware.microphone" android:required="false" />
+
+    <!-- Micro : uniquement pour décoder le Morse à l'oreille, analysé en direct sur le téléphone, rien n'est enregistré. -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
         android:name=".SurviveApp"
