@@ -1,0 +1,115 @@
+[
+  {
+    "id": "regle-des-3",
+    "title": "La règle des 3 : savoir quoi faire en premier",
+    "summary": "Un ordre de priorités simple pour ne pas se disperser quand tout s'arrête.",
+    "priority": "critique",
+    "materials": [],
+    "steps": [
+      "Environ 3 minutes sans air (étouffement, fumée, noyade) : traiter immédiatement.",
+      "Environ 3 heures exposé à un froid ou une chaleur extrême sans protection : s'abriter vient ensuite.",
+      "Environ 3 jours sans eau : sécuriser l'eau potable en troisième.",
+      "Environ 3 semaines sans nourriture : la nourriture n'est presque jamais la première urgence.",
+      "Avant tout cela : se mettre hors de danger immédiat (feu, effondrement, inondation, circulation)."
+    ],
+    "warnings": [],
+    "tips": [
+      "Ces durées sont des ordres de grandeur, pas des limites exactes : elles servent à classer les priorités."
+    ],
+    "tags": [
+      "priorité",
+      "par où commencer",
+      "panique"
+    ],
+    "sources": [
+      "FM 21-76"
+    ],
+    "categoryId": "securite"
+  },
+  {
+    "id": "monoxyde-carbone",
+    "title": "Éviter l'intoxication au monoxyde de carbone",
+    "summary": "Première cause de décès pendant les coupures de courant : groupes électrogènes, braseros et barbecues à l'intérieur.",
+    "priority": "critique",
+    "materials": [],
+    "steps": [
+      "Ne jamais utiliser de groupe électrogène, barbecue, brasero ou chauffage d'appoint à combustion dans un logement, un garage ou une tente fermée.",
+      "Placer un groupe électrogène dehors, à au moins 6 mètres des portes et fenêtres.",
+      "Si un chauffage à combustion est indispensable, aérer en permanence et ne jamais dormir à côté.",
+      "Symptômes : maux de tête, nausées, vertiges, somnolence, souvent plusieurs personnes (et animaux) en même temps.",
+      "En cas de doute : sortir tout le monde à l'air libre immédiatement, puis appeler le 112 ou le 18."
+    ],
+    "warnings": [
+      "Le monoxyde de carbone est invisible et sans odeur : on ne le sent pas venir.",
+      "Ouvrir une fenêtre ne suffit pas à rendre sûr un barbecue utilisé à l'intérieur."
+    ],
+    "tips": [
+      "Un détecteur de monoxyde de carbone à piles est un excellent investissement pour le kit."
+    ],
+    "tags": [
+      "CO",
+      "gaz",
+      "intoxication",
+      "groupe électrogène",
+      "chauffage"
+    ],
+    "sources": [
+      "CDC",
+      "Santé publique France"
+    ],
+    "categoryId": "securite"
+  },
+  {
+    "id": "seisme",
+    "title": "Pendant et après un séisme",
+    "summary": "Les bons réflexes : se baisser, s'abriter, s'agripper, puis évacuer prudemment.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Pendant la secousse : se baisser, s'abriter sous une table solide et s'y agripper, loin des vitres.",
+      "Dehors : s'éloigner des bâtiments, arbres et lignes électriques ; ne pas courir.",
+      "Après la secousse : couper gaz et électricité si possible, ne pas allumer de flamme.",
+      "Évacuer par les escaliers (jamais l'ascenseur) en se protégeant la tête.",
+      "S'attendre à des répliques ; ne pas rentrer dans un bâtiment endommagé."
+    ],
+    "warnings": [
+      "Une odeur de gaz : ne rien allumer, ne pas utiliser d'interrupteur, sortir et prévenir."
+    ],
+    "tips": [],
+    "tags": [
+      "tremblement de terre",
+      "secousse"
+    ],
+    "sources": [
+      "Gouv.fr - Risques"
+    ],
+    "categoryId": "securite"
+  },
+  {
+    "id": "inondation",
+    "title": "Face à une inondation",
+    "summary": "Monter, ne pas s'engager dans l'eau, couper l'électricité.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Monter à l'étage ou sur un point haut avec eau, nourriture, lampe, radio et papiers.",
+      "Couper l'électricité et le gaz si l'eau approche, sans jamais toucher un appareil mouillé.",
+      "Ne jamais traverser une zone inondée à pied ou en voiture.",
+      "Ne pas descendre dans les caves ou parkings souterrains.",
+      "Signaler sa présence aux secours (drap blanc à la fenêtre, lampe la nuit)."
+    ],
+    "warnings": [
+      "30 cm d'eau suffisent à emporter une voiture, 15 cm d'eau en mouvement peuvent faire tomber un adulte."
+    ],
+    "tips": [],
+    "tags": [
+      "crue",
+      "eau",
+      "montée des eaux"
+    ],
+    "sources": [
+      "Gouv.fr - Risques"
+    ],
+    "categoryId": "securite"
+  }
+]

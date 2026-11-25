@@ -1,0 +1,106 @@
+[
+  {
+    "id": "baton-ombre",
+    "title": "Trouver le nord avec un bâton et son ombre",
+    "summary": "Une méthode fiable par temps ensoleillé, n'importe où.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Planter un bâton droit dans un sol plat.",
+      "Marquer d'une pierre l'extrémité de son ombre.",
+      "Attendre 15 à 20 minutes et marquer la nouvelle extrémité de l'ombre.",
+      "Tracer une ligne entre la première et la deuxième marque : elle indique approximativement l'axe ouest (1re marque) – est (2e marque).",
+      "Debout avec la 1re marque à gauche et la 2e à droite, on fait face au nord."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "nord",
+      "soleil",
+      "ombre",
+      "boussole"
+    ],
+    "sources": [
+      "FM 21-76"
+    ],
+    "categoryId": "orientation"
+  },
+  {
+    "id": "etoile-polaire",
+    "title": "S'orienter la nuit avec les étoiles",
+    "summary": "L'étoile polaire dans l'hémisphère nord, la Croix du Sud dans l'hémisphère sud.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Hémisphère nord : repérer la Grande Ourse (une « casserole » de 7 étoiles).",
+      "Prolonger environ 5 fois la distance entre les deux étoiles du bord de la casserole (côté opposé au manche).",
+      "On tombe sur l'étoile polaire : elle indique le nord.",
+      "Hémisphère sud : prolonger le grand axe de la Croix du Sud d'environ 4,5 fois sa longueur ; à la verticale de ce point se trouve le sud."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "nuit",
+      "étoile",
+      "Grande Ourse",
+      "polaire"
+    ],
+    "sources": [
+      "FM 21-76"
+    ],
+    "categoryId": "orientation"
+  },
+  {
+    "id": "montre-soleil",
+    "title": "La montre à aiguilles comme boussole",
+    "summary": "Une estimation rapide de la direction du sud.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Hémisphère nord : pointer la petite aiguille vers le soleil.",
+      "La bissectrice entre la petite aiguille et le 12 indique le sud (utiliser le 1 en heure d'été).",
+      "Hémisphère sud : pointer le 12 vers le soleil ; la bissectrice entre le 12 et la petite aiguille indique le nord."
+    ],
+    "warnings": [
+      "Méthode approximative, d'autant moins précise qu'on est proche de l'équateur."
+    ],
+    "tips": [],
+    "tags": [
+      "montre",
+      "sud",
+      "soleil"
+    ],
+    "sources": [
+      "FM 21-76"
+    ],
+    "categoryId": "orientation"
+  },
+  {
+    "id": "boussole-carte",
+    "title": "Utiliser une boussole et une carte papier",
+    "summary": "Les bases pour suivre une direction sans GPS.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Orienter la carte : poser la boussole dessus et tourner la carte jusqu'à ce que son nord corresponde à l'aiguille.",
+      "Pour suivre un cap : pointer la flèche de direction de la boussole vers la destination, puis tourner le cadran pour aligner la flèche d'orientation avec l'aiguille.",
+      "Garder l'aiguille alignée et marcher vers un repère visible dans l'axe, puis recommencer.",
+      "Tenir la boussole loin des objets métalliques et des téléphones."
+    ],
+    "warnings": [],
+    "tips": [
+      "Une carte papier de sa région et une boussole ont toute leur place dans le kit d'urgence."
+    ],
+    "tags": [
+      "carte",
+      "cap",
+      "azimut",
+      "randonnée"
+    ],
+    "sources": [
+      "IGN",
+      "FM 21-76"
+    ],
+    "categoryId": "orientation"
+  }
+]

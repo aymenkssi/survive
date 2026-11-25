@@ -1,0 +1,87 @@
+[
+  {
+    "id": "economiser-batterie",
+    "title": "Faire durer la batterie du téléphone",
+    "summary": "Quand on ne sait pas quand on pourra recharger.",
+    "priority": "critique",
+    "materials": [],
+    "steps": [
+      "Activer le mode économie d'énergie maximal.",
+      "Passer en mode avion quand on n'attend pas d'appel ; le réactiver brièvement à heures fixes.",
+      "Baisser la luminosité au minimum, désactiver Wi-Fi, Bluetooth, localisation et données.",
+      "Fermer les applications et éviter vidéo, jeux et lampe torche du téléphone.",
+      "Garder le téléphone au chaud (dans une poche intérieure) : le froid vide la batterie."
+    ],
+    "warnings": [],
+    "tips": [
+      "Un réseau faible fait consommer beaucoup plus : en zone sans couverture, le mode avion est indispensable."
+    ],
+    "tags": [
+      "batterie",
+      "téléphone",
+      "autonomie",
+      "recharger"
+    ],
+    "sources": [
+      "FEMA Ready.gov"
+    ],
+    "categoryId": "energie"
+  },
+  {
+    "id": "recharger-sans-secteur",
+    "title": "Recharger sans prise électrique",
+    "summary": "Batterie externe, voiture, solaire, manivelle.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Batterie externe : la garder chargée en permanence dans le kit.",
+      "Voiture : allume-cigare avec adaptateur USB, moteur tournant, à l'extérieur uniquement (jamais dans un garage fermé).",
+      "Panneau solaire USB : l'orienter plein soleil, recharger d'abord une batterie externe plutôt que le téléphone directement.",
+      "Radio ou lampe à manivelle avec port USB : quelques minutes de charge pour un appel d'urgence."
+    ],
+    "warnings": [
+      "Faire tourner un moteur dans un lieu fermé = risque mortel de monoxyde de carbone."
+    ],
+    "tips": [],
+    "tags": [
+      "solaire",
+      "voiture",
+      "powerbank",
+      "manivelle",
+      "électricité"
+    ],
+    "sources": [
+      "FEMA Ready.gov",
+      "CDC"
+    ],
+    "categoryId": "energie"
+  },
+  {
+    "id": "eclairage",
+    "title": "S'éclairer pendant une coupure",
+    "summary": "Privilégier les lampes à piles plutôt que les bougies.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Lampe frontale : garde les mains libres, idéale pour cuisiner ou soigner.",
+      "Lampes à LED à piles ou rechargeables : peu gourmandes, sans risque d'incendie.",
+      "Astuce : poser une lampe frontale sous une bouteille d'eau pour éclairer toute une pièce.",
+      "Bougies : seulement sous surveillance, sur support stable, loin des rideaux et des enfants."
+    ],
+    "warnings": [
+      "Les bougies sont une cause fréquente d'incendie pendant les coupures."
+    ],
+    "tips": [],
+    "tags": [
+      "lampe",
+      "bougie",
+      "lumière",
+      "nuit",
+      "frontale"
+    ],
+    "sources": [
+      "FEMA Ready.gov"
+    ],
+    "categoryId": "energie"
+  }
+]

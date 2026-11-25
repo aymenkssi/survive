@@ -1,0 +1,98 @@
+[
+  {
+    "id": "allumer-feu",
+    "title": "Allumer et entretenir un feu",
+    "summary": "Préparer les trois tailles de combustible avant de craquer l'allumette.",
+    "priority": "important",
+    "materials": [
+      "Briquet, allumettes ou pierre à feu",
+      "Amadou",
+      "Petit bois",
+      "Combustible"
+    ],
+    "steps": [
+      "Choisir un endroit abrité du vent, dégager le sol sur 3 mètres autour, loin des branches basses.",
+      "Rassembler AVANT d'allumer : de l'amadou (très fin et sec : herbe sèche, écorce de bouleau, coton), du petit bois (brindilles de la taille d'un crayon), et du combustible (branches de la taille du poignet).",
+      "Former un nid d'amadou, puis disposer le petit bois en tipi autour, en laissant une ouverture face au vent.",
+      "Allumer l'amadou par le bas, souffler doucement à la base.",
+      "Ajouter progressivement du bois de plus en plus gros sans étouffer la flamme."
+    ],
+    "warnings": [
+      "Respecter les interdictions de feu (risque d'incendie, sécheresse).",
+      "Éteindre complètement avec de l'eau et remuer les cendres avant de partir."
+    ],
+    "tips": [
+      "Coton imbibé de vaseline : un allume-feu excellent qui se conserve des années dans une petite boîte.",
+      "Le bois mort encore accroché aux arbres est plus sec que celui au sol."
+    ],
+    "tags": [
+      "feu de camp",
+      "allumer",
+      "flamme",
+      "bois"
+    ],
+    "sources": [
+      "FM 21-76"
+    ],
+    "categoryId": "feu"
+  },
+  {
+    "id": "chauffer-logement",
+    "title": "Garder la chaleur dans un logement sans chauffage",
+    "summary": "Coupure de courant en hiver : concentrer la chaleur au lieu de la disperser.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Se regrouper dans une seule pièce, de préférence petite et peu exposée.",
+      "Fermer portes, volets et rideaux ; calfeutrer le bas des portes avec des serviettes.",
+      "Superposer plusieurs couches de vêtements, porter bonnet et chaussettes, rester au sec.",
+      "Dormir à plusieurs dans la même pièce, isolé du sol par des matelas ou des couvertures.",
+      "Manger chaud et régulièrement, boire des boissons chaudes."
+    ],
+    "warnings": [
+      "Jamais de barbecue, brasero ou groupe électrogène à l'intérieur (monoxyde de carbone)."
+    ],
+    "tips": [
+      "Une tente montée dans la pièce garde nettement mieux la chaleur corporelle.",
+      "Bouillotte : une bouteille de verre remplie d'eau chaude, entourée d'un tissu."
+    ],
+    "tags": [
+      "froid",
+      "hiver",
+      "coupure de courant",
+      "chauffage"
+    ],
+    "sources": [
+      "FEMA Ready.gov",
+      "CDC"
+    ],
+    "categoryId": "feu"
+  },
+  {
+    "id": "cuisiner-sans-electricite",
+    "title": "Cuisiner sans électricité",
+    "summary": "Options sûres pour chauffer de l'eau et des repas.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Réchaud de camping (gaz, alcool) : uniquement dans un lieu très bien ventilé ou à l'extérieur.",
+      "Barbecue, feu de bois : exclusivement dehors.",
+      "Économiser le combustible : couvercle sur la casserole, aliments coupés petits, plats qui cuisent vite (pâtes fines, semoule, flocons).",
+      "Cuisson passive : porter à ébullition quelques minutes puis envelopper la casserole fermée dans des couvertures ou un sac de couchage pour finir la cuisson."
+    ],
+    "warnings": [
+      "Ne jamais stocker les cartouches de gaz près d'une source de chaleur."
+    ],
+    "tips": [],
+    "tags": [
+      "réchaud",
+      "cuisine",
+      "camping",
+      "gaz"
+    ],
+    "sources": [
+      "FEMA Ready.gov"
+    ],
+    "categoryId": "feu"
+  }
+]

@@ -1,0 +1,119 @@
+[
+  {
+    "id": "signaux-detresse",
+    "title": "Signaux de détresse universels",
+    "summary": "Se faire repérer quand on ne peut pas appeler.",
+    "priority": "critique",
+    "materials": [],
+    "steps": [
+      "Règle du 3 : trois coups de sifflet, trois feux en triangle, trois éclats de lumière, répétés régulièrement.",
+      "SOS en morse : 3 courts, 3 longs, 3 courts (· · · — — — · · ·) avec une lampe ou un sifflet.",
+      "Signaux au sol visibles d'avion : un grand V = besoin d'aide, un grand X = besoin d'assistance médicale. Lettres de plusieurs mètres, contrastées avec le sol.",
+      "Le jour : un miroir ou un écran de téléphone pour renvoyer le soleil vers un avion ou une crête.",
+      "Rester près d'un endroit dégagé et visible."
+    ],
+    "warnings": [],
+    "tips": [
+      "Un sifflet porte beaucoup plus loin que la voix et ne fatigue pas : en accrocher un à chaque sac."
+    ],
+    "tags": [
+      "SOS",
+      "morse",
+      "sifflet",
+      "miroir",
+      "secours",
+      "hélicoptère"
+    ],
+    "sources": [
+      "FM 21-76",
+      "OACI"
+    ],
+    "categoryId": "communication"
+  },
+  {
+    "id": "radios",
+    "title": "Talkies-walkies, CB et radio FM",
+    "summary": "Rester informé et en contact avec ses proches sans réseau mobile.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Radio FM/AM à piles ou à manivelle : pour écouter les consignes officielles (en France, France Bleu / ICI et France Inter sont les radios conventionnées en cas de crise).",
+      "Talkies-walkies PMR446 : utilisables sans licence en Europe, portée de quelques centaines de mètres en ville à quelques kilomètres en terrain dégagé. Convenir à l'avance d'un canal et d'horaires d'écoute.",
+      "CB (27 MHz) : le canal 19 est utilisé par les routiers, le canal 9 est traditionnellement réservé aux urgences.",
+      "Radioamateurs : les réseaux d'urgence existent, mais l'émission nécessite une licence (hors détresse réelle)."
+    ],
+    "warnings": [],
+    "tips": [
+      "Fixer un rendez-vous radio : par exemple 5 minutes toutes les heures pleines, pour économiser les piles."
+    ],
+    "tags": [
+      "radio",
+      "talkie",
+      "PMR446",
+      "CB",
+      "information"
+    ],
+    "sources": [
+      "ANFR",
+      "Radio France"
+    ],
+    "categoryId": "communication"
+  },
+  {
+    "id": "plan-familial",
+    "title": "Plan de communication familial",
+    "summary": "Se mettre d'accord AVANT, car on ne pourra peut-être pas s'appeler après.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Choisir deux points de rendez-vous : un près du domicile, un hors du quartier.",
+      "Désigner un contact relais éloigné géographiquement que chacun préviendra.",
+      "Écrire sur papier les numéros importants (on ne les connaît plus par cœur) et les garder dans chaque sac.",
+      "Convenir d'un canal de talkie-walkie et d'horaires d'écoute.",
+      "Laisser un message écrit sur place (porte, boîte aux lettres) indiquant où l'on est parti."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "famille",
+      "rendez-vous",
+      "contacts",
+      "retrouver"
+    ],
+    "sources": [
+      "FEMA Ready.gov",
+      "Gouv.fr - Je me prépare"
+    ],
+    "categoryId": "communication"
+  },
+  {
+    "id": "messagerie-maillee",
+    "title": "Messagerie sans Internet (Bluetooth, Wi-Fi, LoRa)",
+    "summary": "Des applications et appareils permettent d'échanger des messages de proche en proche.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Installer AVANT la crise une application de messagerie maillée fonctionnant en Bluetooth/Wi-Fi direct (ex. : Briar, Bridgefy).",
+      "La configurer et tester avec ses proches pendant que tout fonctionne.",
+      "Portée : quelques dizaines de mètres par appareil, les messages sautent d'un téléphone à l'autre.",
+      "Pour plus de portée : les petits émetteurs LoRa (ex. : Meshtastic) relaient des messages texte sur plusieurs kilomètres sans réseau."
+    ],
+    "warnings": [
+      "Ces solutions doivent être installées et testées tant qu'Internet fonctionne."
+    ],
+    "tips": [],
+    "tags": [
+      "bluetooth",
+      "maillé",
+      "mesh",
+      "Meshtastic",
+      "Briar",
+      "sms"
+    ],
+    "sources": [
+      "Briar Project",
+      "Meshtastic"
+    ],
+    "categoryId": "communication"
+  }
+]

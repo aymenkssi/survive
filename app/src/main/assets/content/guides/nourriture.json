@@ -1,0 +1,86 @@
+[
+  {
+    "id": "frigo-coupure",
+    "title": "Frigo et congélateur pendant une coupure",
+    "summary": "Savoir combien de temps les aliments restent sûrs.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Garder les portes fermées le plus possible.",
+      "Réfrigérateur : les aliments restent sûrs environ 4 heures porte fermée.",
+      "Congélateur plein : environ 48 heures ; à moitié plein : environ 24 heures.",
+      "Manger d'abord les produits frais du frigo, puis ceux du congélateur, et garder les conserves pour la fin.",
+      "Jeter viandes, poissons, laitages et restes restés plus de 2 heures au-dessus de 4 °C."
+    ],
+    "warnings": [
+      "En cas de doute, jeter : l'odeur et l'aspect ne suffisent pas à détecter les bactéries dangereuses."
+    ],
+    "tips": [],
+    "tags": [
+      "réfrigérateur",
+      "congélateur",
+      "conservation",
+      "coupure de courant"
+    ],
+    "sources": [
+      "USDA",
+      "FEMA Ready.gov"
+    ],
+    "categoryId": "nourriture"
+  },
+  {
+    "id": "rationner",
+    "title": "Organiser et rationner ses réserves",
+    "summary": "Faire durer la nourriture sans s'affaiblir.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Faire l'inventaire de ce qui est disponible et du nombre de personnes.",
+      "Consommer en premier ce qui se périme vite.",
+      "Viser au minimum des repas réguliers : un adulte au repos peut tenir avec moins, mais pas l'eau.",
+      "Réduire l'effort physique pour diminuer les besoins.",
+      "Sans eau suffisante, éviter les aliments très salés ou très protéinés qui augmentent la soif."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "réserves",
+      "provisions",
+      "manger"
+    ],
+    "sources": [
+      "FM 21-76",
+      "FEMA Ready.gov"
+    ],
+    "categoryId": "nourriture"
+  },
+  {
+    "id": "plantes-champignons",
+    "title": "Plantes et champignons sauvages : prudence",
+    "summary": "Ne jamais manger ce que l'on n'identifie pas avec certitude.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Ne consommer que des plantes que l'on connaît parfaitement (ex. : orties cuites, pissenlit, mûres).",
+      "Ne jamais manger de champignon sauvage sans identification certaine par un expert.",
+      "Préférer les réserves stockées, les fruits connus, et la pêche aux expériences risquées.",
+      "Cuire ce qui peut l'être."
+    ],
+    "warnings": [
+      "Certaines plantes et champignons mortels ressemblent à des espèces comestibles.",
+      "En situation de survie de courte durée, une intoxication est bien plus dangereuse que la faim."
+    ],
+    "tips": [],
+    "tags": [
+      "cueillette",
+      "baies",
+      "comestible",
+      "champignon"
+    ],
+    "sources": [
+      "FM 21-76",
+      "ANSES"
+    ],
+    "categoryId": "nourriture"
+  }
+]

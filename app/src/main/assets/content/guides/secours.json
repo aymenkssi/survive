@@ -1,0 +1,218 @@
+[
+  {
+    "id": "alerter-secours",
+    "title": "Alerter les secours",
+    "summary": "Qui appeler et quoi dire pour que les secours arrivent vite.",
+    "priority": "critique",
+    "materials": [],
+    "steps": [
+      "Se protéger et protéger la victime d'un sur-accident.",
+      "Appeler le 112 (numéro d'urgence européen) ; en France aussi le 15 (SAMU), 18 (pompiers), 17 (police), 114 par SMS pour les personnes sourdes ou malentendantes.",
+      "Donner : le lieu exact, ce qui s'est passé, le nombre de victimes, leur état (respire ? conscient ?).",
+      "Ne jamais raccrocher le premier : attendre les instructions."
+    ],
+    "warnings": [],
+    "tips": [
+      "Le 112 passe par n'importe quel réseau mobile disponible, même celui d'un autre opérateur.",
+      "Si le réseau est saturé, un SMS passe souvent mieux qu'un appel."
+    ],
+    "tags": [
+      "appeler",
+      "112",
+      "15",
+      "18",
+      "numéro d'urgence"
+    ],
+    "sources": [
+      "Croix-Rouge",
+      "Gouv.fr - Gestes qui sauvent"
+    ],
+    "categoryId": "secours"
+  },
+  {
+    "id": "massage-cardiaque",
+    "title": "Arrêt cardiaque : massage cardiaque",
+    "summary": "Une personne ne répond pas et ne respire pas normalement : chaque minute compte.",
+    "priority": "critique",
+    "materials": [],
+    "steps": [
+      "Vérifier : la personne ne réagit pas quand on lui parle et lui secoue les épaules, et ne respire pas normalement.",
+      "Faire appeler le 112 et réclamer un défibrillateur (DAE).",
+      "Placer la personne sur le dos, sur une surface dure.",
+      "Mains l'une sur l'autre au centre de la poitrine, bras tendus.",
+      "Appuyer fort : enfoncer de 5 à 6 cm, au rythme de 100 à 120 compressions par minute.",
+      "Si vous êtes formé : 30 compressions puis 2 insufflations. Sinon, compressions seules en continu.",
+      "Dès que le défibrillateur arrive, l'allumer et suivre ses instructions vocales.",
+      "Continuer sans s'arrêter jusqu'au relais des secours ou la reprise d'une respiration normale."
+    ],
+    "warnings": [
+      "Ne pas avoir peur de mal faire : sans massage, les chances de survie chutent très vite."
+    ],
+    "tips": [
+      "Rythme : le tempo de la chanson « Stayin' Alive » correspond à environ 100 compressions par minute."
+    ],
+    "tags": [
+      "RCP",
+      "réanimation",
+      "arrêt cardiaque",
+      "inconscient",
+      "défibrillateur"
+    ],
+    "sources": [
+      "ERC 2021",
+      "Croix-Rouge"
+    ],
+    "categoryId": "secours"
+  },
+  {
+    "id": "hemorragie",
+    "title": "Arrêter une hémorragie",
+    "summary": "Le sang coule abondamment : comprimer immédiatement.",
+    "priority": "critique",
+    "materials": [
+      "Tissu propre ou compresses",
+      "Gants ou sac plastique",
+      "Garrot (ou ceinture/bande large + bâton)"
+    ],
+    "steps": [
+      "Allonger la victime.",
+      "Appuyer fort et directement sur la plaie, avec la main protégée (gant, sac plastique) ou un tissu propre.",
+      "Maintenir la pression sans relâcher ; ajouter du tissu par-dessus si ça traverse, sans retirer le premier.",
+      "Remplacer la main par un pansement compressif serré si possible.",
+      "Appeler le 112.",
+      "Sur un membre, si la compression ne suffit pas : garrot 5 à 7 cm au-dessus de la plaie, serré jusqu'à l'arrêt du saignement ; noter l'heure de pose."
+    ],
+    "warnings": [
+      "Ne jamais desserrer ni retirer un garrot posé : c'est le rôle des secours.",
+      "Ne pas retirer un objet planté dans la plaie : comprimer autour."
+    ],
+    "tips": [],
+    "tags": [
+      "saignement",
+      "sang",
+      "garrot",
+      "plaie"
+    ],
+    "sources": [
+      "ERC 2021",
+      "Croix-Rouge"
+    ],
+    "categoryId": "secours"
+  },
+  {
+    "id": "etouffement",
+    "title": "Étouffement (adulte)",
+    "summary": "La personne ne peut plus parler, ni tousser, ni respirer.",
+    "priority": "critique",
+    "materials": [],
+    "steps": [
+      "Si elle tousse efficacement : l'encourager à tousser, ne rien faire d'autre.",
+      "Si elle ne peut plus tousser ni parler : la pencher en avant et donner jusqu'à 5 claques vigoureuses dans le dos, entre les omoplates.",
+      "Si inefficace : jusqu'à 5 compressions abdominales (se placer derrière, poing au-dessus du nombril, tirer fort vers soi et vers le haut).",
+      "Alterner 5 claques et 5 compressions jusqu'à expulsion de l'objet.",
+      "Si elle perd connaissance : appeler le 112 et commencer le massage cardiaque."
+    ],
+    "warnings": [
+      "Chez la femme enceinte ou la personne obèse, les compressions se font sur la poitrine, pas sur le ventre.",
+      "Les gestes diffèrent pour le nourrisson : se former spécifiquement."
+    ],
+    "tips": [],
+    "tags": [
+      "étouffer",
+      "Heimlich",
+      "s'étrangler",
+      "avaler de travers"
+    ],
+    "sources": [
+      "ERC 2021"
+    ],
+    "categoryId": "secours"
+  },
+  {
+    "id": "pls",
+    "title": "Position latérale de sécurité (PLS)",
+    "summary": "Une personne inconsciente qui respire : la mettre sur le côté pour protéger ses voies respiratoires.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Vérifier qu'elle respire normalement.",
+      "Placer le bras le plus proche de vous à angle droit, paume vers le haut.",
+      "Ramener l'autre main contre sa joue, côté vous, et la maintenir.",
+      "Relever la jambe opposée, genou plié, pied au sol.",
+      "Tirer sur le genou pour faire rouler la personne vers vous.",
+      "Ajuster la jambe pour stabiliser, ouvrir la bouche, vérifier la respiration régulièrement."
+    ],
+    "warnings": [
+      "Si la respiration s'arrête : sur le dos et massage cardiaque."
+    ],
+    "tips": [],
+    "tags": [
+      "inconscient",
+      "évanoui",
+      "position"
+    ],
+    "sources": [
+      "Croix-Rouge"
+    ],
+    "categoryId": "secours"
+  },
+  {
+    "id": "brulure",
+    "title": "Brûlures",
+    "summary": "Refroidir immédiatement, longtemps, à l'eau tempérée.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Refroidir sous l'eau courante tempérée (15 à 25 °C) au moins 10 minutes, idéalement 20.",
+      "Retirer bagues, montres et vêtements autour de la brûlure s'ils ne collent pas.",
+      "Couvrir avec un film alimentaire ou un linge propre non pelucheux.",
+      "Appeler les secours si la brûlure est plus grande que la moitié de la paume de la victime, touche le visage, les mains, les parties génitales, ou si c'est un enfant."
+    ],
+    "warnings": [
+      "Pas de glace, de beurre, de dentifrice ni d'huile.",
+      "Ne pas percer les cloques.",
+      "Économiser l'eau : en pénurie, de l'eau non potable mais claire peut servir au refroidissement."
+    ],
+    "tips": [],
+    "tags": [
+      "brûlé",
+      "cloque",
+      "ébouillanté"
+    ],
+    "sources": [
+      "ERC 2021",
+      "Croix-Rouge"
+    ],
+    "categoryId": "secours"
+  },
+  {
+    "id": "hypothermie",
+    "title": "Hypothermie",
+    "summary": "Le corps se refroidit dangereusement : frissons, confusion, gestes maladroits.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Mettre la personne à l'abri du vent et l'isoler du sol (carton, branchages, sac).",
+      "Remplacer les vêtements mouillés par des vêtements secs.",
+      "Couvrir tout le corps, tête comprise (couverture de survie, duvet).",
+      "Si elle est consciente et avale bien : boissons chaudes et sucrées.",
+      "La manipuler doucement et appeler les secours si elle est confuse ou ne frissonne plus."
+    ],
+    "warnings": [
+      "Pas d'alcool.",
+      "Ne pas frictionner les membres.",
+      "Une personne qui arrête de frissonner tout en restant froide est en danger grave."
+    ],
+    "tips": [],
+    "tags": [
+      "froid",
+      "gelé",
+      "grelotter"
+    ],
+    "sources": [
+      "FM 21-76",
+      "Croix-Rouge"
+    ],
+    "categoryId": "secours"
+  }
+]

@@ -1,0 +1,57 @@
+package com.survive.app.ui.components
+
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.*
+import androidx.compose.material3.*
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.dp
+import com.survive.app.data.Guide
+import com.survive.app.data.Priority
+
+@Composable
+fun PriorityBadge(priority: Priority) {
+    val (label, color) = when (priority) {
+        Priority.CRITICAL -> "VITAL" to Color(0xFFD32F2F)
+        Priority.IMPORTANT -> "IMPORTANT" to Color(0xFFF57C00)
+        Priority.USEFUL -> "UTILE" to Color(0xFF558B2F)
+    }
+    Surface(color = color, shape = MaterialTheme.shapes.small) {
+        Text(
+            label,
+            modifier = Modifier.padding(horizontal = 6.dp, vertical = 2.dp),
+            style = MaterialTheme.typography.labelSmall,
+            color = Color.White,
+            fontWeight = FontWeight.Bold,
+        )
+    }
+}
+
+@Composable
+fun GuideRow(guide: Guide, onClick: () -> Unit) {
+    Card(
+        modifier = Modifier.fillMaxWidth().clickable(onClick = onClick),
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
+    ) {
+        Column(Modifier.padding(16.dp)) {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Text(
+                    guide.title,
+                    style = MaterialTheme.typography.titleMedium,
+                    modifier = Modifier.weight(1f),
+                )
+                Spacer(Modifier.width(8.dp))
+                PriorityBadge(guide.priority)
+            }
+            Spacer(Modifier.height(4.dp))
+            Text(
+                guide.summary,
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.75f),
+            )
+        }
+    }
+}

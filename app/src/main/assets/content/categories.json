@@ -1,0 +1,90 @@
+[
+  {
+    "id": "securite",
+    "title": "Urgences & sécurité",
+    "description": "Les réflexes vitaux et les dangers à éviter quand les réseaux tombent.",
+    "icon": "security",
+    "color": "#E53935",
+    "order": 0
+  },
+  {
+    "id": "secours",
+    "title": "Premiers secours",
+    "description": "Gestes qui sauvent en attendant les secours, ou quand ils ne peuvent pas venir.",
+    "icon": "medical",
+    "color": "#D81B60",
+    "order": 1
+  },
+  {
+    "id": "eau",
+    "title": "Eau",
+    "description": "Trouver, rendre potable et stocker l'eau : la priorité après la sécurité.",
+    "icon": "water",
+    "color": "#1E88E5",
+    "order": 2
+  },
+  {
+    "id": "feu",
+    "title": "Feu & chaleur",
+    "description": "Allumer un feu en sécurité, se chauffer et cuisiner sans électricité.",
+    "icon": "fire",
+    "color": "#FB8C00",
+    "order": 3
+  },
+  {
+    "id": "abri",
+    "title": "Abri",
+    "description": "Se protéger du froid, de la pluie et du vent, en ville comme en pleine nature.",
+    "icon": "shelter",
+    "color": "#6D4C41",
+    "order": 4
+  },
+  {
+    "id": "nourriture",
+    "title": "Nourriture",
+    "description": "Conserver, rationner et préparer la nourriture sans réfrigérateur.",
+    "icon": "food",
+    "color": "#7CB342",
+    "order": 5
+  },
+  {
+    "id": "orientation",
+    "title": "Orientation",
+    "description": "Se repérer sans GPS ni carte en ligne : soleil, étoiles, boussole.",
+    "icon": "navigation",
+    "color": "#00897B",
+    "order": 6
+  },
+  {
+    "id": "communication",
+    "title": "Communiquer sans réseau",
+    "description": "Signaler sa position, alerter et rester en contact sans Internet ni téléphone.",
+    "icon": "communication",
+    "color": "#8E24AA",
+    "order": 7
+  },
+  {
+    "id": "energie",
+    "title": "Énergie & électricité",
+    "description": "Économiser sa batterie, recharger ses appareils et s'éclairer pendant une coupure.",
+    "icon": "energy",
+    "color": "#FDD835",
+    "order": 8
+  },
+  {
+    "id": "hygiene",
+    "title": "Hygiène & santé",
+    "description": "Éviter les maladies quand l'eau courante et les égouts ne fonctionnent plus.",
+    "icon": "hygiene",
+    "color": "#26A69A",
+    "order": 9
+  },
+  {
+    "id": "preparation",
+    "title": "Préparation & kit",
+    "description": "Ce qu'il faut préparer AVANT la crise : kit d'urgence, documents, téléphone.",
+    "icon": "kit",
+    "color": "#546E7A",
+    "order": 10
+  }
+]

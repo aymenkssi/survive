@@ -1,0 +1,91 @@
+[
+  {
+    "id": "kit-72h",
+    "title": "Le kit d'urgence 72 heures",
+    "summary": "Ce qu'il faut pour tenir 3 jours en autonomie : la recommandation officielle.",
+    "priority": "critique",
+    "materials": [],
+    "steps": [
+      "Eau : au moins 6 litres par personne (2 L par jour).",
+      "Nourriture non périssable pour 3 jours, ouvre-boîte manuel.",
+      "Radio à piles ou à manivelle, lampe torche ou frontale, piles de rechange.",
+      "Trousse de premiers secours et médicaments habituels (avec ordonnances).",
+      "Batterie externe chargée et câbles.",
+      "Couteau multifonction, sifflet, briquet, couverture de survie.",
+      "Vêtements chauds, gants, masques, articles d'hygiène.",
+      "Double des clés, argent liquide en petites coupures.",
+      "Copies papier des documents importants et liste des numéros utiles.",
+      "Le nécessaire pour les enfants (couches, lait) et les animaux."
+    ],
+    "warnings": [],
+    "tips": [
+      "Vérifier le kit tous les 6 mois : dates de péremption, piles, batterie.",
+      "Un sac à dos par personne, prêt près de la porte."
+    ],
+    "tags": [
+      "sac",
+      "kit",
+      "72 heures",
+      "liste",
+      "matériel"
+    ],
+    "sources": [
+      "Gouv.fr - Je me prépare",
+      "FEMA Ready.gov"
+    ],
+    "categoryId": "preparation"
+  },
+  {
+    "id": "preparer-telephone",
+    "title": "Préparer son téléphone avant la coupure",
+    "summary": "Ce qu'il faut télécharger tant qu'Internet fonctionne.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Télécharger les cartes hors ligne de sa région (ex. : Organic Maps, OsmAnd, ou cartes hors ligne de Google Maps).",
+      "Installer et tester une messagerie sans Internet (voir « Messagerie sans Internet »).",
+      "Enregistrer en local les documents utiles (photos des papiers d'identité, ordonnances).",
+      "Noter sur papier les numéros importants.",
+      "Garder cette application installée : tout son contenu fonctionne sans réseau."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "smartphone",
+      "cartes hors ligne",
+      "application",
+      "télécharger"
+    ],
+    "sources": [
+      "Gouv.fr - Je me prépare"
+    ],
+    "categoryId": "preparation"
+  },
+  {
+    "id": "trousse-secours",
+    "title": "Composer sa trousse de premiers secours",
+    "summary": "Le contenu de base pour soigner les petites blessures.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Compresses stériles, pansements de tailles variées, bande de contention.",
+      "Antiseptique, sérum physiologique.",
+      "Gants jetables, ciseaux, pince à épiler.",
+      "Couverture de survie.",
+      "Paracétamol, et vos traitements personnels pour plusieurs jours.",
+      "Sachets de réhydratation (SRO).",
+      "Garrot tourniquet si vous êtes formé à son usage."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "pharmacie",
+      "pansement",
+      "médicaments"
+    ],
+    "sources": [
+      "Croix-Rouge"
+    ],
+    "categoryId": "preparation"
+  }
+]

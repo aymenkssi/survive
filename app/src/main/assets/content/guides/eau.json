@@ -1,0 +1,162 @@
+[
+  {
+    "id": "besoins-eau",
+    "title": "Combien d'eau faut-il ?",
+    "summary": "Calculer ses besoins pour tenir plusieurs jours.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Boisson : au moins 2 litres par personne et par jour, davantage par forte chaleur ou effort.",
+      "Avec cuisine et hygiène minimale : prévoir 4 litres par personne et par jour.",
+      "Penser aux animaux domestiques.",
+      "Surveiller la déshydratation : urines foncées, soif, maux de tête, fatigue."
+    ],
+    "warnings": [],
+    "tips": [
+      "Au début d'une coupure, remplir baignoire, casseroles et bouteilles tant que l'eau coule encore (eau de la baignoire : pour les toilettes et le ménage, ou à traiter avant de la boire).",
+      "Réserves cachées : ballon d'eau chaude, glaçons, conserves de légumes."
+    ],
+    "tags": [
+      "déshydratation",
+      "quantité",
+      "litres",
+      "réserve"
+    ],
+    "sources": [
+      "FEMA Ready.gov",
+      "Gouv.fr - Je me prépare"
+    ],
+    "categoryId": "eau"
+  },
+  {
+    "id": "ebullition",
+    "title": "Rendre l'eau potable par ébullition",
+    "summary": "La méthode la plus sûre contre bactéries, virus et parasites.",
+    "priority": "critique",
+    "materials": [
+      "Casserole",
+      "Source de chaleur",
+      "Tissu propre"
+    ],
+    "steps": [
+      "Si l'eau est trouble : la laisser reposer puis la filtrer dans un tissu propre.",
+      "Porter à ébullition franche (gros bouillons).",
+      "Maintenir l'ébullition 1 minute (3 minutes au-dessus de 2000 m d'altitude).",
+      "Laisser refroidir à couvert et stocker dans un récipient propre et fermé."
+    ],
+    "warnings": [
+      "L'ébullition n'élimine pas les produits chimiques, hydrocarbures ou métaux lourds : ne pas utiliser d'eau à l'odeur d'essence ou de produits chimiques."
+    ],
+    "tips": [
+      "Pour améliorer le goût d'une eau bouillie, la transvaser plusieurs fois d'un récipient à l'autre pour l'aérer."
+    ],
+    "tags": [
+      "bouillir",
+      "potable",
+      "purifier",
+      "désinfecter"
+    ],
+    "sources": [
+      "OMS",
+      "CDC"
+    ],
+    "categoryId": "eau"
+  },
+  {
+    "id": "javel",
+    "title": "Désinfecter l'eau à l'eau de Javel",
+    "summary": "Quand on ne peut pas faire bouillir.",
+    "priority": "important",
+    "materials": [
+      "Eau de Javel non parfumée",
+      "Compte-gouttes ou paille",
+      "Récipient propre"
+    ],
+    "steps": [
+      "Utiliser une eau de Javel ordinaire sans parfum ni additif (environ 2,6 % à 6 % de chlore actif).",
+      "Filtrer d'abord l'eau trouble dans un tissu.",
+      "Avec une Javel à 5-6 % : environ 2 gouttes par litre. Doubler si l'eau reste trouble ou très froide.",
+      "Mélanger et attendre 30 minutes à l'abri de la lumière.",
+      "L'eau doit garder une légère odeur de chlore ; sinon, répéter la dose et attendre encore 15 minutes."
+    ],
+    "warnings": [
+      "Ne jamais utiliser de Javel parfumée, « gel », ou de produits ménagers mélangés.",
+      "Vérifier la concentration sur l'étiquette : elle change la dose."
+    ],
+    "tips": [
+      "Les pastilles de purification (chlore ou dioxyde de chlore) sont plus simples à doser : en garder dans le kit."
+    ],
+    "tags": [
+      "chlore",
+      "pastilles",
+      "purifier",
+      "javel"
+    ],
+    "sources": [
+      "CDC",
+      "OMS"
+    ],
+    "categoryId": "eau"
+  },
+  {
+    "id": "sodis",
+    "title": "Désinfection solaire (SODIS)",
+    "summary": "Sans combustible ni produit : le soleil dans une bouteille transparente.",
+    "priority": "utile",
+    "materials": [
+      "Bouteille PET transparente"
+    ],
+    "steps": [
+      "Prendre une bouteille en plastique PET transparente et lisse, de 2 litres maximum.",
+      "La remplir d'eau claire (filtrer si besoin), la fermer et la secouer.",
+      "La poser couchée au soleil direct, idéalement sur une tôle ou une surface réfléchissante.",
+      "Laisser 6 heures en plein soleil, ou 2 jours consécutifs si le ciel est nuageux.",
+      "Boire directement dans la bouteille."
+    ],
+    "warnings": [
+      "Inefficace par temps de pluie et avec une eau trouble.",
+      "N'élimine pas les produits chimiques."
+    ],
+    "tips": [],
+    "tags": [
+      "soleil",
+      "solaire",
+      "bouteille"
+    ],
+    "sources": [
+      "OMS",
+      "EAWAG SODIS"
+    ],
+    "categoryId": "eau"
+  },
+  {
+    "id": "trouver-eau",
+    "title": "Trouver de l'eau",
+    "summary": "En ville comme en pleine nature, les sources auxquelles on ne pense pas.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "En ville : ballon d'eau chaude (couper le courant et l'arrivée d'eau d'abord, vider par le robinet du bas), réservoir des toilettes (pas la cuvette, et seulement s'il n'y a pas de produit), eau de pluie.",
+      "Dans la nature : cours d'eau qui coulent, sources ; suivre la pente et la végétation dense.",
+      "Récupérer la pluie avec une bâche ou des gouttières vers des récipients propres.",
+      "Récolter la rosée du matin avec un tissu passé sur les herbes, puis l'essorer.",
+      "Toujours traiter l'eau trouvée avant de la boire (ébullition, chlore, ou à défaut SODIS)."
+    ],
+    "warnings": [
+      "Ne pas boire d'eau de mer ni d'urine.",
+      "Éviter les eaux stagnantes près des cultures, des routes ou des industries."
+    ],
+    "tips": [],
+    "tags": [
+      "source",
+      "pluie",
+      "rosée",
+      "récupérer"
+    ],
+    "sources": [
+      "FM 21-76",
+      "FEMA Ready.gov"
+    ],
+    "categoryId": "eau"
+  }
+]

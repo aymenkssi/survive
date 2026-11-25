@@ -1,0 +1,84 @@
+[
+  {
+    "id": "lavage-mains",
+    "title": "Se laver les mains avec peu d'eau",
+    "summary": "La première barrière contre les diarrhées et infections.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Se laver les mains avant de manger, de cuisiner, de soigner, et après les toilettes.",
+      "Système « tippy tap » : un bidon suspendu percé d'un petit trou, qu'on fait basculer avec le pied, économise beaucoup d'eau.",
+      "Savonner 20 secondes : paumes, dos, entre les doigts, ongles.",
+      "Sans eau : gel hydroalcoolique (sauf sur mains très sales)."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "mains",
+      "savon",
+      "propreté",
+      "maladie"
+    ],
+    "sources": [
+      "OMS",
+      "CDC"
+    ],
+    "categoryId": "hygiene"
+  },
+  {
+    "id": "toilettes-sans-eau",
+    "title": "Toilettes sans eau courante",
+    "summary": "Éviter que les eaux usées contaminent l'eau et la nourriture.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "En appartement : vider l'eau de la cuvette, la tapisser de deux sacs poubelle solides.",
+      "Après chaque usage, couvrir d'un peu de sciure, litière, terre sèche ou cendres pour limiter odeurs et mouches.",
+      "Fermer les sacs et les stocker à l'extérieur dans un bac fermé.",
+      "Dehors : creuser un trou de 15 à 20 cm, à au moins 60 mètres de tout point d'eau, et le reboucher."
+    ],
+    "warnings": [
+      "Ne pas tirer la chasse si les égouts sont hors service (risque de refoulement)."
+    ],
+    "tips": [],
+    "tags": [
+      "WC",
+      "toilettes",
+      "excréments",
+      "sanitaire"
+    ],
+    "sources": [
+      "CDC",
+      "Leave No Trace"
+    ],
+    "categoryId": "hygiene"
+  },
+  {
+    "id": "diarrhee",
+    "title": "Diarrhée et déshydratation",
+    "summary": "La réhydrater avant tout, surtout chez l'enfant et la personne âgée.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Boire souvent, par petites gorgées.",
+      "Solution de réhydratation maison (OMS) : 1 litre d'eau potable + 6 cuillères à café rases de sucre + 1/2 cuillère à café rase de sel.",
+      "Continuer à manger léger (riz, banane, pain) dès que possible.",
+      "Consulter en urgence en cas de sang dans les selles, forte fièvre, ou signes de déshydratation sévère (somnolence, pas d'urine)."
+    ],
+    "warnings": [
+      "Respecter exactement les doses de sel et de sucre : une solution trop salée est dangereuse.",
+      "Les sachets de SRO en pharmacie sont préférables : en mettre dans le kit."
+    ],
+    "tips": [],
+    "tags": [
+      "SRO",
+      "réhydratation",
+      "gastro",
+      "vomissement"
+    ],
+    "sources": [
+      "OMS"
+    ],
+    "categoryId": "hygiene"
+  }
+]

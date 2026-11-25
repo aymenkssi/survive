@@ -1,0 +1,59 @@
+[
+  {
+    "id": "principes-abri",
+    "title": "Les principes d'un bon abri",
+    "summary": "Isolation du sol, protection contre le vent et l'eau, petit volume.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Choisir un emplacement sec, légèrement surélevé, à l'abri du vent, loin des arbres morts et des lits de rivière.",
+      "S'isoler du sol en priorité : une épaisse couche de feuilles, branchages ou carton (le sol vole plus de chaleur que l'air).",
+      "Construire petit : juste assez grand pour s'allonger, l'air à chauffer est réduit.",
+      "Orienter l'entrée dos au vent dominant.",
+      "Couvrir de bâche, de branchages serrés ou de feuilles épaisses pour l'étanchéité."
+    ],
+    "warnings": [],
+    "tips": [
+      "Une couverture de survie tendue derrière soi, face à un feu, renvoie une partie de la chaleur vers le corps.",
+      "S'envelopper dans la couverture de survie sous les vêtements ou le duvet coupe le vent et limite la perte de chaleur."
+    ],
+    "tags": [
+      "cabane",
+      "bivouac",
+      "dormir dehors",
+      "nuit"
+    ],
+    "sources": [
+      "FM 21-76"
+    ],
+    "categoryId": "abri"
+  },
+  {
+    "id": "abri-bache",
+    "title": "Abri rapide avec une bâche",
+    "summary": "En 15 minutes avec une bâche et une corde.",
+    "priority": "utile",
+    "materials": [
+      "Bâche",
+      "Corde (paracorde)",
+      "Piquets ou pierres"
+    ],
+    "steps": [
+      "Tendre une corde entre deux arbres, à hauteur de hanche.",
+      "Poser la bâche sur la corde.",
+      "Fixer un côté au sol (piquets, pierres) face au vent, pour former un appentis ; ou les deux côtés pour une tente en A.",
+      "Ajouter un tapis de sol isolant sous l'abri."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "tarp",
+      "bâche",
+      "tente"
+    ],
+    "sources": [
+      "FM 21-76"
+    ],
+    "categoryId": "abri"
+  }
+]
