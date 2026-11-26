@@ -133,7 +133,11 @@
     <string name="my_position">Ma position</string>
     <string name="gps_title">Coordonnées GPS</string>
     <string name="gps_searching">Recherche du signal GPS… Placez-vous dehors, à découvert, et patientez une minute.</string>
-    <string name="gps_disabled">La localisation est désactivée dans les paramètres du téléphone.</string>
+    <string name="gps_disabled">L\'autorisation est bien accordée, mais l\'interrupteur « Localisation » du téléphone est coupé. Activez-le (menu rapide ou Paramètres › Localisation).</string>
+    <string name="gps_enable">Activer la localisation</string>
+    <string name="gps_no_permission">L\'application n\'est pas autorisée à utiliser la localisation.</string>
+    <string name="gps_open_permissions">Ouvrir les autorisations</string>
+    <string name="gps_approximate">Seule la position approximative est autorisée (précision de quelques km). Pour votre position exacte, choisissez « Position exacte » dans les autorisations de l\'application.</string>
     <string name="gps_accuracy">Précision : ± %d m</string>
     <string name="gps_permission">Autoriser la localisation</string>
     <string name="gps_explain">Donnez ces coordonnées aux secours : elles fonctionnent partout, même sans adresse.</string>

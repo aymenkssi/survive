@@ -135,7 +135,11 @@
     <string name="my_position">My position</string>
     <string name="gps_title">GPS coordinates</string>
     <string name="gps_searching">Searching for GPS signal… Go outside, in the open, and wait a minute.</string>
-    <string name="gps_disabled">Location is turned off in the phone settings.</string>
+    <string name="gps_disabled">The permission is granted, but the phone\'s Location switch is off. Turn it on (quick settings or Settings › Location).</string>
+    <string name="gps_enable">Turn on location</string>
+    <string name="gps_no_permission">The app is not allowed to use location.</string>
+    <string name="gps_open_permissions">Open app permissions</string>
+    <string name="gps_approximate">Only approximate location is allowed (accuracy of a few km). For your exact position, choose “Precise location” in the app\'s permissions.</string>
     <string name="gps_accuracy">Accuracy: ± %d m</string>
     <string name="gps_permission">Allow location</string>
     <string name="gps_explain">Give these coordinates to rescuers: they work everywhere, even without an address.</string>

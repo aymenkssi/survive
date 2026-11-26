@@ -38,12 +38,14 @@ private class OpenedMap(val view: MapView, val bounds: BoundingBox, val marker: 
 @Composable
 fun MapViewerScreen(store: MapStore, fileName: String, onBack: () -> Unit) {
     val context = LocalContext.current
-    var granted by remember { mutableStateOf(hasLocationPermission(context)) }
     var follow by remember { mutableStateOf(false) }
+    var asked by remember { mutableIntStateOf(0) }
     var failed by remember { mutableStateOf(false) }
     var opened by remember { mutableStateOf<OpenedMap?>(null) }
-    val requestLocation = rememberLocationPermissionRequest { ok -> granted = ok; follow = ok }
-    val location by rememberGpsLocation(granted)
+    val requestLocation = rememberLocationPermissionRequest { ok -> asked++; follow = ok }
+    val gps = key(asked) { rememberGpsState(active = true) }
+    val granted = gps.permission
+    val location = gps.location
 
     // Position sur la carte ; recentre si l'utilisateur a demandé « Ma position ».
     LaunchedEffect(location, opened, follow) {
@@ -96,7 +98,7 @@ fun MapViewerScreen(store: MapStore, fileName: String, onBack: () -> Unit) {
                     shape = MaterialTheme.shapes.medium, tonalElevation = 4.dp, shadowElevation = 4.dp,
                 ) {
                     Column(Modifier.padding(12.dp)) {
-                        CoordinatesText(location, context)
+                        GpsStatus(gps)
                         val l = location
                         val bounds = opened?.bounds
                         if (l != null && bounds != null && !bounds.contains(l.latitude, l.longitude)) {
