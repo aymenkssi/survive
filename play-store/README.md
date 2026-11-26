@@ -85,9 +85,14 @@ git pull
 - Les fichiers arrivent dans `~/builds/survive/` : `survivor-end-of-the-world-1.0.0-6.aab` et
   `survivor-end-of-the-world-1.0.0-6-mapping.txt`. Pour les récupérer :
   `scp 'utilisateur@vps:builds/survive/survivor-end-of-the-world-1.0.0-6*' .`
-- Le code est réduit par **R8**. Le fichier `-mapping.txt` est le **fichier de désobscurcissement** : après l'import
-  du `.aab`, **Explorateur d'app bundles** › la version › onglet **Téléchargements** › **Fichier de désobscurcissement**
-  › **Importer**. Sans lui, les rapports de plantage sont illisibles.
+- Le code est réduit par **R8**. Le **fichier de désobscurcissement** est déjà inclus dans le `.aab`
+  (`BUNDLE-METADATA/…/proguard.map`) : Google Play le lit tout seul. Le `-mapping.txt` copié à côté est une sauvegarde ;
+  si la Console signale qu'il manque : **Explorateur d'app bundles** › la version › **Téléchargements** ›
+  **Fichier de désobscurcissement** › **Importer**.
+- Avertissement **« This App Bundle contains native code, and you've not uploaded debug symbols »** : à ignorer, ce
+  n'est qu'une recommandation. Le seul code natif est une petite bibliothèque de Jetpack Compose
+  (`libandroidx.graphics.path.so`, 10 Ko), fournie par Google déjà dépouillée de ses symboles : il n'existe pas de
+  fichier de symboles à envoyer. Le code de l'application, en Kotlin, est couvert par le fichier de désobscurcissement.
 - La clé créée au premier build (`~/.survive/`) devient la **clé d'importation** : au premier envoi, laisser Google
   Play gérer la clé de signature finale (**Signature d'application Play**, proposé par défaut). Sauvegarder
   `~/.survive/` ailleurs que sur le VPS.
@@ -160,8 +165,8 @@ affiche alors « Aucune donnée collectée » sur la fiche.
 
 ## 6. Tester avant la production
 
-1. **Tester et publier** › **Test interne** › **Créer une version** : importer le `.aab`, nom `1.0.0 (6)`, puis son
-   fichier de désobscurcissement (étape 2), notes de version (bloc ci-dessous), ajouter votre Gmail dans les testeurs et
+1. **Tester et publier** › **Test interne** › **Créer une version** : importer le `.aab`, nom `1.0.0 (6)` (le fichier
+   de désobscurcissement est inclus ; l'avertissement sur les symboles natifs peut être ignoré, voir étape 2), notes de version (bloc ci-dessous), ajouter votre Gmail dans les testeurs et
    installer l'application depuis le lien de test. Essayer chaque outil et **une carte en mode avion**.
 2. **Comptes personnels récents** : l'accès à la production demande d'abord un **test fermé** avec **au moins
    12 testeurs** inscrits pendant **14 jours d'affilée**, puis **Demander l'accès à la production** (questionnaire sur
