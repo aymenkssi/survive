@@ -1,5 +1,7 @@
 package com.survive.app.ui.home
 
+import androidx.compose.ui.res.stringResource
+import com.survive.app.R
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyRow
@@ -44,19 +46,25 @@ fun HomeScreen(
     onSettings: () -> Unit,
     onSupport: () -> Unit,
 ) {
-    val categories = remember { repository.categories }
-    val critical = remember { repository.criticalGuides() }
+    val categories = remember(repository) { repository.categories }
+    val critical = remember(repository) { repository.criticalGuides() }
     val favoriteIds by prefs.favorites.collectAsState()
-    val favorites = remember(favoriteIds) { favoriteIds.mapNotNull(repository::guide).sortedBy { it.title } }
+    val favorites = remember(favoriteIds, repository) { favoriteIds.mapNotNull(repository::guide).sortedBy { it.title } }
 
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Survive", fontWeight = FontWeight.Bold) },
+                title = {
+                    Column {
+                        Text(stringResource(R.string.app_title), fontWeight = FontWeight.Bold)
+                        Text(stringResource(R.string.app_subtitle), style = MaterialTheme.typography.labelMedium,
+                            color = MaterialTheme.colorScheme.secondary)
+                    }
+                },
                 actions = {
-                    IconButton(onClick = onSearch) { Icon(Icons.Filled.Search, contentDescription = "Rechercher") }
-                    IconButton(onClick = onSupport) { Icon(Icons.Filled.FavoriteBorder, contentDescription = "Soutenir l'application") }
-                    IconButton(onClick = onSettings) { Icon(Icons.Filled.Settings, contentDescription = "Réglages") }
+                    IconButton(onClick = onSearch) { Icon(Icons.Filled.Search, contentDescription = stringResource(R.string.search)) }
+                    IconButton(onClick = onSupport) { Icon(Icons.Filled.FavoriteBorder, contentDescription = stringResource(R.string.support)) }
+                    IconButton(onClick = onSettings) { Icon(Icons.Filled.Settings, contentDescription = stringResource(R.string.settings)) }
                 },
             )
         },
@@ -70,18 +78,18 @@ fun HomeScreen(
         ) {
             fullWidth { OfflineBanner() }
 
-            fullWidth { SectionTitle("Outils hors ligne") }
+            fullWidth { SectionTitle(stringResource(R.string.section_tools)) }
             items(toolInfos, key = { "tool-" + it.id }) { tool -> ToolTile(tool) { onTool(tool.id) } }
 
             if (critical.isNotEmpty()) {
-                fullWidth { SectionTitle("Urgence – accès rapide") }
+                fullWidth { SectionTitle(stringResource(R.string.section_urgent)) }
                 fullWidth { Chips(critical.map { it.id to it.title }, onGuide, urgent = true) }
             }
             if (favorites.isNotEmpty()) {
-                fullWidth { SectionTitle("Mes favoris", Icons.Filled.Star) }
+                fullWidth { SectionTitle(stringResource(R.string.section_favorites), Icons.Filled.Star) }
                 fullWidth { Chips(favorites.map { it.id to it.title }, onGuide, urgent = false) }
             }
-            fullWidth { SectionTitle("Thématiques") }
+            fullWidth { SectionTitle(stringResource(R.string.section_topics)) }
             items(categories, key = { it.id }) { cat ->
                 CategoryTile(cat, repository.guidesFor(cat.id).size) { onCategory(cat.id) }
             }
@@ -106,11 +114,7 @@ private fun OfflineBanner() {
         Row(Modifier.padding(12.dp), verticalAlignment = Alignment.CenterVertically) {
             Icon(Icons.Filled.Warning, contentDescription = null, tint = MaterialTheme.colorScheme.secondary)
             Spacer(Modifier.width(8.dp))
-            Text(
-                "Tout le contenu est disponible hors ligne. En cas d'urgence vitale, appelez le 112 : " +
-                    "l'appel passe par n'importe quel réseau mobile disponible.",
-                style = MaterialTheme.typography.bodySmall,
-            )
+            Text(stringResource(R.string.offline_banner), style = MaterialTheme.typography.bodySmall)
         }
     }
 }
@@ -141,8 +145,8 @@ private fun ToolTile(tool: ToolInfo, onClick: () -> Unit) {
             Icon(tool.icon, contentDescription = null, tint = MaterialTheme.colorScheme.primary, modifier = Modifier.size(28.dp))
             Spacer(Modifier.width(10.dp))
             Column {
-                Text(tool.title, style = MaterialTheme.typography.titleSmall, fontWeight = FontWeight.SemiBold)
-                Text(tool.subtitle, style = MaterialTheme.typography.labelSmall)
+                Text(stringResource(tool.title), style = MaterialTheme.typography.titleSmall, fontWeight = FontWeight.SemiBold)
+                Text(stringResource(tool.subtitle), style = MaterialTheme.typography.labelSmall)
             }
         }
     }
@@ -159,7 +163,7 @@ private fun CategoryTile(category: Category, count: Int, onClick: () -> Unit) {
             Icon(categoryIcon(category.icon), contentDescription = null, tint = color, modifier = Modifier.size(32.dp))
             Column {
                 Text(category.title, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
-                Text("$count fiches", style = MaterialTheme.typography.labelMedium)
+                Text(stringResource(R.string.guides_count, count), style = MaterialTheme.typography.labelMedium)
             }
         }
     }

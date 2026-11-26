@@ -7,6 +7,9 @@ import kotlinx.coroutines.flow.asStateFlow
 
 enum class ThemeMode { SYSTEM, LIGHT, DARK, NIGHT_RED }
 
+/** Langue de l'interface et du contenu. SYSTEM suit la langue du téléphone (français si FR, sinon anglais). */
+enum class AppLanguage(val code: String?) { SYSTEM(null), FR("fr"), EN("en") }
+
 /**
  * Préférences locales de l'utilisateur (favoris, thème, taille du texte, cases cochées).
  * Stockées dans SharedPreferences : rien ne quitte le téléphone.
@@ -21,6 +24,11 @@ class UserPrefs(context: Context) {
         runCatching { ThemeMode.valueOf(sp.getString(KEY_THEME, null)!!) }.getOrDefault(ThemeMode.SYSTEM)
     )
     val theme: StateFlow<ThemeMode> = _theme.asStateFlow()
+
+    private val _language = MutableStateFlow(
+        runCatching { AppLanguage.valueOf(sp.getString(KEY_LANG, null)!!) }.getOrDefault(AppLanguage.SYSTEM)
+    )
+    val language: StateFlow<AppLanguage> = _language.asStateFlow()
 
     private val _largeText = MutableStateFlow(sp.getBoolean(KEY_LARGE, false))
     val largeText: StateFlow<Boolean> = _largeText.asStateFlow()
@@ -37,6 +45,11 @@ class UserPrefs(context: Context) {
     fun setTheme(mode: ThemeMode) {
         _theme.value = mode
         sp.edit().putString(KEY_THEME, mode.name).apply()
+    }
+
+    fun setLanguage(language: AppLanguage) {
+        _language.value = language
+        sp.edit().putString(KEY_LANG, language.name).apply()
     }
 
     fun setLargeText(enabled: Boolean) {
@@ -59,6 +72,7 @@ class UserPrefs(context: Context) {
     private companion object {
         const val KEY_FAV = "favorites"
         const val KEY_THEME = "theme"
+        const val KEY_LANG = "language"
         const val KEY_LARGE = "large_text"
         const val KEY_CHECKED = "checked"
     }

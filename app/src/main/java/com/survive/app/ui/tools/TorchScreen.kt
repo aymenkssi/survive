@@ -1,5 +1,7 @@
 package com.survive.app.ui.tools
 
+import androidx.compose.ui.res.stringResource
+import com.survive.app.R
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -64,29 +66,28 @@ fun TorchScreen(onBack: () -> Unit) {
                 .clickable { mode = LightMode.OFF },
             contentAlignment = Alignment.BottomCenter,
         ) {
-            Text("Toucher pour arrêter", color = Color.Gray, modifier = Modifier.padding(32.dp))
+            Text(stringResource(R.string.tap_to_stop), color = Color.Gray, modifier = Modifier.padding(32.dp))
         }
         return
     }
 
-    Scaffold(topBar = { BackTopBar("Lampe & SOS", onBack) }) { padding ->
+    Scaffold(topBar = { BackTopBar(stringResource(R.string.tool_torch), onBack) }) { padding ->
         Column(
             Modifier.padding(padding).padding(16.dp).fillMaxSize(),
             verticalArrangement = Arrangement.spacedBy(16.dp),
         ) {
             if (!torch.available) {
-                Text("Pas de flash détecté : l'écran sera utilisé comme lampe.", color = MaterialTheme.colorScheme.error)
+                Text(stringResource(R.string.no_flash), color = MaterialTheme.colorScheme.error)
             }
-            BigButton("Lampe", mode == LightMode.ON) { mode = if (mode == LightMode.ON) LightMode.OFF else LightMode.ON }
-            BigButton("SOS automatique", mode == LightMode.SOS) { mode = if (mode == LightMode.SOS) LightMode.OFF else LightMode.SOS }
-            BigButton("Stroboscope", mode == LightMode.STROBE) { mode = if (mode == LightMode.STROBE) LightMode.OFF else LightMode.STROBE }
+            BigButton(stringResource(R.string.light), mode == LightMode.ON) { mode = if (mode == LightMode.ON) LightMode.OFF else LightMode.ON }
+            BigButton(stringResource(R.string.sos_auto), mode == LightMode.SOS) { mode = if (mode == LightMode.SOS) LightMode.OFF else LightMode.SOS }
+            BigButton(stringResource(R.string.strobe), mode == LightMode.STROBE) { mode = if (mode == LightMode.STROBE) LightMode.OFF else LightMode.STROBE }
 
             HorizontalDivider()
-            SwitchRow("Utiliser l'écran au lieu du flash", screenLight, enabled = torch.available) { screenLight = it }
-            SwitchRow("Bip sonore avec le SOS", withSound) { withSound = it }
+            SwitchRow(stringResource(R.string.use_screen), screenLight, enabled = torch.available) { screenLight = it }
+            SwitchRow(stringResource(R.string.sos_sound), withSound) { withSound = it }
             Text(
-                "Le SOS (· · · — — — · · ·) est compris partout dans le monde. La nuit, un flash se voit à plusieurs kilomètres. " +
-                    "Le stroboscope consomme moins de batterie qu'une lumière continue.",
+                stringResource(R.string.torch_info),
                 style = MaterialTheme.typography.bodySmall,
             )
         }
@@ -103,7 +104,7 @@ fun BigButton(label: String, active: Boolean, onClick: () -> Unit) {
         border = if (active) null else ButtonDefaults.outlinedButtonBorder(true),
         modifier = Modifier.fillMaxWidth().height(72.dp),
     ) {
-        Text(if (active) "$label : ACTIF" else label, style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
+        Text(if (active) stringResource(R.string.active, label) else label, style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
     }
 }
 

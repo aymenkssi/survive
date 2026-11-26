@@ -1,5 +1,7 @@
 package com.survive.app.ui.components
 
+import androidx.compose.ui.res.stringResource
+import com.survive.app.R
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
@@ -16,9 +18,9 @@ import com.survive.app.ui.theme.LocalNightRed
 @Composable
 fun PriorityBadge(priority: Priority) {
     val (label, color) = when (priority) {
-        Priority.CRITICAL -> "VITAL" to Color(0xFFD32F2F)
-        Priority.IMPORTANT -> "IMPORTANT" to Color(0xFFF57C00)
-        Priority.USEFUL -> "UTILE" to Color(0xFF558B2F)
+        Priority.CRITICAL -> stringResource(R.string.priority_critical) to Color(0xFFD32F2F)
+        Priority.IMPORTANT -> stringResource(R.string.priority_important) to Color(0xFFF57C00)
+        Priority.USEFUL -> stringResource(R.string.priority_useful) to Color(0xFF558B2F)
     }
     val night = LocalNightRed.current
     Surface(color = if (night) MaterialTheme.colorScheme.primaryContainer else color, shape = MaterialTheme.shapes.small) {

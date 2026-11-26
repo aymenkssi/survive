@@ -1,0 +1,142 @@
+[
+  {
+    "id": "economiser-batterie",
+    "title": "Make your phone battery last",
+    "summary": "When you don't know when you will be able to recharge.",
+    "priority": "critique",
+    "materials": [],
+    "steps": [
+      "Turn on the strongest battery-saving mode.",
+      "Switch to airplane mode when you are not expecting a call; turn it off briefly at set times.",
+      "Turn brightness down to the minimum, switch off Wi-Fi, Bluetooth, location and mobile data.",
+      "Close apps and avoid video, games and the phone's flashlight.",
+      "Keep the phone warm (in an inside pocket): cold drains the battery."
+    ],
+    "warnings": [],
+    "tips": [
+      "A weak signal uses much more power: in an area with no coverage, airplane mode is essential."
+    ],
+    "tags": [
+      "battery",
+      "phone",
+      "battery life",
+      "recharge"
+    ],
+    "sources": [
+      "FEMA Ready.gov"
+    ],
+    "categoryId": "energie"
+  },
+  {
+    "id": "recharger-sans-secteur",
+    "title": "Recharging without a power socket",
+    "summary": "Power bank, car, solar, hand crank.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Power bank: keep it permanently charged in your kit.",
+      "Car: cigarette-lighter socket with a USB adapter, engine running, outdoors only (never in a closed garage).",
+      "USB solar panel: point it at full sun, charge a power bank first rather than the phone directly.",
+      "Hand-crank radio or torch with a USB port: a few minutes of charging for an emergency call."
+    ],
+    "warnings": [
+      "Running an engine in an enclosed space = deadly risk of carbon monoxide."
+    ],
+    "tips": [],
+    "tags": [
+      "solar",
+      "car",
+      "power bank",
+      "hand crank",
+      "electricity"
+    ],
+    "sources": [
+      "FEMA Ready.gov",
+      "CDC"
+    ],
+    "categoryId": "energie"
+  },
+  {
+    "id": "eclairage",
+    "title": "Lighting during a power cut",
+    "summary": "Prefer battery lights to candles.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Headlamp: keeps your hands free, ideal for cooking or giving first aid.",
+      "Battery or rechargeable LED lamps: low consumption, no fire risk.",
+      "Tip: put a headlamp under a bottle of water to light a whole room.",
+      "Candles: only under supervision, on a stable holder, away from curtains and children."
+    ],
+    "warnings": [
+      "Candles are a frequent cause of fires during power cuts."
+    ],
+    "tips": [],
+    "tags": [
+      "lamp",
+      "candle",
+      "light",
+      "night",
+      "headlamp",
+      "torch",
+      "flashlight"
+    ],
+    "sources": [
+      "FEMA Ready.gov"
+    ],
+    "categoryId": "energie"
+  },
+  {
+    "id": "batterie-voiture",
+    "title": "Using a car battery safely",
+    "summary": "A 12 V energy reserve to light and recharge.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Connect a 12 V to USB converter, or a cigarette-lighter socket with clamps.",
+      "Red on the + terminal, black on the − terminal, clamps tight.",
+      "Small devices only: phones, LED lamps, radio.",
+      "Don't drain the battery completely if you plan to start the car again: stop before the headlights dim."
+    ],
+    "warnings": [
+      "Never connect the two terminals directly (short circuit, burns, explosion).",
+      "No flame or spark near a charging battery (hydrogen gas)."
+    ],
+    "tips": [],
+    "tags": [
+      "12V",
+      "car",
+      "battery",
+      "converter"
+    ],
+    "sources": [
+      "FEMA Ready.gov"
+    ],
+    "categoryId": "energie"
+  },
+  {
+    "id": "kit-solaire",
+    "title": "Sizing a small solar kit",
+    "summary": "Choose a panel and a battery to recharge phones and lamps.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Estimate your needs: a phone ≈ 15 Wh per charge, an LED lamp ≈ 3 to 5 Wh per evening, a radio ≈ 2 Wh.",
+      "Power bank: 20,000 mAh ≈ 70 Wh, about 4 phone charges.",
+      "20 to 30 W folding panel: about 50 to 100 Wh per sunny day (much less when overcast).",
+      "Charge the power bank with the panel during the day, then the devices in the evening."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "solar",
+      "panel",
+      "watt",
+      "mAh"
+    ],
+    "sources": [
+      "FEMA Ready.gov"
+    ],
+    "categoryId": "energie"
+  }
+]

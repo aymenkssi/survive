@@ -33,17 +33,28 @@ import org.robolectric.annotation.GraphicsMode
 class ScreenshotTest {
     @get:Rule val compose = createComposeRule()
 
-    private val repo = ContentRepository { path -> javaClass.classLoader!!.getResource(path)!!.readText() }
+    private val source = com.survive.app.data.ContentSource { path -> javaClass.classLoader!!.getResource(path)!!.readText() }
+    private val repo = ContentRepository(source, "fr")
+    private val repoEn = ContentRepository(source, "en")
     private val prefs by lazy { UserPrefs(ApplicationProvider.getApplicationContext()) }
 
-    private fun shot(name: String, mode: ThemeMode = ThemeMode.DARK, content: @androidx.compose.runtime.Composable () -> Unit) {
-        compose.setContent { SurviveTheme(mode = mode) { content() } }
+    private fun shot(
+        name: String, mode: ThemeMode = ThemeMode.DARK, lang: String = "fr",
+        content: @androidx.compose.runtime.Composable () -> Unit,
+    ) {
+        compose.setContent { ProvideLanguage(lang) { SurviveTheme(mode = mode) { content() } } }
         compose.onRoot().captureRoboImage("build/outputs/roborazzi/$name.png")
     }
 
     private fun androidx.compose.ui.test.junit4.ComposeContentTestRule.onRoot() =
         onNode(androidx.compose.ui.test.isRoot())
 
+    @Test fun homeEnglish() = shot("en_home", lang = "en") { HomeScreen(repoEn, prefs, {}, {}, {}, {}, {}, {}) }
+    @Test fun guideEnglish() = shot("en_fiche_massage", lang = "en") { GuideScreen(repoEn, prefs, "massage-cardiaque", {}, {}) }
+    @Test fun settingsEnglish() = shot("en_reglages", lang = "en") {
+        com.survive.app.ui.settings.SettingsScreen(prefs, {}, {})
+    }
+    @Test fun settingsFrench() = shot("reglages") { com.survive.app.ui.settings.SettingsScreen(prefs, {}, {}) }
     @Test fun home() = shot("home") { HomeScreen(repo, prefs, {}, {}, {}, {}, {}, {}) }
     @Test fun homeNightRed() = shot("home_nuit_rouge", ThemeMode.NIGHT_RED) { HomeScreen(repo, prefs, {}, {}, {}, {}, {}, {}) }
     @Test fun homeLight() = shot("home_clair", ThemeMode.LIGHT) { HomeScreen(repo, prefs, {}, {}, {}, {}, {}, {}) }
@@ -56,13 +67,13 @@ class ScreenshotTest {
     @Test fun morseListen() {
         org.robolectric.Shadows.shadowOf(ApplicationProvider.getApplicationContext<android.app.Application>())
             .grantPermissions(android.Manifest.permission.RECORD_AUDIO)
-        compose.setContent { SurviveTheme(mode = ThemeMode.DARK) { MorseScreen {} } }
+        compose.setContent { ProvideLanguage("fr") { SurviveTheme(mode = ThemeMode.DARK) { MorseScreen {} } } }
         compose.onNode(androidx.compose.ui.test.hasText("Écouter")).performClick()
         compose.onRoot().captureRoboImage("build/outputs/roborazzi/outil_morse_ecouter.png")
     }
 
     @Test fun morseTranslate() {
-        compose.setContent { SurviveTheme(mode = ThemeMode.DARK) { MorseScreen {} } }
+        compose.setContent { ProvideLanguage("fr") { SurviveTheme(mode = ThemeMode.DARK) { MorseScreen {} } } }
         compose.onNode(androidx.compose.ui.test.hasText("Traduire")).performClick()
         compose.onNode(androidx.compose.ui.test.hasSetTextAction()).performTextInput("... --- ... / .- .. -.. .")
         compose.onRoot().captureRoboImage("build/outputs/roborazzi/outil_morse_traduire.png")

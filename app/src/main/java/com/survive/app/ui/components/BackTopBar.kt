@@ -1,5 +1,7 @@
 package com.survive.app.ui.components
 
+import androidx.compose.ui.res.stringResource
+import com.survive.app.R
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.*
@@ -12,7 +14,7 @@ fun BackTopBar(title: String, onBack: () -> Unit) {
         title = { Text(title) },
         navigationIcon = {
             IconButton(onClick = onBack) {
-                Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Retour")
+                Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = stringResource(R.string.back))
             }
         },
     )

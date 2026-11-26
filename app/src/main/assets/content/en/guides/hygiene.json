@@ -1,0 +1,140 @@
+[
+  {
+    "id": "lavage-mains",
+    "title": "Washing your hands with little water",
+    "summary": "The first barrier against diarrhoea and infections.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Wash your hands before eating, cooking or giving care, and after using the toilet.",
+      "“Tippy tap” system: a hanging container with a small hole, tipped with your foot, saves a lot of water.",
+      "Lather for 20 seconds: palms, backs, between the fingers, nails.",
+      "Without water: hand sanitiser (except on very dirty hands)."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "hands",
+      "soap",
+      "cleanliness",
+      "disease"
+    ],
+    "sources": [
+      "OMS",
+      "CDC"
+    ],
+    "categoryId": "hygiene"
+  },
+  {
+    "id": "toilettes-sans-eau",
+    "title": "Toilets without running water",
+    "summary": "Prevent sewage from contaminating water and food.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "In a flat: empty the water from the bowl and line it with two strong bin bags.",
+      "After each use, cover with a little sawdust, cat litter, dry soil or ash to limit smells and flies.",
+      "Tie the bags closed and store them outdoors in a closed bin.",
+      "Outdoors: dig a hole 15 to 20 cm deep, at least 60 metres from any water source, and fill it in."
+    ],
+    "warnings": [
+      "Do not flush if the sewers are out of service (risk of backflow)."
+    ],
+    "tips": [],
+    "tags": [
+      "WC",
+      "toilet",
+      "sanitation",
+      "waste"
+    ],
+    "sources": [
+      "CDC",
+      "Leave No Trace"
+    ],
+    "categoryId": "hygiene"
+  },
+  {
+    "id": "diarrhee",
+    "title": "Diarrhoea and dehydration",
+    "summary": "Rehydrate above all, especially children and the elderly.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Drink often, in small sips.",
+      "Homemade rehydration solution (WHO): 1 litre of safe water + 6 level teaspoons of sugar + 1/2 level teaspoon of salt.",
+      "Keep eating light food (rice, banana, bread) as soon as possible.",
+      "Seek urgent care for blood in the stools, high fever, or signs of severe dehydration (drowsiness, no urine)."
+    ],
+    "warnings": [
+      "Follow the salt and sugar doses exactly: a solution that is too salty is dangerous.",
+      "Oral rehydration salts (ORS) sachets from the pharmacy are better: keep some in your kit."
+    ],
+    "tips": [],
+    "tags": [
+      "ORS",
+      "rehydration",
+      "gastro",
+      "vomiting"
+    ],
+    "sources": [
+      "OMS"
+    ],
+    "categoryId": "hygiene"
+  },
+  {
+    "id": "stress",
+    "title": "Managing stress and fear",
+    "summary": "Keeping a cool head is the first survival skill.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Stop: don't act in a rush.",
+      "Box breathing: breathe in for 4 seconds, hold for 4, breathe out for 4, hold for 4; repeat 4 times.",
+      "Observe: assess the situation, the dangers and your resources.",
+      "Plan: a short list of priorities (see the rule of 3), then act step by step.",
+      "Keep a routine (meals, sleep, tasks) and give everyone a role, children included.",
+      "Talk, stay together, limit exposure to anxiety-inducing news."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "panic",
+      "anxiety",
+      "fear",
+      "mental health",
+      "children"
+    ],
+    "sources": [
+      "FM 21-76",
+      "OMS"
+    ],
+    "categoryId": "hygiene"
+  },
+  {
+    "id": "dechets",
+    "title": "Managing waste without collection",
+    "summary": "Avoid rats, flies and disease.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Sort: food waste on one side, dry packaging on the other.",
+      "Tie food-waste bags tightly and store them outdoors, in a closed bin, in the shade.",
+      "Rinse and flatten packaging to reduce volume and smells.",
+      "Compost or bury peelings if a garden is available, away from water sources."
+    ],
+    "warnings": [
+      "Do not burn plastics (toxic fumes)."
+    ],
+    "tips": [],
+    "tags": [
+      "bin",
+      "rubbish",
+      "rats",
+      "waste"
+    ],
+    "sources": [
+      "OMS"
+    ],
+    "categoryId": "hygiene"
+  }
+]

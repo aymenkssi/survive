@@ -1,0 +1,110 @@
+[
+  {
+    "id": "noeud-chaise",
+    "title": "The bowline",
+    "summary": "A fixed loop that doesn't slip and is easy to untie, even after loading.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Make a small loop in the standing part, working end on top (“the rabbit hole”).",
+      "Pass the end of the rope up through this loop from underneath (“the rabbit comes out of the hole”).",
+      "Take the end around behind the standing part (“round the tree”).",
+      "Pass it back down into the small loop (“back down the hole”).",
+      "Tighten by pulling on the standing part while holding the big loop."
+    ],
+    "warnings": [],
+    "tips": [
+      "Leave a free end of at least 10 times the rope's diameter.",
+      "Used to hoist a person or make a loop around the waist."
+    ],
+    "tags": [
+      "loop",
+      "knot",
+      "hoist",
+      "rescue"
+    ],
+    "sources": [
+      "FM 3-97.61"
+    ],
+    "categoryId": "noeuds"
+  },
+  {
+    "id": "noeud-cabestan",
+    "title": "The clove hitch",
+    "summary": "Quickly tie a rope to a post or branch.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Wrap the rope once around the post.",
+      "Cross over the first turn and make a second turn.",
+      "Tuck the end under this second turn, between the rope and the post.",
+      "Tighten by pulling on both ends."
+    ],
+    "warnings": [
+      "It can slip if the load changes: back it up with two half hitches for a heavy load."
+    ],
+    "tips": [],
+    "tags": [
+      "tie",
+      "post",
+      "stake",
+      "knot"
+    ],
+    "sources": [
+      "FM 3-97.61"
+    ],
+    "categoryId": "noeuds"
+  },
+  {
+    "id": "noeud-tendeur",
+    "title": "The taut-line hitch (adjustable tension)",
+    "summary": "To tension a tarp or tent guy line and adjust it.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Pass the rope around the stake or tree.",
+      "With the end, make two turns around the standing part, towards the stake (inside the loop).",
+      "Make a third turn outside those two, on the opposite side.",
+      "Tighten: the knot slides when pushed, and locks under tension."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "tension",
+      "tarp",
+      "tent",
+      "guy line"
+    ],
+    "sources": [
+      "FM 3-97.61"
+    ],
+    "categoryId": "noeuds"
+  },
+  {
+    "id": "noeud-plat",
+    "title": "The reef knot (square knot)",
+    "summary": "Join two ropes of the same diameter or close a bandage.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Cross the right end over the left and tie a first overhand knot.",
+      "Cross the left end over the right and tie a second overhand knot.",
+      "Check: both ends come out on the same side, the knot is symmetrical.",
+      "Tighten."
+    ],
+    "warnings": [
+      "Never use it to support a person or a heavy load: it can come undone."
+    ],
+    "tips": [],
+    "tags": [
+      "join",
+      "bend",
+      "bandage",
+      "knot"
+    ],
+    "sources": [
+      "FM 3-97.61"
+    ],
+    "categoryId": "noeuds"
+  }
+]

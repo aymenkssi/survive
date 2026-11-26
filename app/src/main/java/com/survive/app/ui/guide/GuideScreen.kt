@@ -1,5 +1,7 @@
 package com.survive.app.ui.guide
 
+import androidx.compose.ui.res.stringResource
+import com.survive.app.R
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
@@ -33,7 +35,7 @@ fun GuideScreen(
     onTool: (String) -> Unit,
     onBack: () -> Unit,
 ) {
-    val guide = remember(guideId) { repository.guide(guideId) }
+    val guide = remember(guideId, repository) { repository.guide(guideId) }
     val favorites by prefs.favorites.collectAsState()
     val checked by prefs.checked.collectAsState()
     val isFavorite = guideId in favorites
@@ -41,15 +43,15 @@ fun GuideScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text(guide?.title ?: "Fiche introuvable", maxLines = 2) },
+                title = { Text(guide?.title ?: stringResource(R.string.guide_not_found), maxLines = 2) },
                 navigationIcon = {
-                    IconButton(onClick = onBack) { Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Retour") }
+                    IconButton(onClick = onBack) { Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = stringResource(R.string.back)) }
                 },
                 actions = {
                     if (guide != null) IconButton(onClick = { prefs.toggleFavorite(guideId) }) {
                         Icon(
                             if (isFavorite) Icons.Filled.Star else Icons.Filled.StarBorder,
-                            contentDescription = if (isFavorite) "Retirer des favoris" else "Ajouter aux favoris",
+                            contentDescription = stringResource(if (isFavorite) R.string.fav_remove else R.string.fav_add),
                             tint = if (isFavorite) MaterialTheme.colorScheme.secondary else MaterialTheme.colorScheme.onSurface,
                         )
                     }
@@ -69,47 +71,47 @@ fun GuideScreen(
                 Button(onClick = { onTool(tool.id) }, modifier = Modifier.fillMaxWidth().height(56.dp)) {
                     Icon(tool.icon, contentDescription = null)
                     Spacer(Modifier.width(8.dp))
-                    Text("Ouvrir l'outil : ${tool.title}", fontWeight = FontWeight.Bold)
+                    Text(stringResource(R.string.open_tool, stringResource(tool.title)), fontWeight = FontWeight.Bold)
                 }
             }
 
             if (guide.warnings.isNotEmpty()) {
                 Surface(color = MaterialTheme.colorScheme.error.copy(alpha = 0.15f), shape = MaterialTheme.shapes.medium) {
                     Column(Modifier.padding(12.dp).fillMaxWidth()) {
-                        Text("⚠ Attention", fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.error)
+                        Text(stringResource(R.string.warning), fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.error)
                         guide.warnings.forEach { Text("• $it", style = MaterialTheme.typography.bodyMedium) }
                     }
                 }
             }
 
             if (guide.materials.isNotEmpty()) {
-                Section("Matériel")
+                Section(stringResource(R.string.materials))
                 guide.materials.forEach { Text("• $it") }
             }
 
             if (guide.checklist) {
                 val done = guide.steps.indices.count { "$guideId#$it" in checked }
                 Row(verticalAlignment = Alignment.CenterVertically) {
-                    Section("Liste ($done/${guide.steps.size})")
+                    Section(stringResource(R.string.checklist_progress, done, guide.steps.size))
                     Spacer(Modifier.weight(1f))
-                    TextButton(onClick = { prefs.resetChecklist(guideId) }) { Text("Tout décocher") }
+                    TextButton(onClick = { prefs.resetChecklist(guideId) }) { Text(stringResource(R.string.uncheck_all)) }
                 }
                 guide.steps.forEachIndexed { i, step ->
                     CheckRow(step, "$guideId#$i" in checked) { prefs.toggleChecked(guideId, i) }
                 }
             } else {
-                Section("Étapes")
+                Section(stringResource(R.string.steps))
                 guide.steps.forEachIndexed { i, step -> StepRow(i + 1, step) }
             }
 
             if (guide.tips.isNotEmpty()) {
-                Section("Astuces")
+                Section(stringResource(R.string.tips))
                 guide.tips.forEach { Text("💡 $it") }
             }
 
             if (guide.sources.isNotEmpty()) {
                 Text(
-                    "Sources : " + guide.sources.joinToString(" · "),
+                    stringResource(R.string.sources, guide.sources.joinToString(" · ")),
                     style = MaterialTheme.typography.labelSmall,
                     color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.6f),
                 )

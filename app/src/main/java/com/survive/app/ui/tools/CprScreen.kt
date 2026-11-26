@@ -1,5 +1,7 @@
 package com.survive.app.ui.tools
 
+import androidx.compose.ui.res.stringResource
+import com.survive.app.R
 import androidx.compose.animation.core.Animatable
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -55,18 +57,15 @@ fun CprScreen(onBack: () -> Unit) {
         }
     }
 
-    Scaffold(topBar = { BackTopBar("Massage cardiaque", onBack) }) { padding ->
+    Scaffold(topBar = { BackTopBar(stringResource(R.string.tool_cpr), onBack) }) { padding ->
         Column(
             Modifier.padding(padding).padding(16.dp).fillMaxSize(),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.spacedBy(16.dp),
         ) {
             Column(Modifier.fillMaxWidth()) {
-                listOf(
-                    "1. Faites appeler le 112 et chercher un défibrillateur",
-                    "2. Mains au centre de la poitrine, bras tendus",
-                    "3. Appuyez à chaque bip, enfoncez de 5 à 6 cm",
-                ).forEach { Text(it, style = MaterialTheme.typography.bodyLarge) }
+                listOf(R.string.cpr_step1, R.string.cpr_step2, R.string.cpr_step3)
+                    .forEach { Text(stringResource(it), style = MaterialTheme.typography.bodyLarge) }
             }
             Box(Modifier.weight(1f).fillMaxWidth(), contentAlignment = Alignment.Center) {
                 Box(
@@ -75,7 +74,7 @@ fun CprScreen(onBack: () -> Unit) {
                     contentAlignment = Alignment.Center,
                 ) {
                     Text(
-                        when { !running -> "$BPM/min"; breathing -> "2 souffles"; else -> "$count" },
+                        when { !running -> stringResource(R.string.bpm, BPM); breathing -> stringResource(R.string.cpr_breaths); else -> "$count" },
                         style = MaterialTheme.typography.displaySmall,
                         color = MaterialTheme.colorScheme.onPrimary, fontWeight = FontWeight.Bold,
                     )
@@ -84,17 +83,17 @@ fun CprScreen(onBack: () -> Unit) {
             if (running) {
                 val m = elapsedSec / 60
                 val s = elapsedSec % 60
-                Text("Durée : %d:%02d".format(m, s), style = MaterialTheme.typography.titleLarge)
+                Text(stringResource(R.string.duration, m, s), style = MaterialTheme.typography.titleLarge)
                 if (elapsedSec >= 120 && elapsedSec % 120 < 10) {
-                    Text("Si possible, changez de sauveteur maintenant (toutes les 2 min).", color = MaterialTheme.colorScheme.error)
+                    Text(stringResource(R.string.cpr_switch), color = MaterialTheme.colorScheme.error)
                 }
             }
-            SwitchRow("Avec insufflations (30 compressions : 2 souffles) – si vous êtes formé", withBreaths, enabled = !running) { withBreaths = it }
+            SwitchRow(stringResource(R.string.cpr_with_breaths), withBreaths, enabled = !running) { withBreaths = it }
             Button(onClick = { running = !running; breathing = false }, modifier = Modifier.fillMaxWidth().height(72.dp)) {
-                Text(if (running) "ARRÊTER" else "DÉMARRER", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
+                Text(stringResource(if (running) R.string.stop_caps else R.string.start_caps), style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
             }
             Text(
-                "Ne vous arrêtez pas avant l'arrivée des secours, la reprise d'une respiration normale ou l'arrivée d'un défibrillateur (suivez alors ses instructions).",
+                stringResource(R.string.cpr_footer),
                 style = MaterialTheme.typography.bodySmall, textAlign = TextAlign.Center,
             )
         }

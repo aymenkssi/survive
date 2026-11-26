@@ -1,5 +1,7 @@
 package com.survive.app.ui.tools
 
+import androidx.compose.ui.res.stringResource
+import com.survive.app.R
 import android.Manifest
 import android.annotation.SuppressLint
 import android.content.pm.PackageManager
@@ -49,11 +51,11 @@ private fun pretty(code: String) = code.replace(".", "•").replace("-", "—")
 fun MorseScreen(onBack: () -> Unit) {
     var tab by rememberSaveable { mutableIntStateOf(0) }
     KeepScreenOn()
-    Scaffold(topBar = { BackTopBar("Morse", onBack) }) { padding ->
+    Scaffold(topBar = { BackTopBar(stringResource(R.string.tool_morse), onBack) }) { padding ->
         Column(Modifier.padding(padding)) {
             TabRow(selectedTabIndex = tab) {
-                listOf("Émettre", "Écouter", "Traduire").forEachIndexed { i, label ->
-                    Tab(selected = tab == i, onClick = { tab = i }, text = { Text(label) })
+                listOf(R.string.tab_send, R.string.tab_listen, R.string.tab_translate).forEachIndexed { i, label ->
+                    Tab(selected = tab == i, onClick = { tab = i }, text = { Text(stringResource(label)) })
                 }
             }
             when (tab) {
@@ -92,7 +94,7 @@ private fun EmitTab() {
             Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
                 OutlinedTextField(
                     value = text, onValueChange = { text = it.take(80) },
-                    label = { Text("Message") }, singleLine = true, modifier = Modifier.fillMaxWidth(),
+                    label = { Text(stringResource(R.string.message)) }, singleLine = true, modifier = Modifier.fillMaxWidth(),
                 )
                 Text(pretty(code).ifEmpty { "—" }, fontFamily = FontFamily.Monospace, style = MaterialTheme.typography.headlineSmall)
                 Row(verticalAlignment = Alignment.CenterVertically) {
@@ -117,12 +119,12 @@ private fun EmitTab() {
                             }
                         },
                         modifier = Modifier.weight(1f).height(56.dp),
-                    ) { Text(if (playing) "Arrêter" else "Émettre", fontWeight = FontWeight.Bold) }
+                    ) { Text(stringResource(if (playing) R.string.stop else R.string.send), fontWeight = FontWeight.Bold) }
                 }
-                SwitchRow("Flash", useTorch, enabled = torch.available) { useTorch = it }
-                SwitchRow("Son", useSound) { useSound = it }
-                SwitchRow("Vitesse lente (plus lisible de loin)", slow) { slow = it }
-                Text("Alphabet", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
+                SwitchRow(stringResource(R.string.flash), useTorch, enabled = torch.available) { useTorch = it }
+                SwitchRow(stringResource(R.string.sound), useSound) { useSound = it }
+                SwitchRow(stringResource(R.string.slow), slow) { slow = it }
+                Text(stringResource(R.string.alphabet), style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
             }
         }
         items(Morse.table.entries.toList()) { (c, m) ->
@@ -157,6 +159,7 @@ private fun ListenTab() {
     var wpm by remember { mutableIntStateOf(0) }
     var error by remember { mutableStateOf<String?>(null) }
 
+    val micError = stringResource(R.string.mic_error)
     LaunchedEffect(listening, decoder) {
         if (!listening) return@LaunchedEffect
         error = null
@@ -164,7 +167,7 @@ private fun ListenTab() {
         withContext(Dispatchers.Default) {
             val recorder = openRecorder()
             if (recorder == null) {
-                withContext(Dispatchers.Main) { error = "Impossible d'ouvrir le micro."; listening = false }
+                withContext(Dispatchers.Main) { error = micError; listening = false }
                 return@withContext
             }
             val tracker = SignalTracker(10, dec)
@@ -196,10 +199,9 @@ private fun ListenTab() {
         verticalArrangement = Arrangement.spacedBy(14.dp),
     ) {
         if (!granted) {
-            Text("Pour écouter des signaux Morse, Survive a besoin du micro. Le son est analysé sur le téléphone, " +
-                "en direct : rien n'est enregistré ni envoyé.")
+            Text(stringResource(R.string.mic_explain))
             Button(onClick = { askPermission.launch(Manifest.permission.RECORD_AUDIO) }, modifier = Modifier.fillMaxWidth().height(56.dp)) {
-                Text("Autoriser le micro", fontWeight = FontWeight.Bold)
+                Text(stringResource(R.string.allow_mic), fontWeight = FontWeight.Bold)
             }
             return@Column
         }
@@ -211,23 +213,23 @@ private fun ListenTab() {
                 LinearProgressIndicator(progress = { if (listening) level else 0f }, modifier = Modifier.fillMaxWidth())
                 Spacer(Modifier.height(4.dp))
                 Text(
-                    if (listening && wpm > 0) "Vitesse estimée : $wpm mots/min" else "Niveau du signal",
+                    if (listening && wpm > 0) stringResource(R.string.speed_estimated, wpm) else stringResource(R.string.signal_level),
                     style = MaterialTheme.typography.labelMedium,
                 )
             }
         }
 
         Button(onClick = { listening = !listening }, modifier = Modifier.fillMaxWidth().height(64.dp)) {
-            Text(if (listening) "ARRÊTER L'ÉCOUTE" else "ÉCOUTER", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
+            Text(stringResource(if (listening) R.string.listen_stop else R.string.listen_start), style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
         }
         error?.let { Text(it, color = MaterialTheme.colorScheme.error) }
 
         Surface(color = MaterialTheme.colorScheme.surfaceVariant, shape = MaterialTheme.shapes.medium, modifier = Modifier.fillMaxWidth()) {
             Column(Modifier.padding(16.dp).heightIn(min = 120.dp)) {
-                Text("Message reçu", style = MaterialTheme.typography.labelMedium)
+                Text(stringResource(R.string.received), style = MaterialTheme.typography.labelMedium)
                 Spacer(Modifier.height(6.dp))
                 Text(
-                    text.ifEmpty { if (listening) "En attente de signaux…" else "—" },
+                    text.ifEmpty { if (listening) stringResource(R.string.waiting_signals) else "—" },
                     style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold,
                 )
                 if (pending.isNotEmpty()) {
@@ -237,11 +239,10 @@ private fun ListenTab() {
             }
         }
         OutlinedButton(onClick = { decoder = MorseDecoder(); text = ""; pending = "" }, modifier = Modifier.fillMaxWidth()) {
-            Text("Effacer")
+            Text(stringResource(R.string.clear))
         }
         Text(
-            "Approchez le téléphone de la source du son (sifflet, klaxon, radio, autre téléphone) et limitez les bruits autour. " +
-                "La vitesse est détectée automatiquement. Un « ? » signale une lettre mal reçue.",
+            stringResource(R.string.listen_help),
             style = MaterialTheme.typography.bodySmall,
         )
     }
@@ -267,11 +268,11 @@ private fun TranslateTab() {
         Modifier.verticalScroll(rememberScrollState()).padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp),
     ) {
-        Text("Tapez le code avec les touches ou le clavier : un espace entre les lettres, « / » entre les mots.",
+        Text(stringResource(R.string.translate_help),
             style = MaterialTheme.typography.bodyMedium)
         OutlinedTextField(
             value = code, onValueChange = { code = it.take(400) },
-            label = { Text("Code Morse") }, modifier = Modifier.fillMaxWidth(),
+            label = { Text(stringResource(R.string.morse_code)) }, modifier = Modifier.fillMaxWidth(),
             textStyle = MaterialTheme.typography.titleLarge.copy(fontFamily = FontFamily.Monospace),
         )
         Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -279,17 +280,17 @@ private fun TranslateTab() {
             KeyButton("—", Modifier.weight(1f)) { code += "-" }
         }
         Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-            KeyButton("Lettre", Modifier.weight(1f)) { code += " " }
-            KeyButton("Mot /", Modifier.weight(1f)) { code += " / " }
+            KeyButton(stringResource(R.string.key_letter), Modifier.weight(1f)) { code += " " }
+            KeyButton(stringResource(R.string.key_word), Modifier.weight(1f)) { code += " / " }
             KeyButton("⌫", Modifier.weight(1f)) { code = code.trimEnd().dropLast(1).let { if (it.endsWith(" /")) it.dropLast(2) else it } }
         }
         Surface(color = MaterialTheme.colorScheme.surfaceVariant, shape = MaterialTheme.shapes.medium, modifier = Modifier.fillMaxWidth()) {
             Column(Modifier.padding(16.dp)) {
-                Text("Traduction", style = MaterialTheme.typography.labelMedium)
+                Text(stringResource(R.string.translation), style = MaterialTheme.typography.labelMedium)
                 Text(translation.ifEmpty { "—" }, style = MaterialTheme.typography.headlineMedium, fontWeight = FontWeight.Bold)
             }
         }
-        OutlinedButton(onClick = { code = "" }, modifier = Modifier.fillMaxWidth()) { Text("Effacer") }
+        OutlinedButton(onClick = { code = "" }, modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.clear)) }
     }
 }
 

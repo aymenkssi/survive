@@ -16,22 +16,23 @@ fun interface ContentSource {
  * Charge tout le contenu embarqué en mémoire (quelques centaines de Ko au plus),
  * puis répond aux requêtes sans aucun accès réseau ni disque supplémentaire.
  *
- * Organisation des fichiers (dans assets/) :
- *   content/categories.json          -> List<Category>
- *   content/guides/<categoryId>.json -> List<Guide>
+ * Organisation des fichiers (dans assets/), une arborescence par langue ("fr", "en") :
+ *   content/<lang>/categories.json          -> List<Category>
+ *   content/<lang>/guides/<categoryId>.json -> List<Guide>
+ * Les identifiants sont les mêmes dans toutes les langues (favoris et cases cochées restent valables).
  */
-class ContentRepository(private val source: ContentSource) {
+class ContentRepository(private val source: ContentSource, val lang: String = "fr") {
 
     private val json = Json { ignoreUnknownKeys = true }
 
     val categories: List<Category> by lazy {
-        json.decodeFromString<List<Category>>(source.read("content/categories.json"))
+        json.decodeFromString<List<Category>>(source.read("content/$lang/categories.json"))
             .sortedBy { it.order }
     }
 
     val guides: List<Guide> by lazy {
         categories.flatMap { cat ->
-            json.decodeFromString<List<Guide>>(source.read("content/guides/${cat.id}.json"))
+            json.decodeFromString<List<Guide>>(source.read("content/$lang/guides/${cat.id}.json"))
         }
     }
 

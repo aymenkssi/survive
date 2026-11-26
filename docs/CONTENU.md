@@ -2,7 +2,9 @@
 
 ## Format d'une fiche
 
-Fichier `app/src/main/assets/content/guides/<categoryId>.json` (tableau de fiches) :
+Fichier `app/src/main/assets/content/<lang>/guides/<categoryId>.json` (tableau de fiches), avec `<lang>` = `fr` ou `en`.
+**Toute fiche existe dans les deux langues**, avec le même `id`, la même catégorie, la même priorité, les mêmes sources
+et le même nombre d'étapes, d'avertissements, d'astuces et de matériel (le test le vérifie). Seuls les textes et les `tags` changent.
 
 ```json
 {
@@ -31,7 +33,9 @@ Fichier `app/src/main/assets/content/guides/<categoryId>.json` (tableau de fiche
 3. **Les dangers en `warnings`**, pas noyés dans les étapes.
 4. **Reformuler** les sources, ne jamais copier un texte protégé.
 5. **Premiers secours** : se conformer aux recommandations ERC / PSC1 en vigueur ; toute fiche médicale doit être relue par une personne formée (secouriste, soignant) avant publication.
-6. Ajouter des **tags** avec les mots du langage courant (« s'étrangler », « gastro »…).
+6. Ajouter des **tags** avec les mots du langage courant (« s'étrangler », « gastro »…), dans chaque langue.
+7. En anglais, donner les numéros d'urgence sous la forme « 112 / 911 » (Europe / Amérique du Nord) ; garder les
+   précisions propres à la France en les signalant comme telles (« in France, … »).
 
 ## État de la collecte
 
@@ -55,6 +59,6 @@ Toutes les fiches de premiers secours (thème `secours`) doivent être **relues 
 
 ## Ajouter une fiche
 
-1. Ajouter l'objet JSON dans le fichier de la thématique.
+1. Ajouter l'objet JSON dans le fichier de la thématique, en français (`content/fr/`) ET en anglais (`content/en/`).
 2. Si la source est nouvelle, l'ajouter dans `docs/SOURCES.md`.
 3. Lancer `./gradlew test` : le test vérifie identifiants, catégories, étapes et sources.

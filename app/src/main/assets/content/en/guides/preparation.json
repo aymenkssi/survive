@@ -1,0 +1,155 @@
+[
+  {
+    "id": "kit-72h",
+    "title": "The 72-hour emergency kit",
+    "summary": "What you need to last 3 days on your own: the official recommendation.",
+    "priority": "critique",
+    "materials": [],
+    "steps": [
+      "Water: at least 6 litres per person (2 L per day).",
+      "Non-perishable food for 3 days, manual can opener.",
+      "Battery or hand-crank radio, torch or headlamp, spare batteries.",
+      "First-aid kit and usual medicines (with prescriptions).",
+      "Charged power bank and cables.",
+      "Multi-tool, whistle, lighter, space blanket.",
+      "Warm clothes, gloves, masks, toiletries.",
+      "Spare keys, cash in small notes.",
+      "Paper copies of important documents and a list of useful numbers.",
+      "What children (nappies, milk) and pets need."
+    ],
+    "warnings": [],
+    "tips": [
+      "Check the kit every 6 months: expiry dates, batteries, power bank.",
+      "One backpack per person, ready by the door."
+    ],
+    "tags": [
+      "bag",
+      "kit",
+      "72 hours",
+      "list",
+      "equipment",
+      "go bag"
+    ],
+    "sources": [
+      "Gouv.fr - Je me prépare",
+      "FEMA Ready.gov"
+    ],
+    "categoryId": "preparation",
+    "checklist": true
+  },
+  {
+    "id": "preparer-telephone",
+    "title": "Prepare your phone before the outage",
+    "summary": "What to download while the Internet still works.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Download offline maps of your area (e.g. Organic Maps, OsmAnd, or Google Maps offline maps).",
+      "Install and test a messaging app that works without Internet (see “Messaging without Internet”).",
+      "Save useful documents locally (photos of ID, prescriptions).",
+      "Write important numbers down on paper.",
+      "Keep this app installed: all its content works without a network."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "smartphone",
+      "offline maps",
+      "app",
+      "download"
+    ],
+    "sources": [
+      "Gouv.fr - Je me prépare"
+    ],
+    "categoryId": "preparation"
+  },
+  {
+    "id": "trousse-secours",
+    "title": "Putting together a first-aid kit",
+    "summary": "The basics to treat minor injuries.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Sterile compresses, plasters of various sizes, crepe bandage.",
+      "Antiseptic, saline solution.",
+      "Disposable gloves, scissors, tweezers.",
+      "Space blanket.",
+      "Paracetamol, and your personal medication for several days.",
+      "Oral rehydration salts (ORS).",
+      "Tourniquet if you are trained to use it."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "pharmacy",
+      "bandage",
+      "medicines"
+    ],
+    "sources": [
+      "Croix-Rouge"
+    ],
+    "categoryId": "preparation",
+    "checklist": true
+  },
+  {
+    "id": "kit-voiture",
+    "title": "The car emergency kit",
+    "summary": "For being stuck on the road, a breakdown or an evacuation.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Water (a few litres) and non-perishable snacks.",
+      "Space blankets and a warm blanket.",
+      "Headlamp and batteries.",
+      "USB charging cable and cigarette-lighter adapter.",
+      "First-aid kit.",
+      "High-visibility vest and warning triangle.",
+      "Folding shovel, ice scraper, snow chains in winter.",
+      "Jump leads.",
+      "Paper road map of the area."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "car",
+      "vehicle",
+      "boot",
+      "trunk",
+      "road"
+    ],
+    "sources": [
+      "FEMA Ready.gov",
+      "Gouv.fr - Je me prépare"
+    ],
+    "checklist": true,
+    "categoryId": "preparation"
+  },
+  {
+    "id": "documents",
+    "title": "Documents to prepare",
+    "summary": "To prove your identity and get treatment when nothing is available online.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Photocopies of ID cards, passports, family records.",
+      "Prescriptions, health insurance cards, vaccination records, blood group.",
+      "Insurance contracts (home, car) and their numbers.",
+      "Paper list of important numbers (family, doctor, neighbours, employer).",
+      "Spare keys.",
+      "Keep everything in a waterproof pouch in your emergency kit."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "papers",
+      "identity",
+      "prescription",
+      "insurance"
+    ],
+    "sources": [
+      "Gouv.fr - Je me prépare"
+    ],
+    "checklist": true,
+    "categoryId": "preparation"
+  }
+]

@@ -1,0 +1,426 @@
+[
+  {
+    "id": "alerter-secours",
+    "title": "Calling for help",
+    "summary": "Who to call and what to say so that help arrives quickly.",
+    "priority": "critique",
+    "materials": [],
+    "steps": [
+      "Protect yourself and the victim from further accidents.",
+      "Call 112 (emergency number in Europe, also redirected in many other countries) or 911 in North America; in France also 15 (medical), 18 (fire), 17 (police), 114 by text for deaf or hard-of-hearing people.",
+      "Give: the exact location, what happened, the number of victims, their condition (breathing? conscious?).",
+      "Never hang up first: wait for instructions."
+    ],
+    "warnings": [],
+    "tips": [
+      "112 goes through any available mobile network, even another operator's.",
+      "If the network is saturated, a text message often gets through better than a call."
+    ],
+    "tags": [
+      "call",
+      "112",
+      "911",
+      "emergency number"
+    ],
+    "sources": [
+      "Croix-Rouge",
+      "Gouv.fr - Gestes qui sauvent"
+    ],
+    "categoryId": "secours"
+  },
+  {
+    "id": "massage-cardiaque",
+    "title": "Cardiac arrest: CPR",
+    "summary": "A person is unresponsive and not breathing normally: every minute counts.",
+    "priority": "critique",
+    "materials": [],
+    "steps": [
+      "Check: the person does not react when you talk to them and shake their shoulders, and is not breathing normally.",
+      "Have someone call 112 / 911 and ask for a defibrillator (AED).",
+      "Lay the person on their back on a hard surface.",
+      "Hands one on top of the other in the centre of the chest, arms straight.",
+      "Push hard: press down 5 to 6 cm, at a rate of 100 to 120 compressions per minute.",
+      "If you are trained: 30 compressions then 2 rescue breaths. Otherwise, continuous chest compressions only.",
+      "As soon as the defibrillator arrives, switch it on and follow its voice instructions.",
+      "Keep going without stopping until rescuers take over or normal breathing returns."
+    ],
+    "warnings": [
+      "Don't be afraid of doing it wrong: without CPR, the chances of survival drop very quickly."
+    ],
+    "tips": [
+      "Rhythm: the beat of the song “Stayin' Alive” is about 100 compressions per minute."
+    ],
+    "tags": [
+      "CPR",
+      "resuscitation",
+      "cardiac arrest",
+      "unconscious",
+      "defibrillator",
+      "AED"
+    ],
+    "sources": [
+      "ERC 2021",
+      "Croix-Rouge"
+    ],
+    "categoryId": "secours",
+    "tool": "cpr"
+  },
+  {
+    "id": "hemorragie",
+    "title": "Stop severe bleeding",
+    "summary": "Blood is flowing heavily: apply pressure immediately.",
+    "priority": "critique",
+    "materials": [
+      "Clean cloth or compresses",
+      "Gloves or plastic bag",
+      "Tourniquet (or belt/wide strip + stick)"
+    ],
+    "steps": [
+      "Lay the victim down.",
+      "Press hard directly on the wound, with a protected hand (glove, plastic bag) or a clean cloth.",
+      "Keep the pressure on without letting go; add cloth on top if blood soaks through, without removing the first one.",
+      "Replace your hand with a tight pressure bandage if possible.",
+      "Call 112 / 911.",
+      "On a limb, if pressure is not enough: tourniquet 5 to 7 cm above the wound, tightened until the bleeding stops; note the time it was applied."
+    ],
+    "warnings": [
+      "Never loosen or remove a tourniquet once applied: that is the rescuers' job.",
+      "Do not remove an object stuck in the wound: apply pressure around it."
+    ],
+    "tips": [],
+    "tags": [
+      "bleeding",
+      "blood",
+      "tourniquet",
+      "wound"
+    ],
+    "sources": [
+      "ERC 2021",
+      "Croix-Rouge"
+    ],
+    "categoryId": "secours"
+  },
+  {
+    "id": "etouffement",
+    "title": "Choking (adult)",
+    "summary": "The person can no longer speak, cough or breathe.",
+    "priority": "critique",
+    "materials": [],
+    "steps": [
+      "If they are coughing effectively: encourage them to cough, do nothing else.",
+      "If they can no longer cough or speak: lean them forward and give up to 5 firm back blows between the shoulder blades.",
+      "If that fails: up to 5 abdominal thrusts (stand behind, fist above the navel, pull hard towards you and upwards).",
+      "Alternate 5 blows and 5 thrusts until the object comes out.",
+      "If they lose consciousness: call 112 / 911 and start CPR."
+    ],
+    "warnings": [
+      "For pregnant or obese people, thrusts are given on the chest, not the abdomen.",
+      "The technique is different for infants: get specific training."
+    ],
+    "tips": [],
+    "tags": [
+      "choking",
+      "Heimlich",
+      "swallowed the wrong way"
+    ],
+    "sources": [
+      "ERC 2021"
+    ],
+    "categoryId": "secours"
+  },
+  {
+    "id": "pls",
+    "title": "Recovery position",
+    "summary": "An unconscious person who is breathing: put them on their side to protect their airway.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Check that they are breathing normally.",
+      "Place the arm nearest to you at a right angle, palm up.",
+      "Bring the other hand against their cheek, on your side, and hold it there.",
+      "Raise the far leg, knee bent, foot on the ground.",
+      "Pull on the knee to roll the person towards you.",
+      "Adjust the leg to stabilise them, open the mouth, check breathing regularly."
+    ],
+    "warnings": [
+      "If breathing stops: roll them onto their back and start CPR."
+    ],
+    "tips": [],
+    "tags": [
+      "unconscious",
+      "fainted",
+      "position"
+    ],
+    "sources": [
+      "Croix-Rouge"
+    ],
+    "categoryId": "secours"
+  },
+  {
+    "id": "brulure",
+    "title": "Burns",
+    "summary": "Cool immediately, for a long time, with lukewarm water.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Cool under lukewarm running water (15 to 25 °C) for at least 10 minutes, ideally 20.",
+      "Remove rings, watches and clothing around the burn if they are not stuck.",
+      "Cover with cling film or a clean, lint-free cloth.",
+      "Call for help if the burn is larger than half the victim's palm, affects the face, hands or genitals, or if the victim is a child."
+    ],
+    "warnings": [
+      "No ice, butter, toothpaste or oil.",
+      "Do not burst blisters.",
+      "Save water: in a shortage, non-drinkable but clear water can be used for cooling."
+    ],
+    "tips": [],
+    "tags": [
+      "burn",
+      "blister",
+      "scald"
+    ],
+    "sources": [
+      "ERC 2021",
+      "Croix-Rouge"
+    ],
+    "categoryId": "secours"
+  },
+  {
+    "id": "hypothermie",
+    "title": "Hypothermia",
+    "summary": "The body is getting dangerously cold: shivering, confusion, clumsiness.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Get the person out of the wind and insulate them from the ground (cardboard, branches, bag).",
+      "Replace wet clothes with dry ones.",
+      "Cover the whole body, head included (space blanket, sleeping bag).",
+      "If they are conscious and swallowing well: hot, sweet drinks.",
+      "Handle them gently and call for help if they are confused or have stopped shivering."
+    ],
+    "warnings": [
+      "No alcohol.",
+      "Do not rub the limbs.",
+      "A person who stops shivering while still cold is in serious danger."
+    ],
+    "tips": [],
+    "tags": [
+      "cold",
+      "frozen",
+      "shivering"
+    ],
+    "sources": [
+      "FM 21-76",
+      "Croix-Rouge"
+    ],
+    "categoryId": "secours"
+  },
+  {
+    "id": "avc",
+    "title": "Recognising a stroke",
+    "summary": "Face, arms, speech: at the slightest sign, call immediately.",
+    "priority": "critique",
+    "materials": [],
+    "steps": [
+      "Face: ask them to smile; is the mouth drooping on one side?",
+      "Arms: ask them to raise both arms; does one drift down?",
+      "Speech: ask them to repeat a simple sentence; are the words confused or slurred?",
+      "At the slightest of these signs: call 112 / 911 immediately.",
+      "Note the time the symptoms started: it determines which treatment is possible.",
+      "Lay the person down or make them comfortable, give them nothing to eat or drink."
+    ],
+    "warnings": [
+      "Even if the signs go away, call anyway: it is often the warning of a severe stroke."
+    ],
+    "tips": [],
+    "tags": [
+      "stroke",
+      "paralysis",
+      "FAST",
+      "speech"
+    ],
+    "sources": [
+      "Santé publique France",
+      "ERC 2021"
+    ],
+    "categoryId": "secours"
+  },
+  {
+    "id": "allergie-grave",
+    "title": "Severe allergic reaction",
+    "summary": "Swelling of the face, difficulty breathing after a sting, a food or a medicine.",
+    "priority": "critique",
+    "materials": [],
+    "steps": [
+      "Call 112 / 911.",
+      "If the person has an adrenaline auto-injector: help them use it on the outer thigh (through clothing if needed).",
+      "Sit them up if they are struggling to breathe, lay them down with legs raised if they are pale or weak.",
+      "If there is no improvement after 5 minutes and a second injector is available: give a second injection.",
+      "Monitor breathing; if it stops, start CPR."
+    ],
+    "warnings": [
+      "Do not make the person walk or stand up suddenly."
+    ],
+    "tips": [],
+    "tags": [
+      "anaphylaxis",
+      "swelling",
+      "adrenaline",
+      "epinephrine",
+      "EpiPen",
+      "wasp sting"
+    ],
+    "sources": [
+      "ERC 2021"
+    ],
+    "categoryId": "secours"
+  },
+  {
+    "id": "asthme",
+    "title": "Asthma attack",
+    "summary": "Wheezing, difficulty breathing out.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Sit the person up, leaning slightly forward, and reassure them.",
+      "Help them take their reliever treatment (bronchodilator inhaler, often blue) as prescribed.",
+      "Loosen clothing, move them away from smoke, dust or cold.",
+      "Call 112 / 911 if the attack does not ease, if they can no longer speak or if their lips turn blue."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "breathing",
+      "inhaler",
+      "Ventolin",
+      "breathless"
+    ],
+    "sources": [
+      "ERC 2021"
+    ],
+    "categoryId": "secours"
+  },
+  {
+    "id": "fracture",
+    "title": "Fracture, sprain, dislocation",
+    "summary": "Do not move the limb, immobilise it as it is.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Do not try to put the limb back in place or straighten it.",
+      "Immobilise it in the position found: wedge it with rolled-up clothes, or tie it to a splint (stick, cardboard, rolled magazine) covering the joint above and below.",
+      "For an arm: a sling made from a scarf or a T-shirt.",
+      "Open fracture (bone visible): cover with a clean cloth without pressing on the bone, stop the bleeding around it.",
+      "Apply cold wrapped in cloth for sprains and pain, 20 minutes maximum.",
+      "Have someone call for help or get to a health professional."
+    ],
+    "warnings": [
+      "Suspected back or neck injury (fall from height, accident): do not move the victim unless in immediate danger, ask them not to move their head."
+    ],
+    "tips": [],
+    "tags": [
+      "broken bone",
+      "splint",
+      "sprain",
+      "ankle",
+      "wrist"
+    ],
+    "sources": [
+      "Croix-Rouge",
+      "ERC 2021"
+    ],
+    "categoryId": "secours"
+  },
+  {
+    "id": "coup-de-chaleur",
+    "title": "Heatstroke",
+    "summary": "Burning skin, headache, confusion: cool them without waiting.",
+    "priority": "critique",
+    "materials": [],
+    "steps": [
+      "Move the person into the shade or somewhere cool, lay them down.",
+      "Call 112 / 911 if they are confused, vomiting or lose consciousness.",
+      "Remove unnecessary clothing, spray them with cool water and fan them continuously.",
+      "Place wet cloths on the neck, armpits and groin.",
+      "If they are fully conscious: give them cool water in small sips."
+    ],
+    "warnings": [
+      "Give nothing to drink to an unconscious or confused person: recovery position if they are breathing."
+    ],
+    "tips": [],
+    "tags": [
+      "heat",
+      "sunstroke",
+      "hyperthermia",
+      "fever"
+    ],
+    "sources": [
+      "ERC 2021",
+      "Santé publique France"
+    ],
+    "categoryId": "secours"
+  },
+  {
+    "id": "morsures",
+    "title": "Bites and stings",
+    "summary": "Dog, snake, tick, wasp: the right actions.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Animal bite: wash thoroughly with soap and water for 5 minutes, disinfect, and see a doctor (risk of infection and rabies).",
+      "Snake bite: stay calm and still, lay the victim down, remove rings and bracelets, immobilise the limb, call 112 / 911.",
+      "Tick: remove it as soon as possible with a tick remover by twisting, without crushing it, then disinfect; watch for a red patch spreading in the following weeks and see a doctor if it appears.",
+      "Wasp or bee: remove the sting by scraping it with a fingernail or a card, apply cold. Call 112 / 911 for a sting in the mouth or a whole-body reaction."
+    ],
+    "warnings": [
+      "Snake: no tourniquet, no cutting, no sucking out the venom.",
+      "Tick: do not use ether, alcohol or any product before removing it."
+    ],
+    "tips": [],
+    "tags": [
+      "snake",
+      "viper",
+      "dog",
+      "tick",
+      "wasp",
+      "bee",
+      "rabies",
+      "Lyme"
+    ],
+    "sources": [
+      "Croix-Rouge",
+      "Santé publique France"
+    ],
+    "categoryId": "secours"
+  },
+  {
+    "id": "etouffement-nourrisson",
+    "title": "Choking infant (under one year)",
+    "summary": "The baby can no longer cry, cough or breathe.",
+    "priority": "critique",
+    "materials": [],
+    "steps": [
+      "Lay the baby face down along your forearm, head lower than the body, supporting the jaw.",
+      "Give up to 5 back blows between the shoulder blades with the heel of your hand.",
+      "If the object has not come out: turn them face up onto the other forearm, head lower.",
+      "Give up to 5 chest thrusts with two fingers in the centre of the chest, just below the nipple line.",
+      "Alternate 5 blows and 5 thrusts; have someone call 112 / 911.",
+      "If the baby loses consciousness: start infant resuscitation."
+    ],
+    "warnings": [
+      "Never hang the baby upside down by the feet or sweep blindly for the object with a finger.",
+      "Hands-on training in paediatric first aid is strongly recommended."
+    ],
+    "tips": [],
+    "tags": [
+      "baby",
+      "infant",
+      "choking",
+      "child"
+    ],
+    "sources": [
+      "ERC 2021"
+    ],
+    "categoryId": "secours"
+  }
+]

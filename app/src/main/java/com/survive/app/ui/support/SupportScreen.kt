@@ -1,5 +1,7 @@
 package com.survive.app.ui.support
 
+import androidx.compose.ui.res.stringResource
+import com.survive.app.R
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.net.Uri
@@ -31,7 +33,7 @@ fun SupportScreen(onBack: () -> Unit) {
     val night = LocalNightRed.current
     var failed by remember { mutableStateOf(false) }
 
-    Scaffold(topBar = { BackTopBar("Soutenir l'application", onBack) }) { padding ->
+    Scaffold(topBar = { BackTopBar(stringResource(R.string.support), onBack) }) { padding ->
         Column(
             Modifier.padding(padding).verticalScroll(rememberScrollState()).padding(16.dp),
         ) {
@@ -49,12 +51,10 @@ fun SupportScreen(onBack: () -> Unit) {
                         Icons.Filled.Favorite, contentDescription = null, modifier = Modifier.size(48.dp),
                         tint = if (night) MaterialTheme.colorScheme.primary else Color(0xFFE53935),
                     )
-                    Text("Merci d'utiliser Survive !", style = MaterialTheme.typography.headlineSmall,
+                    Text(stringResource(R.string.support_thanks), style = MaterialTheme.typography.headlineSmall,
                         fontWeight = FontWeight.Bold, textAlign = TextAlign.Center)
                     Text(
-                        "L'application est gratuite, sans publicité, sans compte, et fonctionne entièrement sans Internet. " +
-                            "Si elle vous est utile, vous pouvez soutenir son développement (nouvelles fiches, illustrations, " +
-                            "traductions, nouveaux outils) par un don.",
+                        stringResource(R.string.support_message),
                         style = MaterialTheme.typography.bodyLarge, textAlign = TextAlign.Center,
                     )
                     Button(
@@ -70,15 +70,14 @@ fun SupportScreen(onBack: () -> Unit) {
                         else ButtonDefaults.buttonColors(containerColor = PayPalBlue, contentColor = Color.White),
                         modifier = Modifier.fillMaxWidth().height(60.dp),
                     ) {
-                        Text("Faire un don via PayPal", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
+                        Text(stringResource(R.string.donate_button), style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
                     }
                     if (failed) {
-                        Text("Aucun navigateur trouvé sur ce téléphone. Adresse : ${Links.DONATION_URL}",
+                        Text(stringResource(R.string.no_browser, Links.DONATION_URL),
                             color = MaterialTheme.colorScheme.error, textAlign = TextAlign.Center)
                     }
                     Text(
-                        "Le don se fait sur le site de PayPal, du montant de votre choix, et nécessite une connexion Internet. " +
-                            "L'application ne reçoit aucune information de paiement.",
+                        stringResource(R.string.donate_note),
                         style = MaterialTheme.typography.bodySmall, textAlign = TextAlign.Center,
                         color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.7f),
                     )

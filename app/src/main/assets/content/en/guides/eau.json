@@ -1,0 +1,224 @@
+[
+  {
+    "id": "besoins-eau",
+    "title": "How much water do you need?",
+    "summary": "Work out your needs to last several days.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Drinking: at least 2 litres per person per day, more in hot weather or with exertion.",
+      "With cooking and minimal hygiene: plan for 4 litres per person per day.",
+      "Remember pets.",
+      "Watch for dehydration: dark urine, thirst, headache, fatigue."
+    ],
+    "warnings": [],
+    "tips": [
+      "At the start of an outage, fill the bathtub, pans and bottles while water is still running (bathtub water: for toilets and cleaning, or to be treated before drinking).",
+      "Hidden reserves: the hot-water tank, ice cubes, canned vegetables."
+    ],
+    "tags": [
+      "dehydration",
+      "quantity",
+      "litres",
+      "reserve"
+    ],
+    "sources": [
+      "FEMA Ready.gov",
+      "Gouv.fr - Je me prépare"
+    ],
+    "categoryId": "eau"
+  },
+  {
+    "id": "ebullition",
+    "title": "Make water safe by boiling",
+    "summary": "The safest method against bacteria, viruses and parasites.",
+    "priority": "critique",
+    "materials": [
+      "Pan",
+      "Heat source",
+      "Clean cloth"
+    ],
+    "steps": [
+      "If the water is cloudy: let it settle, then filter it through a clean cloth.",
+      "Bring to a rolling boil (big bubbles).",
+      "Keep boiling for 1 minute (3 minutes above 2,000 m altitude).",
+      "Let it cool covered and store it in a clean, closed container."
+    ],
+    "warnings": [
+      "Boiling does not remove chemicals, fuel or heavy metals: do not use water that smells of petrol or chemicals."
+    ],
+    "tips": [
+      "To improve the taste of boiled water, pour it back and forth between two containers to aerate it."
+    ],
+    "tags": [
+      "boil",
+      "drinkable",
+      "purify",
+      "disinfect"
+    ],
+    "sources": [
+      "OMS",
+      "CDC"
+    ],
+    "categoryId": "eau"
+  },
+  {
+    "id": "javel",
+    "title": "Disinfect water with bleach",
+    "summary": "When you cannot boil.",
+    "priority": "important",
+    "materials": [
+      "Unscented bleach",
+      "Dropper or straw",
+      "Clean container"
+    ],
+    "steps": [
+      "Use plain household bleach with no scent or additives (about 2.6% to 6% available chlorine).",
+      "First filter cloudy water through a cloth.",
+      "With 5-6% bleach: about 2 drops per litre. Double it if the water stays cloudy or is very cold.",
+      "Stir and wait 30 minutes away from light.",
+      "The water should keep a slight smell of chlorine; if not, repeat the dose and wait another 15 minutes."
+    ],
+    "warnings": [
+      "Never use scented bleach, bleach “gel”, or mixed household products.",
+      "Check the concentration on the label: it changes the dose."
+    ],
+    "tips": [
+      "Purification tablets (chlorine or chlorine dioxide) are easier to dose: keep some in your kit."
+    ],
+    "tags": [
+      "chlorine",
+      "tablets",
+      "purify",
+      "bleach"
+    ],
+    "sources": [
+      "CDC",
+      "OMS"
+    ],
+    "categoryId": "eau"
+  },
+  {
+    "id": "sodis",
+    "title": "Solar water disinfection (SODIS)",
+    "summary": "No fuel or chemicals: the sun in a clear bottle.",
+    "priority": "utile",
+    "materials": [
+      "Clear PET bottle"
+    ],
+    "steps": [
+      "Take a clear, smooth PET plastic bottle, 2 litres maximum.",
+      "Fill it with clear water (filter if necessary), close it and shake it.",
+      "Lay it flat in direct sunlight, ideally on a metal sheet or reflective surface.",
+      "Leave it for 6 hours in full sun, or 2 consecutive days if the sky is cloudy.",
+      "Drink straight from the bottle."
+    ],
+    "warnings": [
+      "Does not work in rainy weather or with cloudy water.",
+      "Does not remove chemicals."
+    ],
+    "tips": [],
+    "tags": [
+      "sun",
+      "solar",
+      "bottle"
+    ],
+    "sources": [
+      "OMS",
+      "EAWAG SODIS"
+    ],
+    "categoryId": "eau"
+  },
+  {
+    "id": "trouver-eau",
+    "title": "Finding water",
+    "summary": "In the city or in the wild, sources people don't think of.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "In the city: the hot-water tank (switch off the power and water inlet first, drain from the bottom tap), the toilet cistern (not the bowl, and only if there is no cleaning product in it), rainwater.",
+      "In the wild: flowing streams, springs; follow the slope and dense vegetation.",
+      "Collect rain with a tarp or gutters into clean containers.",
+      "Collect morning dew with a cloth wiped over grass, then wring it out.",
+      "Always treat water you find before drinking it (boiling, chlorine, or failing that SODIS)."
+    ],
+    "warnings": [
+      "Do not drink seawater or urine.",
+      "Avoid stagnant water near crops, roads or industry."
+    ],
+    "tips": [],
+    "tags": [
+      "source",
+      "rain",
+      "dew",
+      "collect"
+    ],
+    "sources": [
+      "FM 21-76",
+      "FEMA Ready.gov"
+    ],
+    "categoryId": "eau"
+  },
+  {
+    "id": "filtre-artisanal",
+    "title": "Make a homemade water filter",
+    "summary": "To clear cloudy water before disinfecting it.",
+    "priority": "utile",
+    "materials": [
+      "Plastic bottle",
+      "Cloth",
+      "Charcoal",
+      "Sand",
+      "Gravel"
+    ],
+    "steps": [
+      "Cut the bottom off a plastic bottle and turn it upside down, with the cap pierced with small holes or replaced by a cloth.",
+      "Fill in layers, from bottom to top: cloth, crushed charcoal (not barbecue briquettes), fine sand, coarse sand, gravel.",
+      "Pour the water slowly in at the top; throw away the first batches, which are still cloudy.",
+      "Disinfect the filtered water (boiling, chlorine or SODIS) before drinking it."
+    ],
+    "warnings": [
+      "This filter makes water clearer but does NOT make it safe to drink: disinfection is still essential."
+    ],
+    "tips": [],
+    "tags": [
+      "filter",
+      "cloudy",
+      "mud",
+      "clarify"
+    ],
+    "sources": [
+      "FM 21-76",
+      "OMS"
+    ],
+    "categoryId": "eau"
+  },
+  {
+    "id": "stocker-eau",
+    "title": "Storing water long-term",
+    "summary": "Clean reserves that do not deteriorate.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "The simplest: shop-bought bottled water, stored somewhere cool and dark, and replaced before the indicated date.",
+      "For containers filled from the tap: use food-grade containers, cleaned then rinsed with slightly chlorinated water.",
+      "Fill to the brim, close, label with the date; replace every 6 months.",
+      "Store away from chemicals, petrol and heat sources."
+    ],
+    "warnings": [
+      "Never reuse a container that held chemicals or milk (hard to clean)."
+    ],
+    "tips": [],
+    "tags": [
+      "reserve",
+      "jerrycan",
+      "stock",
+      "store"
+    ],
+    "sources": [
+      "CDC",
+      "FEMA Ready.gov"
+    ],
+    "categoryId": "eau"
+  }
+]

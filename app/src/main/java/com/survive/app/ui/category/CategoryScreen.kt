@@ -19,8 +19,8 @@ fun CategoryScreen(
     onGuide: (String) -> Unit,
     onBack: () -> Unit,
 ) {
-    val category = remember(categoryId) { repository.category(categoryId) }
-    val guides = remember(categoryId) { repository.guidesFor(categoryId) }
+    val category = remember(categoryId, repository) { repository.category(categoryId) }
+    val guides = remember(categoryId, repository) { repository.guidesFor(categoryId) }
 
     Scaffold(topBar = { BackTopBar(category?.title ?: "", onBack) }) { padding ->
         LazyColumn(

@@ -1,6 +1,6 @@
-# Survive
+# Survivor: End of the World
 
-Application Android de survie **entièrement hors ligne** : toutes les astuces et les gestes utiles
+Application Android de survie **entièrement hors ligne** et **bilingue (français / anglais)** : toutes les astuces et les gestes utiles
 quand Internet, le réseau mobile ou l'électricité ne fonctionnent plus.
 
 - 12 thématiques : urgences, premiers secours, eau, feu, abri, nourriture, orientation,
@@ -10,6 +10,8 @@ quand Internet, le réseau mobile ou l'électricité ne fonctionnent plus.
   boussole, métronome de massage cardiaque.
 - Page « Soutenir l'application » : don libre via PayPal (ouvert dans le navigateur).
 - Favoris, checklists mémorisées (kit 72 h, trousse, stock…), mode nuit rouge, grand texte.
+- Bilingue : interface et 73 fiches en français et en anglais ; la langue suit celle du téléphone
+  ou se choisit dans les Réglages.
 - Recherche insensible aux accents, accès rapide aux gestes vitaux.
 - Aucune permission Internet : rien ne dépend du réseau. Seule permission : le micro, facultative,
   pour décoder le Morse à l'oreille (analyse en direct, rien n'est enregistré).
@@ -38,7 +40,7 @@ git pull
 ```
 
 - Le script vérifie d'abord le contenu (tests des fiches JSON et du Morse), puis compile en release (R8 activé).
-- Les fichiers arrivent dans `~/builds/survive/` (`survive-<version>-<versionCode>.apk` / `.aab`).
+- Les fichiers arrivent dans `~/builds/survive/` (`survivor-end-of-the-world-<version>-<versionCode>.apk` / `.aab`).
   Pour les récupérer : `scp utilisateur@vps:builds/survive/*.apk .`
 - La clé de signature est créée au premier build dans `~/.survive/` (jamais dans le dépôt).
   **Sauvegardez ce dossier** : la même clé doit signer toutes les mises à jour.
@@ -64,6 +66,10 @@ Prérequis : JDK 17+ et le SDK Android (API 35). Ouvrir le projet dans Android S
 | Morse : écouter | Morse : traduire | Soutenir |
 |---|---|---|
 | ![](docs/captures/outil_morse_ecouter.png) | ![](docs/captures/outil_morse_traduire.png) | ![](docs/captures/soutenir.png) |
+
+| English: home | English: guide | Réglages (langue) |
+|---|---|---|
+| ![](docs/captures/en_home.png) | ![](docs/captures/en_fiche_massage.png) | ![](docs/captures/reglages.png) |
 
 Générées sans émulateur (Robolectric + Roborazzi) : `./gradlew recordRoborazziDebug` → `app/build/outputs/roborazzi/`.
 

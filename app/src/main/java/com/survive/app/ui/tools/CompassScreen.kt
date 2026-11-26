@@ -1,5 +1,7 @@
 package com.survive.app.ui.tools
 
+import androidx.compose.ui.res.stringResource
+import com.survive.app.R
 import android.content.Context
 import android.hardware.Sensor
 import android.hardware.SensorEvent
@@ -24,9 +26,8 @@ import kotlin.math.cos
 import kotlin.math.roundToInt
 import kotlin.math.sin
 
-private val CARDINALS = listOf("N", "NE", "E", "SE", "S", "SO", "O", "NO")
-
-fun cardinal(deg: Float): String = CARDINALS[(((deg % 360 + 360) % 360 + 22.5f) / 45f).toInt() % 8]
+/** Point cardinal le plus proche ; [names] = 8 abréviations de N à NO, dans la langue de l'interface. */
+fun cardinal(deg: Float, names: List<String>): String = names[(((deg % 360 + 360) % 360 + 22.5f) / 45f).toInt() % 8]
 
 /** Cap magnétique en degrés (0 = nord), ou null si le téléphone n'a pas de magnétomètre. */
 @Composable
@@ -87,9 +88,10 @@ fun CompassScreen(onBack: () -> Unit) {
     val primary = MaterialTheme.colorScheme.primary
     val onSurface = MaterialTheme.colorScheme.onSurface
     val error = MaterialTheme.colorScheme.error
+    val cardinals = stringResource(R.string.cardinals).split(",")
     KeepScreenOn()
 
-    Scaffold(topBar = { BackTopBar("Boussole", onBack) }) { padding ->
+    Scaffold(topBar = { BackTopBar(stringResource(R.string.tool_compass), onBack) }) { padding ->
         Column(
             Modifier.padding(padding).padding(16.dp).fillMaxSize(),
             horizontalAlignment = Alignment.CenterHorizontally,
@@ -97,11 +99,10 @@ fun CompassScreen(onBack: () -> Unit) {
         ) {
             val h = heading
             if (h == null) {
-                Text("En attente du capteur… Si rien ne s'affiche, ce téléphone n'a pas de boussole : " +
-                    "utilisez la méthode du bâton et de l'ombre (thème Orientation).")
+                Text(stringResource(R.string.compass_waiting))
                 return@Column
             }
-            Text("${h.roundToInt()}°  ${cardinal(h)}", style = MaterialTheme.typography.displayMedium, fontWeight = FontWeight.Bold)
+            Text("${h.roundToInt()}°  ${cardinal(h, cardinals)}", style = MaterialTheme.typography.displayMedium, fontWeight = FontWeight.Bold)
             Canvas(Modifier.fillMaxWidth().aspectRatio(1f)) {
                 val r = size.minDimension / 2f * 0.92f
                 val c = center
@@ -131,9 +132,7 @@ fun CompassScreen(onBack: () -> Unit) {
                 }
             }
             Text(
-                "Tenez le téléphone à plat, écran vers le ciel, loin des objets métalliques et des aimants. " +
-                    "Si l'indication semble fausse, décrivez plusieurs « 8 » en l'air avec le téléphone pour calibrer. " +
-                    "Le nord indiqué est le nord magnétique (écart de quelques degrés avec le nord des cartes en France).",
+                stringResource(R.string.compass_help),
                 style = MaterialTheme.typography.bodySmall,
             )
         }

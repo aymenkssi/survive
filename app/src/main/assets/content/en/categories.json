@@ -1,0 +1,98 @@
+[
+  {
+    "id": "securite",
+    "title": "Emergencies & safety",
+    "description": "Life-saving reflexes and dangers to avoid when networks go down.",
+    "icon": "security",
+    "color": "#E53935",
+    "order": 0
+  },
+  {
+    "id": "secours",
+    "title": "First aid",
+    "description": "Life-saving actions while waiting for help, or when help cannot come.",
+    "icon": "medical",
+    "color": "#D81B60",
+    "order": 1
+  },
+  {
+    "id": "eau",
+    "title": "Water",
+    "description": "Find, purify and store water: the top priority after safety.",
+    "icon": "water",
+    "color": "#1E88E5",
+    "order": 2
+  },
+  {
+    "id": "feu",
+    "title": "Fire & warmth",
+    "description": "Light a fire safely, keep warm and cook without electricity.",
+    "icon": "fire",
+    "color": "#FB8C00",
+    "order": 3
+  },
+  {
+    "id": "abri",
+    "title": "Shelter",
+    "description": "Protect yourself from cold, rain and wind, in the city or in the wild.",
+    "icon": "shelter",
+    "color": "#6D4C41",
+    "order": 4
+  },
+  {
+    "id": "nourriture",
+    "title": "Food",
+    "description": "Store, ration and prepare food without a fridge.",
+    "icon": "food",
+    "color": "#7CB342",
+    "order": 5
+  },
+  {
+    "id": "orientation",
+    "title": "Navigation",
+    "description": "Find your way without GPS or online maps: sun, stars, compass.",
+    "icon": "navigation",
+    "color": "#00897B",
+    "order": 6
+  },
+  {
+    "id": "communication",
+    "title": "Communicate without network",
+    "description": "Signal your position, raise the alarm and stay in touch without Internet or phone.",
+    "icon": "communication",
+    "color": "#8E24AA",
+    "order": 7
+  },
+  {
+    "id": "energie",
+    "title": "Energy & electricity",
+    "description": "Save your battery, recharge devices and get light during a power cut.",
+    "icon": "energy",
+    "color": "#FDD835",
+    "order": 8
+  },
+  {
+    "id": "hygiene",
+    "title": "Hygiene & health",
+    "description": "Avoid disease when running water and sewers no longer work.",
+    "icon": "hygiene",
+    "color": "#26A69A",
+    "order": 9
+  },
+  {
+    "id": "preparation",
+    "title": "Preparation & kit",
+    "description": "What to prepare BEFORE the crisis: emergency kit, documents, phone.",
+    "icon": "kit",
+    "color": "#546E7A",
+    "order": 10
+  },
+  {
+    "id": "noeuds",
+    "title": "Knots & ropes",
+    "description": "The few knots that really matter: tie, tension, hoist, secure.",
+    "icon": "knot",
+    "color": "#8D6E63",
+    "order": 11
+  }
+]

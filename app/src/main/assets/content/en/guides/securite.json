@@ -1,0 +1,236 @@
+[
+  {
+    "id": "regle-des-3",
+    "title": "The rule of 3: what to do first",
+    "summary": "A simple order of priorities so you don't scatter your efforts when everything stops.",
+    "priority": "critique",
+    "materials": [],
+    "steps": [
+      "About 3 minutes without air (choking, smoke, drowning): deal with it immediately.",
+      "About 3 hours exposed to extreme cold or heat without protection: shelter comes next.",
+      "About 3 days without water: secure drinking water third.",
+      "About 3 weeks without food: food is almost never the first emergency.",
+      "Before all that: get out of immediate danger (fire, collapse, flood, traffic)."
+    ],
+    "warnings": [],
+    "tips": [
+      "These durations are orders of magnitude, not exact limits: they are used to rank priorities."
+    ],
+    "tags": [
+      "priority",
+      "where to start",
+      "panic"
+    ],
+    "sources": [
+      "FM 21-76"
+    ],
+    "categoryId": "securite"
+  },
+  {
+    "id": "monoxyde-carbone",
+    "title": "Avoid carbon monoxide poisoning",
+    "summary": "The leading cause of death during power cuts: generators, braziers and barbecues used indoors.",
+    "priority": "critique",
+    "materials": [],
+    "steps": [
+      "Never use a generator, barbecue, brazier or fuel-burning heater inside a home, garage or closed tent.",
+      "Place a generator outdoors, at least 6 metres (20 ft) from doors and windows.",
+      "If a fuel-burning heater is essential, ventilate constantly and never sleep next to it.",
+      "Symptoms: headache, nausea, dizziness, drowsiness, often several people (and pets) at the same time.",
+      "If in doubt: get everyone into fresh air immediately, then call 112 / 911."
+    ],
+    "warnings": [
+      "Carbon monoxide is invisible and odourless: you cannot sense it coming.",
+      "Opening a window is not enough to make an indoor barbecue safe."
+    ],
+    "tips": [
+      "A battery-powered carbon monoxide detector is an excellent investment for your kit."
+    ],
+    "tags": [
+      "CO",
+      "gas",
+      "poisoning",
+      "generator",
+      "heating"
+    ],
+    "sources": [
+      "CDC",
+      "Santé publique France"
+    ],
+    "categoryId": "securite"
+  },
+  {
+    "id": "seisme",
+    "title": "During and after an earthquake",
+    "summary": "The right reflexes: drop, cover, hold on, then evacuate carefully.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "During the shaking: drop, take cover under a sturdy table and hold on, away from windows.",
+      "Outdoors: move away from buildings, trees and power lines; do not run.",
+      "After the shaking: turn off gas and electricity if possible, do not light any flame.",
+      "Evacuate by the stairs (never the lift) while protecting your head.",
+      "Expect aftershocks; do not go back into a damaged building."
+    ],
+    "warnings": [
+      "If you smell gas: light nothing, do not use switches, get out and warn others."
+    ],
+    "tips": [],
+    "tags": [
+      "earthquake",
+      "quake",
+      "tremor"
+    ],
+    "sources": [
+      "Gouv.fr - Risques"
+    ],
+    "categoryId": "securite"
+  },
+  {
+    "id": "inondation",
+    "title": "Facing a flood",
+    "summary": "Go up, stay out of the water, cut the electricity.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Go upstairs or to high ground with water, food, a light, a radio and your papers.",
+      "Turn off electricity and gas if the water is coming, without ever touching a wet appliance.",
+      "Never cross a flooded area on foot or by car.",
+      "Do not go down into cellars or underground car parks.",
+      "Signal your presence to rescuers (white sheet at the window, light at night)."
+    ],
+    "warnings": [
+      "30 cm (1 ft) of water is enough to carry a car away; 15 cm (6 in) of moving water can knock an adult over."
+    ],
+    "tips": [],
+    "tags": [
+      "flood",
+      "water",
+      "rising water"
+    ],
+    "sources": [
+      "Gouv.fr - Risques"
+    ],
+    "categoryId": "securite"
+  },
+  {
+    "id": "incendie-domicile",
+    "title": "Fire at home",
+    "summary": "Get out fast, protect yourself from smoke, close the doors.",
+    "priority": "critique",
+    "materials": [],
+    "steps": [
+      "If the fire is small and just starting (pan, bin): smother it with a lid or a blanket, cut the gas or electricity. Never put water on burning oil.",
+      "Otherwise: evacuate everyone immediately, taking nothing, closing doors behind you.",
+      "In smoke: stay low, breathable air is near the floor; cover your nose and mouth with cloth.",
+      "Never take the lift.",
+      "If the exit is blocked: stay in a room, close the door, seal the gap at the bottom with wet cloths, show yourself at the window and call 112 / 911.",
+      "If someone's clothes catch fire: stop them, lay them on the ground and roll them, or wrap them in a (non-synthetic) blanket."
+    ],
+    "warnings": [
+      "Smoke kills more than flames: a few breaths can make you pass out.",
+      "Before opening a door, touch the handle with the back of your hand: if it is hot, do not open it."
+    ],
+    "tips": [],
+    "tags": [
+      "fire",
+      "smoke",
+      "firefighters",
+      "burning",
+      "evacuate"
+    ],
+    "sources": [
+      "Gouv.fr - Risques",
+      "Croix-Rouge"
+    ],
+    "categoryId": "securite"
+  },
+  {
+    "id": "confinement-alerte",
+    "title": "Warning siren and sheltering in place",
+    "summary": "Industrial, chemical or nuclear accident: shut yourself in and listen to the radio.",
+    "priority": "critique",
+    "materials": [],
+    "steps": [
+      "Recognise the warning siren (in France: rising and falling sound, three cycles of 1 minute 41 seconds separated by 5 seconds; end of alert: continuous 30-second sound). Other countries have their own signals.",
+      "Go immediately into the nearest building (not a car).",
+      "Close doors and windows, switch off ventilation, air conditioning and forced-air heating.",
+      "Seal openings if possible (wet cloths, tape).",
+      "Listen to the radio for instructions from the authorities.",
+      "Do not go and fetch children from school: teachers shelter them.",
+      "Only phone in a life-threatening emergency, to keep networks free for rescuers."
+    ],
+    "warnings": [
+      "Only go out at the end of the alert or when ordered by the authorities.",
+      "Iodine tablets are taken only on official instructions, and only in a nuclear accident."
+    ],
+    "tips": [],
+    "tags": [
+      "siren",
+      "nuclear",
+      "chemical",
+      "toxic cloud",
+      "shelter in place",
+      "lockdown"
+    ],
+    "sources": [
+      "Gouv.fr - Risques",
+      "Radio France"
+    ],
+    "categoryId": "securite"
+  },
+  {
+    "id": "tempete",
+    "title": "Storms and high winds",
+    "summary": "Stay indoors and away from anything that could fall.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Before: bring in or tie down outdoor objects (pots, garden furniture, bins).",
+      "Close shutters and windows, charge phones and batteries, prepare lights and a radio.",
+      "During: stay indoors, away from windows; avoid travelling.",
+      "Never shelter under a tree, and stay away from building sites and the seafront.",
+      "After: do not touch fallen power lines, report damage."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "wind",
+      "hurricane",
+      "thunderstorm",
+      "cyclone"
+    ],
+    "sources": [
+      "Gouv.fr - Risques"
+    ],
+    "categoryId": "securite"
+  },
+  {
+    "id": "canicule",
+    "title": "Heatwave: protect yourself from heat",
+    "summary": "Especially without electricity or air conditioning: keep your body and home cool.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Drink water regularly without waiting until you are thirsty; avoid alcohol.",
+      "Close shutters and windows during the day, open them at night when it is cooler outside.",
+      "Wet your body (spray, damp cloth) and fan yourself.",
+      "Avoid exertion and going out during the hottest hours; stay in the coolest room.",
+      "Check on elderly or isolated people, babies and the sick."
+    ],
+    "warnings": [
+      "Never leave a child or an animal in a car, even for a few minutes."
+    ],
+    "tips": [],
+    "tags": [
+      "heat",
+      "summer",
+      "dehydration",
+      "air conditioning"
+    ],
+    "sources": [
+      "Santé publique France"
+    ],
+    "categoryId": "securite"
+  }
+]

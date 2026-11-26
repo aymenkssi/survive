@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Compile Survive sur un serveur Linux (VPS Ubuntu / Debian).
+# Compile Survivor: End of the World sur un serveur Linux (VPS Ubuntu / Debian).
 #
 #   ./scripts/build-vps.sh setup   # une seule fois : JDK 17 et SDK Android (sudo pour les paquets système)
 #   ./scripts/build-vps.sh apk     # APK à installer sur un téléphone
@@ -61,7 +61,7 @@ signing() {
     pass="$(head -c 24 /dev/urandom | base64 | tr -dc 'A-Za-z0-9' | head -c 24)"
     keytool -genkeypair -v -storetype JKS -keystore "$KEYS_DIR/survive.jks" -alias survive \
       -keyalg RSA -keysize 2048 -validity 10000 -storepass "$pass" -keypass "$pass" \
-      -dname "CN=Survive, O=Aymen, C=FR" >/dev/null 2>&1
+      -dname "CN=Survivor End of the World, O=Aymen, C=FR" >/dev/null 2>&1
     printf 'STORE_PASSWORD=%s\nKEY_ALIAS=survive\nKEY_PASSWORD=%s\n' "$pass" "$pass" > "$KEYS_DIR/signing.env"
     chmod 600 "$KEYS_DIR/signing.env" "$KEYS_DIR/survive.jks"
     printf '\033[1;31m⚠ Sauvegardez %s (les deux fichiers) : sans cette clé, plus de mise à jour possible.\033[0m\n' "$KEYS_DIR"
@@ -82,7 +82,7 @@ build() {
   echo "sdk.dir=$ANDROID_HOME" > local.properties
   version="$(sed -n 's/.*versionName *= *"\(.*\)".*/\1/p' app/build.gradle.kts)"
   code="$(sed -n 's/.*versionCode *= *\([0-9]*\).*/\1/p' app/build.gradle.kts)"
-  name="survive-$version-$code"
+  name="survivor-end-of-the-world-$version-$code"
 
   # Vérifie le contenu (fiches JSON, sources, liens vers les outils) avant de compiler.
   say "Vérification du contenu"

@@ -1,0 +1,116 @@
+[
+  {
+    "id": "frigo-coupure",
+    "title": "Fridge and freezer during a power cut",
+    "summary": "Know how long food stays safe.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Keep the doors closed as much as possible.",
+      "Fridge: food stays safe for about 4 hours with the door closed.",
+      "Full freezer: about 48 hours; half full: about 24 hours.",
+      "Eat fresh food from the fridge first, then from the freezer, and keep canned food for last.",
+      "Throw away meat, fish, dairy and leftovers kept above 4 °C for more than 2 hours."
+    ],
+    "warnings": [
+      "When in doubt, throw it out: smell and appearance are not enough to detect dangerous bacteria."
+    ],
+    "tips": [],
+    "tags": [
+      "refrigerator",
+      "freezer",
+      "food safety",
+      "power cut"
+    ],
+    "sources": [
+      "USDA",
+      "FEMA Ready.gov"
+    ],
+    "categoryId": "nourriture"
+  },
+  {
+    "id": "rationner",
+    "title": "Organise and ration your supplies",
+    "summary": "Make food last without weakening yourself.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Take stock of what is available and how many people there are.",
+      "Eat whatever spoils quickly first.",
+      "Aim for regular meals at least: an adult at rest can manage with less food, but not less water.",
+      "Reduce physical effort to lower your needs.",
+      "Without enough water, avoid very salty or high-protein foods, which increase thirst."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "supplies",
+      "provisions",
+      "eating"
+    ],
+    "sources": [
+      "FM 21-76",
+      "FEMA Ready.gov"
+    ],
+    "categoryId": "nourriture"
+  },
+  {
+    "id": "plantes-champignons",
+    "title": "Wild plants and mushrooms: be careful",
+    "summary": "Never eat anything you cannot identify with certainty.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Only eat plants you know perfectly (e.g. cooked nettles, dandelion, blackberries).",
+      "Never eat a wild mushroom without a certain identification by an expert.",
+      "Prefer stored supplies, known fruit and fishing over risky experiments.",
+      "Cook whatever can be cooked."
+    ],
+    "warnings": [
+      "Some deadly plants and mushrooms look like edible species.",
+      "In a short-term survival situation, poisoning is far more dangerous than hunger."
+    ],
+    "tips": [],
+    "tags": [
+      "foraging",
+      "berries",
+      "edible",
+      "mushroom"
+    ],
+    "sources": [
+      "FM 21-76",
+      "ANSES"
+    ],
+    "categoryId": "nourriture"
+  },
+  {
+    "id": "stock-2-semaines",
+    "title": "Build a two-week food stock",
+    "summary": "Foods that keep, can be eaten without cooking or cook quickly.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Canned ready meals, vegetables, fish, meat (can be eaten cold).",
+      "Quick-cooking starches: couscous, oats, thin pasta, instant mashed potato.",
+      "Biscuits, crispbread, crackers, cereal bars.",
+      "Dried fruit, nuts, peanut butter, chocolate.",
+      "Powdered or UHT milk, sugar, salt, honey, coffee or tea.",
+      "Manual can opener, and whatever covers specific needs (baby, diet, pets).",
+      "Apply “first in, first out”: eat and replace regularly."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "supplies",
+      "provisions",
+      "canned food",
+      "stock"
+    ],
+    "sources": [
+      "Gouv.fr - Je me prépare",
+      "FEMA Ready.gov"
+    ],
+    "checklist": true,
+    "categoryId": "nourriture"
+  }
+]

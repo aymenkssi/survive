@@ -1,0 +1,134 @@
+[
+  {
+    "id": "baton-ombre",
+    "title": "Find north with a stick and its shadow",
+    "summary": "A reliable method on sunny days, anywhere.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Plant a straight stick in flat ground.",
+      "Mark the tip of its shadow with a stone.",
+      "Wait 15 to 20 minutes and mark the new tip of the shadow.",
+      "Draw a line between the first and second marks: it shows roughly the west (1st mark) – east (2nd mark) axis.",
+      "Standing with the 1st mark on your left and the 2nd on your right, you are facing north."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "north",
+      "sun",
+      "shadow",
+      "compass"
+    ],
+    "sources": [
+      "FM 21-76"
+    ],
+    "categoryId": "orientation"
+  },
+  {
+    "id": "etoile-polaire",
+    "title": "Navigating at night by the stars",
+    "summary": "The North Star in the northern hemisphere, the Southern Cross in the southern hemisphere.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Northern hemisphere: find the Big Dipper (a “saucepan” of 7 stars).",
+      "Extend the distance between the two stars on the edge of the pan (opposite the handle) about 5 times.",
+      "You reach the North Star (Polaris): it shows north.",
+      "Southern hemisphere: extend the long axis of the Southern Cross about 4.5 times its length; south lies straight below that point."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "night",
+      "star",
+      "Big Dipper",
+      "Polaris"
+    ],
+    "sources": [
+      "FM 21-76"
+    ],
+    "categoryId": "orientation"
+  },
+  {
+    "id": "montre-soleil",
+    "title": "Using an analogue watch as a compass",
+    "summary": "A quick estimate of the direction of south.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Northern hemisphere: point the hour hand at the sun.",
+      "The line halfway between the hour hand and 12 points south (use 1 o'clock in summer time).",
+      "Southern hemisphere: point 12 at the sun; the line halfway between 12 and the hour hand points north."
+    ],
+    "warnings": [
+      "An approximate method, less accurate the closer you are to the equator."
+    ],
+    "tips": [],
+    "tags": [
+      "watch",
+      "south",
+      "sun"
+    ],
+    "sources": [
+      "FM 21-76"
+    ],
+    "categoryId": "orientation"
+  },
+  {
+    "id": "boussole-carte",
+    "title": "Using a compass and a paper map",
+    "summary": "The basics for following a bearing without GPS.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Orient the map: lay the compass on it and turn the map until its north matches the needle.",
+      "To follow a bearing: point the compass's direction-of-travel arrow at the destination, then turn the dial to line up the orienting arrow with the needle.",
+      "Keep the needle aligned and walk towards a visible landmark on that line, then repeat.",
+      "Keep the compass away from metal objects and phones."
+    ],
+    "warnings": [],
+    "tips": [
+      "A paper map of your area and a compass belong in your emergency kit."
+    ],
+    "tags": [
+      "map",
+      "bearing",
+      "azimuth",
+      "hiking"
+    ],
+    "sources": [
+      "IGN",
+      "FM 21-76"
+    ],
+    "categoryId": "orientation",
+    "tool": "compass"
+  },
+  {
+    "id": "estimer-jour-restant",
+    "title": "Estimate the time left before nightfall",
+    "summary": "With your hand held out towards the horizon.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Hold your arm out, hand flat, fingers together and horizontal.",
+      "Put the bottom of your hand on the horizon and count how many finger-widths fit up to the sun.",
+      "Each finger is about 15 minutes before sunset (4 fingers ≈ 1 hour).",
+      "Plan to set up your shelter before the last hour."
+    ],
+    "warnings": [
+      "Never look directly at the sun."
+    ],
+    "tips": [],
+    "tags": [
+      "sunset",
+      "time",
+      "night",
+      "daylight"
+    ],
+    "sources": [
+      "FM 21-76"
+    ],
+    "categoryId": "orientation"
+  }
+]

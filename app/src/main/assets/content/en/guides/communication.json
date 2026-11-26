@@ -1,0 +1,198 @@
+[
+  {
+    "id": "signaux-detresse",
+    "title": "Universal distress signals",
+    "summary": "Get spotted when you cannot call.",
+    "priority": "critique",
+    "materials": [],
+    "steps": [
+      "Rule of 3: three whistle blasts, three fires in a triangle, three flashes of light, repeated regularly.",
+      "SOS in Morse: 3 short, 3 long, 3 short (· · · — — — · · ·) with a light or a whistle.",
+      "Ground-to-air signals visible from aircraft: a large V = need help, a large X = need medical assistance. Letters several metres high, contrasting with the ground.",
+      "In daytime: a mirror or a phone screen to reflect the sun towards an aircraft or a ridge.",
+      "Stay near an open, visible area."
+    ],
+    "warnings": [],
+    "tips": [
+      "A whistle carries much further than your voice and doesn't tire you: attach one to every bag."
+    ],
+    "tags": [
+      "SOS",
+      "Morse",
+      "whistle",
+      "mirror",
+      "rescue",
+      "helicopter"
+    ],
+    "sources": [
+      "FM 21-76",
+      "OACI"
+    ],
+    "categoryId": "communication",
+    "tool": "torch"
+  },
+  {
+    "id": "radios",
+    "title": "Walkie-talkies, CB and FM radio",
+    "summary": "Stay informed and in touch with your family without a mobile network.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Battery or hand-crank FM/AM radio: to hear official instructions (in France, France Bleu / ICI and France Inter are the designated crisis stations; elsewhere, your national public broadcaster).",
+      "PMR446 walkie-talkies: licence-free in Europe (FRS in North America), range from a few hundred metres in town to a few kilometres in open country. Agree on a channel and listening times in advance.",
+      "CB (27 MHz): channel 19 is used by truck drivers, channel 9 is traditionally reserved for emergencies.",
+      "Amateur radio: emergency networks exist, but transmitting requires a licence (except in genuine distress)."
+    ],
+    "warnings": [],
+    "tips": [
+      "Set a radio appointment: for example 5 minutes at the top of every hour, to save batteries."
+    ],
+    "tags": [
+      "radio",
+      "walkie-talkie",
+      "PMR446",
+      "CB",
+      "information"
+    ],
+    "sources": [
+      "ANFR",
+      "Radio France"
+    ],
+    "categoryId": "communication"
+  },
+  {
+    "id": "plan-familial",
+    "title": "Family communication plan",
+    "summary": "Agree BEFOREHAND, because you may not be able to call each other afterwards.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Choose two meeting points: one near home, one outside the neighbourhood.",
+      "Name a relay contact far away whom everyone will notify.",
+      "Write down important numbers on paper (nobody knows them by heart any more) and keep them in every bag.",
+      "Agree on a walkie-talkie channel and listening times.",
+      "Leave a written message on site (door, letterbox) saying where you have gone."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "family",
+      "meeting point",
+      "contacts",
+      "reunite"
+    ],
+    "sources": [
+      "FEMA Ready.gov",
+      "Gouv.fr - Je me prépare"
+    ],
+    "categoryId": "communication"
+  },
+  {
+    "id": "messagerie-maillee",
+    "title": "Messaging without Internet (Bluetooth, Wi-Fi, LoRa)",
+    "summary": "Apps and devices can pass messages from one phone to the next.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Install BEFORE the crisis a mesh messaging app that works over Bluetooth/Wi-Fi Direct (e.g. Briar, Bridgefy).",
+      "Set it up and test it with your family while everything still works.",
+      "Range: a few dozen metres per device, messages hop from one phone to another.",
+      "For more range: small LoRa radios (e.g. Meshtastic) relay text messages over several kilometres without a network."
+    ],
+    "warnings": [
+      "These solutions must be installed and tested while the Internet is working."
+    ],
+    "tips": [],
+    "tags": [
+      "bluetooth",
+      "mesh",
+      "Meshtastic",
+      "Briar",
+      "text message"
+    ],
+    "sources": [
+      "Briar Project",
+      "Meshtastic"
+    ],
+    "categoryId": "communication"
+  },
+  {
+    "id": "alphabet-morse",
+    "title": "The Morse alphabet",
+    "summary": "Send a message with a light, a whistle or knocks.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Dot = short signal; dash = long signal (3 times a dot).",
+      "Leave a short silence between the signals of a letter, a longer one (3 dots) between letters, and longer still (7 dots) between words.",
+      "Most useful letters: S = · · ·  O = — — —  E = ·  T = —  A = · —  N = — ·  I = · ·  M = — —.",
+      "SOS: · · · — — — · · · as a single block, then a pause, and start again.",
+      "Use the app's Morse tool to translate and send any message automatically, or to listen to and decode one."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "Morse",
+      "code",
+      "light",
+      "signal"
+    ],
+    "sources": [
+      "UIT"
+    ],
+    "tool": "morse",
+    "categoryId": "communication"
+  },
+  {
+    "id": "alphabet-radio",
+    "title": "The radio alphabet (spelling without mistakes)",
+    "summary": "To spell a name or address over radio or phone in a noisy place.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "A Alfa, B Bravo, C Charlie, D Delta, E Echo, F Foxtrot, G Golf, H Hotel, I India.",
+      "J Juliett, K Kilo, L Lima, M Mike, N November, O Oscar, P Papa, Q Quebec, R Romeo.",
+      "S Sierra, T Tango, U Uniform, V Victor, W Whiskey, X X-ray, Y Yankee, Z Zulu.",
+      "Numbers: say them one digit at a time (“one - two - five” for 125).",
+      "End of message: “Over”; to end the conversation: “Over and out” (strictly, “Out”)."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "NATO",
+      "spell",
+      "radio",
+      "phonetic alphabet"
+    ],
+    "sources": [
+      "OACI"
+    ],
+    "categoryId": "communication"
+  },
+  {
+    "id": "entraide-quartier",
+    "title": "Organising neighbourhood mutual aid",
+    "summary": "Without the Internet, information travels through neighbours.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Identify in advance the vulnerable people in the building or street (elderly, sick, living alone).",
+      "Set a daily meeting point and time to share news.",
+      "Use a notice board (hallway, town hall): needs, offers, official information.",
+      "Pool resources: radio, tools, solar chargers, skills (nurse, electrician).",
+      "Always check information with an official source (radio) before passing it on."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "neighbours",
+      "solidarity",
+      "rumours",
+      "neighbourhood"
+    ],
+    "sources": [
+      "Gouv.fr - Je me prépare"
+    ],
+    "categoryId": "communication"
+  }
+]

@@ -10,6 +10,18 @@
 - Chargement en mémoire au premier accès (quelques centaines de Ko), puis tout est instantané.
 - `minSdk = 24` (Android 7.0) pour fonctionner sur un vieux téléphone de secours.
 
+## Langues
+
+- Interface : ressources Android (`values/` = anglais par défaut, `values-fr/` = français).
+- Contenu : `assets/content/fr/` et `assets/content/en/`, mêmes identifiants et même structure
+  (vérifié par `ContentRepositoryTest.languagesHaveTheSameStructure`) : favoris et cases cochées
+  restent valables quand on change de langue.
+- Choix dans Réglages : Automatique (français si le téléphone est en français, sinon anglais), Français, English.
+  `ui/Localization.kt` applique la langue choisie sans redémarrer l'application.
+- Android 13+ : la langue est aussi réglable dans les paramètres du téléphone (`res/xml/locales_config.xml`).
+- Ajouter une langue : un dossier `values-xx/`, un dossier `content/xx/`, et `xx` dans `SUPPORTED_LANGUAGES`,
+  `resourceConfigurations` et `locales_config.xml`.
+
 ## Pile technique
 
 | Couche | Choix | Pourquoi |
@@ -25,9 +37,11 @@
 ```
 app/src/main/
 ├── AndroidManifest.xml              # sans permission INTERNET
-├── assets/content/
+├── assets/content/<lang>/           # fr et en, mêmes identifiants
 │   ├── categories.json              # liste des thématiques
 │   └── guides/<categoryId>.json     # fiches d'une thématique
+├── res/values/strings.xml           # textes de l'interface en anglais (langue par défaut)
+├── res/values-fr/strings.xml        # textes de l'interface en français
 └── java/com/survive/app/
     ├── SurviveApp.kt                # Application : crée le ContentRepository
     ├── MainActivity.kt
@@ -69,6 +83,7 @@ Les écrans d'outils gardent l'écran allumé tant qu'ils sont affichés.
 1. ~~v0.1 : structure, thématiques, fiches, recherche, accès rapide urgence.~~
 2. ~~v0.2 : favoris, checklists, mode grand texte, mode nuit rouge, outils hors ligne, 12 thématiques / 73 fiches.~~
 3. ~~v0.3 : Morse à l'écoute (micro) et traduction, page de dons.~~
-4. **v0.4** : illustrations vectorielles (nœuds, PLS, massage, signaux sol-air), relecture médicale des fiches.
-5. **v0.5** : traduction (arabe, anglais) via des fichiers `content-<langue>/` ; widget d'accueil « SOS ».
-6. **v0.6** : publication (signature release, F-Droid / Play Store).
+4. **À venir** : illustrations vectorielles (nœuds, PLS, massage, signaux sol-air), relecture médicale des fiches.
+5. ~~v0.4 : nom « Survivor: End of the World », application bilingue français / anglais.~~
+6. **v0.5** : traduction arabe ; widget d'accueil « SOS ».
+7. **v0.6** : publication (signature release, F-Droid / Play Store).

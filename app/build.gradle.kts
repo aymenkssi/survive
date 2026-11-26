@@ -14,8 +14,10 @@ android {
         applicationId = "com.survive.app"
         minSdk = 24          // Android 7.0 : couvre les vieux téléphones gardés en secours
         targetSdk = 35
-        versionCode = 2
-        versionName = "0.3.0"
+        // Langues embarquées (retire les traductions des bibliothèques dans d'autres langues).
+        resourceConfigurations += listOf("en", "fr")
+        versionCode = 3
+        versionName = "0.4.0"
     }
 
     buildTypes {
@@ -64,4 +66,10 @@ dependencies {
     testImplementation(libs.roborazzi)
     testImplementation(libs.roborazzi.compose)
     debugImplementation(libs.androidx.ui.test.manifest)
+}
+
+// Les tests JVM (contenu, Morse, captures Compose) tournent sur la variante debug uniquement :
+// les outils de test Compose ne sont pas inclus dans la release.
+androidComponents {
+    beforeVariants(selector().withBuildType("release")) { it.enableUnitTest = false }
 }

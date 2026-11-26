@@ -1,0 +1,156 @@
+[
+  {
+    "id": "allumer-feu",
+    "title": "Light and maintain a fire",
+    "summary": "Prepare all three sizes of fuel before striking the match.",
+    "priority": "important",
+    "materials": [
+      "Lighter, matches or fire steel",
+      "Tinder",
+      "Kindling",
+      "Fuel"
+    ],
+    "steps": [
+      "Choose a spot sheltered from the wind, clear the ground for 3 metres around, away from low branches.",
+      "Gather BEFORE lighting: tinder (very fine and dry: dry grass, birch bark, cotton), kindling (twigs the size of a pencil), and fuel (branches the size of your wrist).",
+      "Make a nest of tinder, then arrange the kindling as a teepee around it, leaving an opening facing the wind.",
+      "Light the tinder from below, blow gently at the base.",
+      "Gradually add larger and larger wood without smothering the flame."
+    ],
+    "warnings": [
+      "Respect fire bans (fire risk, drought).",
+      "Put it out completely with water and stir the ashes before leaving."
+    ],
+    "tips": [
+      "Cotton soaked in petroleum jelly: an excellent fire starter that keeps for years in a small box.",
+      "Dead wood still attached to trees is drier than wood on the ground."
+    ],
+    "tags": [
+      "campfire",
+      "light",
+      "flame",
+      "wood"
+    ],
+    "sources": [
+      "FM 21-76"
+    ],
+    "categoryId": "feu"
+  },
+  {
+    "id": "chauffer-logement",
+    "title": "Keep the heat in a home without heating",
+    "summary": "Power cut in winter: concentrate the heat instead of losing it.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Gather in a single room, preferably small and not exposed.",
+      "Close doors, shutters and curtains; block the bottom of doors with towels.",
+      "Wear several layers of clothing, a hat and socks, and stay dry.",
+      "Sleep together in the same room, insulated from the floor by mattresses or blankets.",
+      "Eat hot meals regularly, have hot drinks."
+    ],
+    "warnings": [
+      "Never a barbecue, brazier or generator indoors (carbon monoxide)."
+    ],
+    "tips": [
+      "A tent pitched inside the room holds body heat much better.",
+      "Hot-water bottle: a glass bottle filled with hot water, wrapped in cloth."
+    ],
+    "tags": [
+      "cold",
+      "winter",
+      "power cut",
+      "heating"
+    ],
+    "sources": [
+      "FEMA Ready.gov",
+      "CDC"
+    ],
+    "categoryId": "feu"
+  },
+  {
+    "id": "cuisiner-sans-electricite",
+    "title": "Cooking without electricity",
+    "summary": "Safe ways to heat water and meals.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Camping stove (gas, alcohol): only in a very well-ventilated place or outdoors.",
+      "Barbecue, wood fire: outdoors only.",
+      "Save fuel: lid on the pan, food cut small, quick-cooking dishes (thin pasta, couscous, oats).",
+      "Passive cooking: bring to the boil for a few minutes, then wrap the closed pan in blankets or a sleeping bag to finish cooking."
+    ],
+    "warnings": [
+      "Never store gas canisters near a heat source."
+    ],
+    "tips": [],
+    "tags": [
+      "stove",
+      "cooking",
+      "camping",
+      "gas"
+    ],
+    "sources": [
+      "FEMA Ready.gov"
+    ],
+    "categoryId": "feu"
+  },
+  {
+    "id": "feu-sans-briquet",
+    "title": "Light a fire without a lighter or matches",
+    "summary": "Fire steel, lens, battery: alternatives that really work.",
+    "priority": "utile",
+    "materials": [
+      "Fire steel, magnifying glass, or 9 V battery and steel wool",
+      "Dry tinder"
+    ],
+    "steps": [
+      "Fire steel (ferrocerium): scrape the rod firmly with the back of a knife, right against the tinder; the very hot sparks ignite it.",
+      "Magnifying glass, reading-glasses lens, polished can bottom: focus the sun into a tiny point on dark, dry tinder.",
+      "Battery and fine steel wool: rub both terminals of a 9 V battery on the steel wool, which glows red; put it straight into the tinder.",
+      "In every case, prepare the tinder, kindling and fuel BEFORE trying."
+    ],
+    "warnings": [],
+    "tips": [
+      "The friction method (bow drill) is very hard without practice: don't count on it in a real situation.",
+      "Slip a fire steel into every kit: it works even when wet."
+    ],
+    "tags": [
+      "ferro rod",
+      "spark",
+      "magnifying glass",
+      "light",
+      "no matches"
+    ],
+    "sources": [
+      "FM 21-76"
+    ],
+    "categoryId": "feu"
+  },
+  {
+    "id": "feu-sous-pluie",
+    "title": "Making fire in wet weather",
+    "summary": "Finding dry wood in the rain.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Look for dead branches still attached to trees, and the underside of fallen trunks.",
+      "Split the wood: the core stays dry even when the outside is wet.",
+      "Carve “feather sticks”: long, thin shavings left attached, which catch fire easily.",
+      "Build a platform of branches to keep the fire off the wet ground.",
+      "Dry the next wood near the fire."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "rain",
+      "wet",
+      "damp",
+      "dry wood"
+    ],
+    "sources": [
+      "FM 21-76"
+    ],
+    "categoryId": "feu"
+  }
+]

@@ -1,0 +1,115 @@
+[
+  {
+    "id": "principes-abri",
+    "title": "Principles of a good shelter",
+    "summary": "Insulation from the ground, protection from wind and water, small volume.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Choose a dry, slightly raised spot, sheltered from the wind, away from dead trees and riverbeds.",
+      "Insulate yourself from the ground first: a thick layer of leaves, branches or cardboard (the ground steals more heat than the air).",
+      "Build small: just big enough to lie down, so there is less air to warm.",
+      "Face the entrance away from the prevailing wind.",
+      "Cover with a tarp, tightly packed branches or thick leaves to keep the water out."
+    ],
+    "warnings": [],
+    "tips": [
+      "A space blanket stretched behind you, facing a fire, reflects some of the heat back to your body.",
+      "Wrapping yourself in the space blanket under your clothes or sleeping bag blocks the wind and limits heat loss."
+    ],
+    "tags": [
+      "hut",
+      "bivouac",
+      "sleeping outside",
+      "night"
+    ],
+    "sources": [
+      "FM 21-76"
+    ],
+    "categoryId": "abri"
+  },
+  {
+    "id": "abri-bache",
+    "title": "Quick tarp shelter",
+    "summary": "In 15 minutes with a tarp and a rope.",
+    "priority": "utile",
+    "materials": [
+      "Tarp",
+      "Rope (paracord)",
+      "Pegs or stones"
+    ],
+    "steps": [
+      "Stretch a rope between two trees at hip height.",
+      "Lay the tarp over the rope.",
+      "Fix one side to the ground (pegs, stones) facing the wind to make a lean-to; or both sides for an A-frame tent.",
+      "Add an insulating ground mat under the shelter."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "tarp",
+      "tent",
+      "lean-to"
+    ],
+    "sources": [
+      "FM 21-76"
+    ],
+    "categoryId": "abri"
+  },
+  {
+    "id": "abri-voiture",
+    "title": "Sheltering in a car",
+    "summary": "Stuck in snow or on the road: the car protects you, if you use it properly.",
+    "priority": "important",
+    "materials": [],
+    "steps": [
+      "Stay in the vehicle, unless a safe shelter is visible and very close.",
+      "Signal your presence: hazard lights, a coloured cloth on the aerial or window.",
+      "Run the engine only 10 minutes per hour for heat, with a window slightly open.",
+      "Regularly clear snow away from the exhaust pipe.",
+      "Cover up (blankets, clothes), move a little to keep your circulation going, drink water."
+    ],
+    "warnings": [
+      "An exhaust blocked by snow = carbon monoxide inside the car, deadly within minutes."
+    ],
+    "tips": [],
+    "tags": [
+      "car",
+      "snow",
+      "stuck",
+      "road",
+      "vehicle"
+    ],
+    "sources": [
+      "FEMA Ready.gov",
+      "CDC"
+    ],
+    "categoryId": "abri"
+  },
+  {
+    "id": "choisir-bivouac",
+    "title": "Choosing where to spend the night outdoors",
+    "summary": "Location mistakes you pay for at night.",
+    "priority": "utile",
+    "materials": [],
+    "steps": [
+      "Set up before nightfall, one to two hours beforehand.",
+      "Avoid valley floors (cold air, damp) and exposed summits: prefer a flat spot halfway up a slope.",
+      "Never sleep in a dry riverbed or too close to water (flash floods).",
+      "Check there are no dead trees or branches overhead (“widowmakers”).",
+      "Stay near water, wood and an open area where you can be seen."
+    ],
+    "warnings": [],
+    "tips": [],
+    "tags": [
+      "camping",
+      "sleeping",
+      "night",
+      "location"
+    ],
+    "sources": [
+      "FM 21-76"
+    ],
+    "categoryId": "abri"
+  }
+]
