@@ -206,6 +206,14 @@ La carte est dessinée par le vrai moteur Mapsforge à partir du fichier OpenStr
 
 ## Points d'attention
 
+- **Erreur « Your APK or Android App Bundle needs to have the package name com.aymen.survivor » ou « content provider
+  authorities are in use by other developers: com.survive.app.androidx-startup »** : le fichier envoyé a été construit
+  avec l'**ancien code** (nom de paquet `com.survive.app`, déjà pris par un autre développeur). Sur le VPS :
+  `git pull`, `./scripts/build-vps.sh setup` (SDK Android 16), puis `./scripts/build-vps.sh aab`, et envoyer le fichier
+  `survivor-end-of-the-world-1.0.0-6.aab` (le nom contient la version : un fichier `survive-…` ou `…-0.x…` est ancien).
+  Le script refuse désormais de produire un fichier dont le nom de paquet n'est pas `com.aymen.survivor`, et s'arrête
+  si le VPS n'a pas la dernière version du code.
+
 - **Nom** : « Survivor » est aussi le nom d'une émission de télévision connue (marque déposée). Le nom complet
   « Survivor: End of the World » et le contenu (guide de survie, sans rapport avec l'émission) limitent le risque de
   confusion, mais Google peut refuser un nom jugé trop proche d'une marque. En cas de refus : changer le nom de la fiche

@@ -76,13 +76,52 @@ signing() {
   )
 }
 
+# Affiche la version du code utilisée et prévient si le VPS n'a pas la dernière version de la branche.
+check_source() {
+  command -v git >/dev/null && [ -d "$ROOT/.git" ] || return 0
+  local branch head
+  branch="$(git -C "$ROOT" rev-parse --abbrev-ref HEAD)"
+  head="$(git -C "$ROOT" log -1 --format='%h %s')"
+  say "Code utilisé : branche $branch, commit $head"
+  if git -C "$ROOT" fetch -q origin "$branch" 2>/dev/null; then
+    local behind
+    behind="$(git -C "$ROOT" rev-list --count "HEAD..origin/$branch" 2>/dev/null || echo 0)"
+    if [ "$behind" -gt 0 ]; then
+      die "Le VPS a $behind commit(s) de retard sur origin/$branch. Lancez d'abord : git pull"
+    fi
+  fi
+  if ! git -C "$ROOT" diff --quiet; then
+    printf '\033[1;31m⚠ Des fichiers ont été modifiés sur le VPS (git status) : ils seront inclus dans le build.\033[0m\n'
+  fi
+}
+
+# Vérifie que le fichier produit porte bien le nom de paquet attendu par Google Play.
+verify_package() {
+  local file="$1" found
+  if [[ "$file" == *.apk ]]; then
+    local aapt2
+    aapt2="$(ls -d "$ANDROID_HOME"/build-tools/*/ | sort -V | tail -1)aapt2"
+    [ -x "$aapt2" ] || die "aapt2 introuvable dans $ANDROID_HOME/build-tools : lancez ./scripts/build-vps.sh setup"
+    found="$("$aapt2" dump packagename "$file" 2>/dev/null | tail -1 || true)"
+  else
+    # Dans un .aab, le manifeste est binaire : on y cherche l'autorité de démarrage, dérivée du nom de paquet.
+    found="$(unzip -p "$file" base/manifest/AndroidManifest.xml | grep -a -o '[A-Za-z0-9_.]*\.androidx-startup' | head -1)"
+    found="${found%.androidx-startup}"
+  fi
+  [ "$found" = "$package" ] || die "Nom de paquet incorrect dans $(basename "$file") : « $found » au lieu de « $package »."
+  say "Nom de paquet vérifié : $found"
+}
+
 build() {
   [ -x "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" ] || die "SDK Android introuvable dans $ANDROID_HOME. Lancez d'abord : ./scripts/build-vps.sh setup"
   cd "$ROOT"
   echo "sdk.dir=$ANDROID_HOME" > local.properties
   version="$(sed -n 's/.*versionName *= *"\(.*\)".*/\1/p' app/build.gradle.kts)"
   code="$(sed -n 's/.*versionCode *= *\([0-9]*\).*/\1/p' app/build.gradle.kts)"
+  package="$(sed -n 's/.*applicationId *= *"\(.*\)".*/\1/p' app/build.gradle.kts)"
   name="survivor-end-of-the-world-$version-$code"
+  check_source
+  say "Paquet $package · version $version (code $code)"
 
   # Vérifie le contenu (fiches FR/EN, sources, outils, politique de confidentialité) avant de compiler.
   say "Vérification du contenu"
@@ -95,11 +134,13 @@ build() {
     if [ "$target" = apk ]; then
       say "Compilation de l'APK"
       ./gradlew assembleRelease --no-daemon "${SIGNING[@]}"
+      verify_package app/build/outputs/apk/release/app-release.apk
       cp app/build/outputs/apk/release/app-release.apk "$OUT_DIR/$name.apk"
       say "APK : $OUT_DIR/$name.apk"
     else
       say "Compilation du .aab pour Google Play"
       ./gradlew bundleRelease --no-daemon "${SIGNING[@]}"
+      verify_package app/build/outputs/bundle/release/app-release.aab
       cp app/build/outputs/bundle/release/app-release.aab "$OUT_DIR/$name.aab"
       say ".aab : $OUT_DIR/$name.aab"
       # Code réduit par R8 : Google Play a besoin de ce fichier pour lire les rapports de plantage.
