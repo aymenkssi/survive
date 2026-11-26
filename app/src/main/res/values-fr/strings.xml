@@ -147,4 +147,8 @@
     <string name="map_error">Impossible d\'ouvrir cette carte. Le fichier est peut-être abîmé : supprimez-le et téléchargez-le à nouveau.</string>
     <string name="map_outside">Vous êtes en dehors de la zone de cette carte.</string>
     <string name="size_units">o,Ko,Mo,Go</string>
+    <string name="lang_code">fr</string>
+    <string name="privacy">Confidentialité</string>
+    <string name="privacy_button">🔒 Politique de confidentialité</string>
+    <string name="privacy_updated">Mise à jour : %s</string>
 </resources>

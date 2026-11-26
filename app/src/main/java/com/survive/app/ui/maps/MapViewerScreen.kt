@@ -31,6 +31,9 @@ import org.mapsforge.map.layer.renderer.TileRendererLayer
 import org.mapsforge.map.reader.MapFile
 import org.mapsforge.map.rendertheme.internal.MapsforgeThemes
 
+/** Zoom « rue » utilisé quand on se place sur sa position. */
+private const val STREET_ZOOM: Byte = 15
+
 /** Une carte ouverte et prête à afficher. */
 private class OpenedMap(val view: MapView, val bounds: BoundingBox, val marker: FixedPixelCircle)
 
@@ -47,7 +50,10 @@ fun MapViewerScreen(store: MapStore, fileName: String, onBack: () -> Unit) {
     val granted = gps.permission
     val location = gps.location
 
-    // Position sur la carte ; recentre si l'utilisateur a demandé « Ma position ».
+    var autoCentered by remember { mutableStateOf(false) }
+
+    // Position sur la carte. À la première position connue dans la zone de la carte, on s'y place
+    // à l'échelle de la rue ; ensuite, seul le bouton « Ma position » recentre.
     LaunchedEffect(location, opened, follow) {
         val map = opened ?: return@LaunchedEffect
         val l = location ?: return@LaunchedEffect
@@ -55,7 +61,14 @@ fun MapViewerScreen(store: MapStore, fileName: String, onBack: () -> Unit) {
         map.marker.setLatLong(p)
         map.marker.isVisible = true
         map.marker.requestRedraw()
-        if (follow) { map.view.setCenter(p); follow = false }
+        if (!autoCentered && map.bounds.contains(l.latitude, l.longitude)) {
+            autoCentered = true
+            map.view.setCenter(p)
+            map.view.setZoomLevel(STREET_ZOOM)
+        } else if (follow) {
+            map.view.setCenter(p)
+        }
+        follow = false
     }
 
     Scaffold(topBar = { BackTopBar(LocalMap(store.file(fileName)).name, onBack) }) { padding ->
@@ -94,11 +107,12 @@ fun MapViewerScreen(store: MapStore, fileName: String, onBack: () -> Unit) {
 
             if (granted) {
                 Surface(
-                    Modifier.align(Alignment.BottomStart).padding(12.dp).fillMaxWidth(0.8f),
+                    Modifier.align(Alignment.TopCenter).padding(8.dp).fillMaxWidth(),
                     shape = MaterialTheme.shapes.medium, tonalElevation = 4.dp, shadowElevation = 4.dp,
+                    color = MaterialTheme.colorScheme.surface.copy(alpha = 0.92f),
                 ) {
-                    Column(Modifier.padding(12.dp)) {
-                        GpsStatus(gps)
+                    Column(Modifier.padding(horizontal = 12.dp, vertical = 8.dp)) {
+                        GpsStatus(gps, compact = true)
                         val l = location
                         val bounds = opened?.bounds
                         if (l != null && bounds != null && !bounds.contains(l.latitude, l.longitude)) {
@@ -109,7 +123,7 @@ fun MapViewerScreen(store: MapStore, fileName: String, onBack: () -> Unit) {
                 }
             }
             Surface(
-                Modifier.align(Alignment.TopStart).padding(6.dp),
+                Modifier.align(Alignment.BottomEnd).padding(6.dp),
                 color = MaterialTheme.colorScheme.surface.copy(alpha = 0.8f), shape = MaterialTheme.shapes.small,
             ) {
                 Text(MapCatalog.ATTRIBUTION, style = MaterialTheme.typography.labelSmall, modifier = Modifier.padding(4.dp, 2.dp))

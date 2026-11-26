@@ -79,6 +79,12 @@ Prérequis : JDK 17+ et le SDK Android (API 35). Ouvrir le projet dans Android S
 
 Générées sans émulateur (Robolectric + Roborazzi) : `./gradlew recordRoborazziDebug` → `app/build/outputs/roborazzi/`.
 
+## Publication sur Google Play
+
+Tout est prêt dans [`play-store/`](play-store/README.md) : textes FR/EN, icône, bannières, 8 captures par langue,
+politique de confidentialité (`docs/confidentialite.html`, aussi dans l'application) et marche à suivre pas à pas
+dans la Play Console. Nom du paquet : `com.aymen.survivor`, cible Android 16 (API 36).
+
 ## Documentation
 
 - [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) – structure du code et feuille de route

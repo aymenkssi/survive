@@ -8,16 +8,14 @@ plugins {
 
 android {
     namespace = "com.survive.app"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.survive.app"
+        applicationId = "com.aymen.survivor"
         minSdk = 24          // Android 7.0 : couvre les vieux téléphones gardés en secours
-        targetSdk = 35
-        // Langues embarquées (retire les traductions des bibliothèques dans d'autres langues).
-        resourceConfigurations += listOf("en", "fr")
-        versionCode = 5
-        versionName = "0.5.1"
+        targetSdk = 36
+        versionCode = 6
+        versionName = "1.0.0"
     }
 
     buildTypes {
@@ -32,6 +30,10 @@ android {
     }
     kotlinOptions {
         jvmTarget = "17"
+    }
+    androidResources {
+        // Langues embarquées (retire les traductions des bibliothèques dans d'autres langues).
+        localeFilters += listOf("en", "fr")
     }
     buildFeatures {
         compose = true

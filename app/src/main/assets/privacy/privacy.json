@@ -1,0 +1,81 @@
+{
+  "updated": "26 novembre 2026",
+  "updatedEn": "26 November 2026",
+  "contact": "aymenkssi@gmail.com",
+  "fr": {
+    "title": "Politique de confidentialité",
+    "intro": "Survivor: End of the World est une application de survie qui fonctionne sans connexion : fiches pratiques, outils (lampe, Morse, boussole, massage cardiaque) et cartes hors ligne. Elle ne demande aucun compte, ne contient aucune publicité et ne collecte aucune donnée personnelle.",
+    "sections": [
+      {
+        "title": "Aucune donnée collectée",
+        "body": "L'application ne demande ni nom, ni adresse e-mail, ni numéro de téléphone. Elle n'utilise aucun outil de statistiques, aucun traceur et aucun identifiant publicitaire. Le développeur ne reçoit aucune information sur les utilisateurs."
+      },
+      {
+        "title": "Données enregistrées sur l'appareil",
+        "body": "Vos favoris, les cases cochées des listes, vos réglages (langue, thème) et les cartes que vous téléchargez sont enregistrés uniquement sur votre téléphone. Ils ne quittent jamais l'appareil. Pour les effacer : supprimez les cartes depuis « Cartes hors ligne », ou désinstallez l'application."
+      },
+      {
+        "title": "Micro (outil Morse, onglet « Écouter »)",
+        "body": "Le micro sert uniquement à décoder des signaux Morse, quand vous touchez « Écouter » et seulement après votre autorisation. Le son est analysé en direct, dans la mémoire du téléphone, pour repérer les bips. Il n'est jamais enregistré, conservé ni envoyé. Le reste de l'application fonctionne sans le micro."
+      },
+      {
+        "title": "Localisation (cartes hors ligne et coordonnées GPS)",
+        "body": "La position sert uniquement à afficher votre point sur une carte et vos coordonnées GPS à l'écran, quand vous le demandez et après votre autorisation, et seulement pendant que l'application est ouverte. Elle est calculée par le téléphone (le GPS fonctionne sans réseau). Elle n'est jamais conservée ni envoyée. Le reste de l'application fonctionne sans la localisation."
+      },
+      {
+        "title": "Internet : uniquement pour télécharger des cartes",
+        "body": "Les fiches et les outils n'utilisent jamais Internet. La connexion sert uniquement, à votre demande, à afficher la liste des cartes et à télécharger les fichiers de cartes depuis le serveur du projet Mapsforge (download.mapsforge.org), par le gestionnaire de téléchargements d'Android. Comme pour tout téléchargement, ce serveur reçoit les informations techniques de la requête (notamment l'adresse IP). L'application ne lui transmet aucune donnée personnelle. Les cartes proviennent d'OpenStreetMap (© contributeurs OpenStreetMap)."
+      },
+      {
+        "title": "Liens externes",
+        "body": "Le bouton « Faire un don via PayPal » ouvre le site de PayPal dans votre navigateur ; la politique de confidentialité de PayPal s'y applique. L'application ne reçoit aucune information de paiement."
+      },
+      {
+        "title": "Enfants",
+        "body": "L'application ne s'adresse pas spécifiquement aux enfants et ne collecte aucune donnée, quel que soit l'âge de l'utilisateur."
+      },
+      {
+        "title": "Contact et modifications",
+        "body": "Pour toute question : aymenkssi@gmail.com. En cas de modification de cette politique, la nouvelle version est publiée dans l'application et en ligne, avec sa date de mise à jour."
+      }
+    ]
+  },
+  "en": {
+    "title": "Privacy policy",
+    "intro": "Survivor: End of the World is a survival app that works without a connection: practical guides, tools (light, Morse, compass, CPR) and offline maps. It requires no account, contains no ads and collects no personal data.",
+    "sections": [
+      {
+        "title": "No data collected",
+        "body": "The app does not ask for your name, e-mail address or phone number. It uses no analytics, no trackers and no advertising identifier. The developer receives no information about users."
+      },
+      {
+        "title": "Data stored on the device",
+        "body": "Your favorites, checked list items, settings (language, theme) and the maps you download are stored only on your phone. They never leave the device. To erase them: delete maps from “Offline maps”, or uninstall the app."
+      },
+      {
+        "title": "Microphone (Morse tool, “Listen” tab)",
+        "body": "The microphone is used only to decode Morse signals, when you tap “Listen” and only after you allow it. Sound is analysed live, in the phone's memory, to detect beeps. It is never recorded, stored or sent. The rest of the app works without the microphone."
+      },
+      {
+        "title": "Location (offline maps and GPS coordinates)",
+        "body": "Location is used only to show your position on a map and your GPS coordinates on screen, when you ask for it and after you allow it, and only while the app is open. It is computed by the phone (GPS works without a network). It is never stored or sent. The rest of the app works without location."
+      },
+      {
+        "title": "Internet: only to download maps",
+        "body": "The guides and tools never use the Internet. The connection is used only, at your request, to show the list of maps and to download map files from the Mapsforge project's server (download.mapsforge.org), through Android's download manager. As with any download, this server receives the technical information of the request (including the IP address). The app sends it no personal data. Maps come from OpenStreetMap (© OpenStreetMap contributors)."
+      },
+      {
+        "title": "External links",
+        "body": "The “Donate with PayPal” button opens the PayPal website in your browser; PayPal's privacy policy applies there. The app receives no payment information."
+      },
+      {
+        "title": "Children",
+        "body": "The app is not specifically aimed at children and collects no data, whatever the user's age."
+      },
+      {
+        "title": "Contact and changes",
+        "body": "For any question: aymenkssi@gmail.com. If this policy changes, the new version is published in the app and online, with its update date."
+      }
+    ]
+  }
+}

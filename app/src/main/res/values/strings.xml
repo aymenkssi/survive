@@ -149,4 +149,8 @@
     <string name="map_error">Unable to open this map. The file may be damaged: delete it and download it again.</string>
     <string name="map_outside">You are outside this map\'s area.</string>
     <string name="size_units">B,KB,MB,GB</string>
+    <string name="lang_code">en</string>
+    <string name="privacy">Privacy</string>
+    <string name="privacy_button">🔒 Privacy policy</string>
+    <string name="privacy_updated">Last updated: %s</string>
 </resources>

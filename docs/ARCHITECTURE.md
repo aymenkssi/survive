@@ -9,7 +9,10 @@
   en mémoire et jamais enregistré) et la localisation (position GPS sur les cartes, coordonnées).
 - Tout le contenu est livré **dans l'APK** (`app/src/main/assets/content/`), en JSON.
 - Chargement en mémoire au premier accès (quelques centaines de Ko), puis tout est instantané.
-- `minSdk = 24` (Android 7.0) pour fonctionner sur un vieux téléphone de secours.
+- `minSdk = 24` (Android 7.0) pour fonctionner sur un vieux téléphone de secours ; `targetSdk = 36` (Android 16),
+  exigé par Google Play pour les nouvelles applications depuis le 31 août 2026. Nom du paquet : `com.aymen.survivor`.
+- Politique de confidentialité : `assets/privacy/privacy.json`, affichée hors ligne (Réglages) et publiée en HTML
+  (`docs/confidentialite.html`, générée par `play-store/scripts/build_privacy.py`, vérifiée par `PrivacyPolicyTest`).
 
 ## Langues
 
@@ -103,5 +106,5 @@ Les écrans d'outils gardent l'écran allumé tant qu'ils sont affichés.
 4. **À venir** : illustrations vectorielles (nœuds, PLS, massage, signaux sol-air), relecture médicale des fiches.
 5. ~~v0.4 : nom « Survivor: End of the World », application bilingue français / anglais.~~
 6. ~~v0.5 : cartes hors ligne (catalogue mondial, import .map, position GPS).~~
-7. **v0.6** : traduction arabe ; widget d'accueil « SOS ».
-8. **v0.7** : publication (signature release, F-Droid / Play Store).
+7. ~~v1.0 : dossier Google Play, politique de confidentialité, Android 16.~~
+8. **Ensuite** : traduction arabe ; widget d'accueil « SOS ».

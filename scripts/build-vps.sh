@@ -16,9 +16,9 @@ export ANDROID_SDK_ROOT="$ANDROID_HOME"
 KEYS_DIR="${KEYS_DIR:-$HOME/.survive}"
 OUT_DIR="${OUT_DIR:-$HOME/builds/survive}"
 
-# Versions demandées par app/build.gradle.kts (compileSdk 35).
+# Versions demandées par app/build.gradle.kts (compileSdk 36, exigé par Google Play depuis août 2026).
 CMDLINE_TOOLS_ZIP="commandlinetools-linux-13114758_latest.zip"
-SDK_PACKAGES=("platform-tools" "platforms;android-35" "build-tools;35.0.0")
+SDK_PACKAGES=("platform-tools" "platforms;android-36" "build-tools;36.0.0")
 
 say() { printf '\n\033[1;33m▶ %s\033[0m\n' "$*"; }
 die() { printf '\033[1;31m✖ %s\033[0m\n' "$*" >&2; exit 1; }
@@ -40,7 +40,7 @@ setup() {
     mv "$tmp/cmdline-tools" "$ANDROID_HOME/cmdline-tools/latest"
   fi
 
-  say "SDK Android (plateforme 35, build-tools) : environ 1 Go"
+  say "SDK Android (plateforme 36, build-tools) : environ 1 Go"
   yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses >/dev/null || true
   "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "${SDK_PACKAGES[@]}" >/dev/null
 
@@ -84,9 +84,10 @@ build() {
   code="$(sed -n 's/.*versionCode *= *\([0-9]*\).*/\1/p' app/build.gradle.kts)"
   name="survivor-end-of-the-world-$version-$code"
 
-  # Vérifie le contenu (fiches JSON, sources, liens vers les outils) avant de compiler.
+  # Vérifie le contenu (fiches FR/EN, sources, outils, politique de confidentialité) avant de compiler.
   say "Vérification du contenu"
-  ./gradlew testDebugUnitTest --no-daemon --tests '*ContentRepositoryTest*' --tests '*MorseTest*'
+  ./gradlew testDebugUnitTest --no-daemon --tests '*ContentRepositoryTest*' --tests '*MorseTest*' \
+    --tests '*MapCatalogTest*' --tests '*PrivacyPolicyTest*' --tests '*LocalizationTest*'
 
   signing
   mkdir -p "$OUT_DIR"

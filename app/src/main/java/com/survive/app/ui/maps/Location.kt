@@ -160,7 +160,7 @@ fun GpsCoordinatesCard(modifier: Modifier = Modifier) {
 
 /** Coordonnées, ou ce qui empêche de les obtenir avec le bouton pour y remédier. */
 @Composable
-fun GpsStatus(state: GpsState) {
+fun GpsStatus(state: GpsState, compact: Boolean = false) {
     val context = LocalContext.current
     val location = state.location
     when {
@@ -174,8 +174,10 @@ fun GpsStatus(state: GpsState) {
         }
         location != null -> {
             Text(Coordinates.decimal(location.latitude, location.longitude),
-                style = MaterialTheme.typography.headlineSmall, fontFamily = FontFamily.Monospace, fontWeight = FontWeight.Bold)
-            Text(Coordinates.dms(location.latitude, location.longitude), fontFamily = FontFamily.Monospace)
+                style = if (compact) MaterialTheme.typography.titleMedium else MaterialTheme.typography.headlineSmall,
+                fontFamily = FontFamily.Monospace, fontWeight = FontWeight.Bold)
+            Text(Coordinates.dms(location.latitude, location.longitude), fontFamily = FontFamily.Monospace,
+                style = if (compact) MaterialTheme.typography.labelLarge else MaterialTheme.typography.bodyMedium)
             if (location.hasAccuracy()) {
                 Text(stringResource(R.string.gps_accuracy, location.accuracy.toInt()), style = MaterialTheme.typography.labelMedium)
             }

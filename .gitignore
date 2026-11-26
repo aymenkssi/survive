@@ -11,3 +11,4 @@ build/
 *.aab
 *.keystore
 .kotlin/
+play-store/build/

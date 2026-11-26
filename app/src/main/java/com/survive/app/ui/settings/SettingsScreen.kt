@@ -22,7 +22,7 @@ import com.survive.app.ui.components.BackTopBar
 import com.survive.app.ui.tools.SwitchRow
 
 @Composable
-fun SettingsScreen(prefs: UserPrefs, onSupport: () -> Unit, onBack: () -> Unit) {
+fun SettingsScreen(prefs: UserPrefs, onSupport: () -> Unit, onBack: () -> Unit, onPrivacy: () -> Unit = {}) {
     val theme by prefs.theme.collectAsState()
     val language by prefs.language.collectAsState()
     val large by prefs.largeText.collectAsState()
@@ -51,6 +51,7 @@ fun SettingsScreen(prefs: UserPrefs, onSupport: () -> Unit, onBack: () -> Unit) 
 
             HorizontalDivider()
             OutlinedButton(onClick = onSupport, modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.support_button)) }
+            OutlinedButton(onClick = onPrivacy, modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.privacy_button)) }
             Text(stringResource(R.string.settings_about), style = MaterialTheme.typography.bodySmall)
         }
     }
