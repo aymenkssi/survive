@@ -26,7 +26,7 @@ class MainActivity : ComponentActivity() {
             val lang = resolveLanguage(language, systemLocale)
             ProvideLanguage(lang) {
                 SurviveTheme(mode = theme, largeText = largeText) {
-                    SurviveNavHost(app.repository(lang), app.prefs)
+                    SurviveNavHost(app.repository(lang), app.prefs, app.mapStore)
                 }
             }
         }

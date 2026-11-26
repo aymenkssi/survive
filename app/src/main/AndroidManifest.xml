@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Aucune permission INTERNET : l'application est conçue pour fonctionner
-  à 100 % hors ligne. Tout le contenu est embarqué dans l'APK (dossier assets/).
+  L'application fonctionne à 100 % hors ligne : tout le contenu est embarqué dans l'APK (dossier assets/).
+  Internet ne sert qu'à télécharger des cartes, à la demande de l'utilisateur.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
@@ -9,6 +9,14 @@
     <uses-feature android:name="android.hardware.camera.flash" android:required="false" />
     <uses-feature android:name="android.hardware.sensor.compass" android:required="false" />
     <uses-feature android:name="android.hardware.microphone" android:required="false" />
+
+    <!-- Internet : uniquement pour parcourir le catalogue et télécharger des cartes hors ligne.
+         Tout le reste de l'application (fiches, outils, cartes déjà téléchargées) fonctionne sans réseau. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Position GPS sur les cartes hors ligne (le GPS fonctionne sans réseau). Facultatif. -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="false" />
 
     <!-- Micro : uniquement pour décoder le Morse à l'oreille, analysé en direct sur le téléphone, rien n'est enregistré. -->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />

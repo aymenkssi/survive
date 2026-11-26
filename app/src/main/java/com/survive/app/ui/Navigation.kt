@@ -1,6 +1,13 @@
 package com.survive.app.ui
 
+import android.net.Uri
 import androidx.compose.runtime.Composable
+import androidx.navigation.NavType
+import androidx.navigation.navArgument
+import com.survive.app.data.maps.MapStore
+import com.survive.app.ui.maps.CatalogScreen
+import com.survive.app.ui.maps.MapViewerScreen
+import com.survive.app.ui.maps.MapsScreen
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
@@ -28,10 +35,14 @@ object Routes {
     fun category(id: String) = "category/$id"
     fun guide(id: String) = "guide/$id"
     fun tool(id: String) = "tool/$id"
+    const val MAP_CATALOG = "maps/catalog?folder={folder}"
+    const val MAP_VIEW = "maps/view/{file}"
+    fun mapCatalog(folder: String) = "maps/catalog?folder=" + Uri.encode(folder)
+    fun mapView(file: String) = "maps/view/" + Uri.encode(file)
 }
 
 @Composable
-fun SurviveNavHost(repository: ContentRepository, prefs: UserPrefs) {
+fun SurviveNavHost(repository: ContentRepository, prefs: UserPrefs, mapStore: MapStore) {
     val nav = rememberNavController()
     val back: () -> Unit = { nav.popBackStack() }
     NavHost(navController = nav, startDestination = Routes.HOME) {
@@ -73,5 +84,27 @@ fun SurviveNavHost(repository: ContentRepository, prefs: UserPrefs) {
         composable(Routes.tool(Tools.MORSE)) { MorseScreen(back) }
         composable(Routes.tool(Tools.COMPASS)) { CompassScreen(back) }
         composable(Routes.tool(Tools.CPR)) { CprScreen(back) }
+        composable(Routes.tool(Tools.MAPS)) {
+            MapsScreen(
+                mapStore,
+                onCatalog = { nav.navigate(Routes.mapCatalog("")) },
+                onOpen = { nav.navigate(Routes.mapView(it)) },
+                onBack = back,
+            )
+        }
+        composable(
+            Routes.MAP_CATALOG,
+            arguments = listOf(navArgument("folder") { type = NavType.StringType; defaultValue = "" }),
+        ) { entry ->
+            CatalogScreen(
+                mapStore,
+                folder = entry.arguments?.getString("folder").orEmpty(),
+                onFolder = { nav.navigate(Routes.mapCatalog(it)) },
+                onBack = back,
+            )
+        }
+        composable(Routes.MAP_VIEW) { entry ->
+            MapViewerScreen(mapStore, entry.arguments?.getString("file").orEmpty(), onBack = back)
+        }
     }
 }

@@ -29,6 +29,7 @@ protection civile, manuels du domaine public). Pas de blogs ni de vidéos comme 
 | `Briar Project` | briarproject.org – messagerie pair-à-pair | Communication | — |
 | `Meshtastic` | meshtastic.org – réseau maillé LoRa | Communication | — |
 | `FM 3-97.61` | US Army Field Manual FM 3-97.61 *Military Mountaineering* (2002) – nœuds | Nœuds & cordes | Domaine public (document du gouvernement US) |
+| `OSM` | OpenStreetMap (données cartographiques des cartes hors ligne, via Mapsforge) | Cartes | ODbL : attribution « © OpenStreetMap contributors » affichée |
 | `UIT` | Union internationale des télécommunications – Recommandation UIT-R M.1677 (code Morse international) | Communication | Norme publique |
 
 ## Sources à exploiter pour la suite de la collecte

@@ -16,8 +16,8 @@ android {
         targetSdk = 35
         // Langues embarquées (retire les traductions des bibliothèques dans d'autres langues).
         resourceConfigurations += listOf("en", "fr")
-        versionCode = 3
-        versionName = "0.4.0"
+        versionCode = 4
+        versionName = "0.5.0"
     }
 
     buildTypes {
@@ -57,6 +57,9 @@ dependencies {
     implementation(libs.androidx.material.icons.extended)
     implementation(libs.androidx.navigation.compose)
     implementation(libs.kotlinx.serialization.json)
+    // Cartes hors ligne : rendu local des fichiers .map (OpenStreetMap)
+    implementation(libs.mapsforge.map.android)
+    implementation(libs.mapsforge.themes)
     debugImplementation(libs.androidx.ui.tooling)
 
     testImplementation(libs.junit)

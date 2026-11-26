@@ -43,7 +43,7 @@
     "priority": "important",
     "materials": [],
     "steps": [
-      "Télécharger les cartes hors ligne de sa région (ex. : Organic Maps, OsmAnd, ou cartes hors ligne de Google Maps).",
+      "Télécharger les cartes hors ligne de sa région : directement dans cette application (outil « Cartes hors ligne »), ou avec Organic Maps ou OsmAnd.",
       "Installer et tester une messagerie sans Internet (voir « Messagerie sans Internet »).",
       "Enregistrer en local les documents utiles (photos des papiers d'identité, ordonnances).",
       "Noter sur papier les numéros importants.",
@@ -60,7 +60,8 @@
     "sources": [
       "Gouv.fr - Je me prépare"
     ],
-    "categoryId": "preparation"
+    "categoryId": "preparation",
+    "tool": "maps"
   },
   {
     "id": "trousse-secours",

@@ -44,7 +44,7 @@
     "priority": "important",
     "materials": [],
     "steps": [
-      "Download offline maps of your area (e.g. Organic Maps, OsmAnd, or Google Maps offline maps).",
+      "Download offline maps of your area: directly in this app (“Offline maps” tool), or with Organic Maps or OsmAnd.",
       "Install and test a messaging app that works without Internet (see “Messaging without Internet”).",
       "Save useful documents locally (photos of ID, prescriptions).",
       "Write important numbers down on paper.",
@@ -61,7 +61,8 @@
     "sources": [
       "Gouv.fr - Je me prépare"
     ],
-    "categoryId": "preparation"
+    "categoryId": "preparation",
+    "tool": "maps"
   },
   {
     "id": "trousse-secours",

@@ -6,6 +6,8 @@ quand Internet, le réseau mobile ou l'électricité ne fonctionnent plus.
 - 12 thématiques : urgences, premiers secours, eau, feu, abri, nourriture, orientation,
   communication sans réseau, énergie, hygiène, préparation, nœuds.
 - 73 fiches pratiques sourcées (OMS, ERC, Croix-Rouge, gouvernement, manuels FM 21-76 / FM 3-97.61…).
+- **Cartes hors ligne** : catalogue OpenStreetMap (Mapsforge) par pays et par région, téléchargé une fois puis
+  affiché sans réseau, avec la position GPS et les coordonnées à donner aux secours. Import de fichiers `.map` possible.
 - Outils intégrés : lampe & SOS automatique, Morse (émettre, **écouter au micro et traduire**, traduire un code écrit),
   boussole, métronome de massage cardiaque.
 - Page « Soutenir l'application » : don libre via PayPal (ouvert dans le navigateur).
@@ -13,8 +15,8 @@ quand Internet, le réseau mobile ou l'électricité ne fonctionnent plus.
 - Bilingue : interface et 73 fiches en français et en anglais ; la langue suit celle du téléphone
   ou se choisit dans les Réglages.
 - Recherche insensible aux accents, accès rapide aux gestes vitaux.
-- Aucune permission Internet : rien ne dépend du réseau. Seule permission : le micro, facultative,
-  pour décoder le Morse à l'oreille (analyse en direct, rien n'est enregistré).
+- Rien ne dépend du réseau. Internet ne sert qu'à télécharger des cartes, à la demande. Permissions facultatives :
+  micro (décoder le Morse à l'oreille, rien n'est enregistré) et localisation (position sur les cartes).
 
 > ⚠️ Ce contenu ne remplace pas une formation aux premiers secours (PSC1) ni l'avis des secours.
 > En cas d'urgence vitale : **112**.
@@ -66,6 +68,10 @@ Prérequis : JDK 17+ et le SDK Android (API 35). Ouvrir le projet dans Android S
 | Morse : écouter | Morse : traduire | Soutenir |
 |---|---|---|
 | ![](docs/captures/outil_morse_ecouter.png) | ![](docs/captures/outil_morse_traduire.png) | ![](docs/captures/soutenir.png) |
+
+| Cartes hors ligne | Catalogue des cartes | |
+|---|---|---|
+| ![](docs/captures/cartes.png) | ![](docs/captures/cartes_catalogue.png) | |
 
 | English: home | English: guide | Réglages (langue) |
 |---|---|---|

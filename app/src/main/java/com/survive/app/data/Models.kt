@@ -46,7 +46,7 @@ data class Guide(
     val sources: List<String> = emptyList(),
     /** Si vrai, les étapes s'affichent comme des cases à cocher mémorisées (listes de matériel). */
     val checklist: Boolean = false,
-    /** Outil intégré associé à la fiche : "torch", "morse", "compass" ou "cpr". */
+    /** Outil intégré associé à la fiche : "maps", "torch", "morse", "compass" ou "cpr". */
     val tool: String? = null,
 )
 
@@ -56,5 +56,6 @@ object Tools {
     const val MORSE = "morse"
     const val COMPASS = "compass"
     const val CPR = "cpr"
-    val all = listOf(TORCH, MORSE, COMPASS, CPR)
+    const val MAPS = "maps"
+    val all = listOf(MAPS, TORCH, MORSE, COMPASS, CPR)
 }

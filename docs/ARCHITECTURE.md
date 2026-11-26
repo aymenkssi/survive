@@ -2,10 +2,11 @@
 
 ## Principe directeur : 100 % hors ligne
 
-- **Aucune permission `INTERNET`** dans le manifeste : l'application ne peut pas dépendre du réseau, même par erreur.
-  Le lien de don s'ouvre dans le navigateur du téléphone (intent `ACTION_VIEW`), pas dans l'application.
-- Seule permission demandée : `RECORD_AUDIO`, au moment d'utiliser « Morse → Écouter ». L'audio est analysé
-  trame par trame en mémoire et jamais enregistré.
+- Fiches et outils n'utilisent jamais le réseau. La permission `INTERNET` ne sert qu'aux **cartes hors ligne**
+  (parcourir le catalogue, télécharger un fichier), à la demande de l'utilisateur.
+  Le lien de don s'ouvre dans le navigateur du téléphone (intent `ACTION_VIEW`).
+- Permissions facultatives, demandées au moment de l'usage : `RECORD_AUDIO` (« Morse → Écouter », audio analysé
+  en mémoire et jamais enregistré) et la localisation (position GPS sur les cartes, coordonnées).
 - Tout le contenu est livré **dans l'APK** (`app/src/main/assets/content/`), en JSON.
 - Chargement en mémoire au premier accès (quelques centaines de Ko), puis tout est instantané.
 - `minSdk = 24` (Android 7.0) pour fonctionner sur un vieux téléphone de secours.
@@ -66,10 +67,26 @@ app/src/main/
 app/src/test/                        # tests JVM qui valident le contenu
 ```
 
+## Cartes hors ligne
+
+- **Source** : fichiers vectoriels Mapsforge (`https://download.mapsforge.org/maps/v5/`), données OpenStreetMap
+  (© contributeurs OpenStreetMap, ODbL). Un fichier par pays, les grands pays aussi par région. Le téléchargement
+  de fichiers entiers est l'usage prévu par ce serveur (contrairement au téléchargement massif de tuiles OSM, interdit).
+- **Catalogue** : lu en direct sur le serveur (`MapCatalog.parseIndex`, page d'index), donc toujours complet et à jour.
+- **Téléchargement** : `DownloadManager` d'Android (continue application fermée, reprend après coupure, notification),
+  vers le dossier privé `Android/data/<app>/files/maps/` (aucune permission de stockage).
+  Nom local : chemin du catalogue avec `__` (`europe__france__alsace.map`).
+- **Import** : n'importe quel fichier `.map` Mapsforge (vérification de la signature `mapsforge binary OSM`).
+- **Affichage** : bibliothèque Mapsforge 0.25 (`MapView` dans Compose via `AndroidView`), rendu local des tuiles,
+  thème `MapsforgeThemes.DEFAULT`, point de position GPS (`LocationManager`, fonctionne sans réseau).
+- **Tests** : `MapCatalogTest` (catalogue, tailles, coordonnées) ; `MapsScreenshotTest` rend une vraie carte si
+  `SURVIVOR_TEST_MAP` pointe vers un petit fichier `.map` (ex. `europe/monaco.map`, 350 Ko).
+
 ## Outils hors ligne
 
 | Outil | Matériel utilisé | Repli si absent |
 |---|---|---|
+| Cartes hors ligne | stockage, GPS | coordonnées non affichées sans GPS |
 | Lampe & SOS | flash (`CameraManager.setTorchMode`, sans permission caméra) | écran plein blanc (ou rouge en mode nuit), luminosité max |
 | Morse – émettre | flash + bip (`ToneGenerator`, flux alarme) + voyant écran | voyant écran |
 | Morse – écouter | micro (`AudioRecord` 16 kHz) → `ToneDetector` (filtres de Goertzel 300–3000 Hz) → `SignalTracker` (seuil adaptatif au bruit) → `MorseDecoder` (vitesse estimée automatiquement) | onglet « Traduire » (saisie du code à la main) |
@@ -85,5 +102,6 @@ Les écrans d'outils gardent l'écran allumé tant qu'ils sont affichés.
 3. ~~v0.3 : Morse à l'écoute (micro) et traduction, page de dons.~~
 4. **À venir** : illustrations vectorielles (nœuds, PLS, massage, signaux sol-air), relecture médicale des fiches.
 5. ~~v0.4 : nom « Survivor: End of the World », application bilingue français / anglais.~~
-6. **v0.5** : traduction arabe ; widget d'accueil « SOS ».
-7. **v0.6** : publication (signature release, F-Droid / Play Store).
+6. ~~v0.5 : cartes hors ligne (catalogue mondial, import .map, position GPS).~~
+7. **v0.6** : traduction arabe ; widget d'accueil « SOS ».
+8. **v0.7** : publication (signature release, F-Droid / Play Store).
